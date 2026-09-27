@@ -4,6 +4,8 @@ China House Pricing is a lightweight interactive prototype for exploring China h
 
 > Repository name follows the requested project title: **China House Pricing**.
 
+**Online demo:** <https://haichaowa.github.io/China-House-Pricing/>
+
 ## Features
 
 - China province map with animated zoom on click
