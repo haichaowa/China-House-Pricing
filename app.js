@@ -272,6 +272,7 @@ function setMapOption(animation = true, preserveView = false) {
         color: "rgba(238,243,255,0.82)",
         fontSize: level === "city" ? 10 : 11,
       },
+      labelLayout: { hideOverlap: true },
       emphasis: {
         label: { show: true, fontWeight: 700 },
         itemStyle: { areaColor: "#4bd4c4", shadowBlur: 18, shadowColor: "rgba(75,212,196,0.5)" },
@@ -676,6 +677,9 @@ function renderTimeFeedback() {
   const progress = max ? index / max : 0;
 
   document.querySelector("#time-input-wrap").style.setProperty("--time-progress", String(progress));
+  const tooltip = document.querySelector("#time-tooltip");
+  tooltip.classList.toggle("is-start", progress === 0);
+  tooltip.classList.toggle("is-end", progress === 1);
   document.querySelector("#time-focus-name").textContent = focus.name;
   document.querySelector("#time-tooltip-price").textContent = formatPrice(record.average);
   document.querySelector("#time-tooltip-change").textContent = `环比 ${formatChange(record.mom)}`;

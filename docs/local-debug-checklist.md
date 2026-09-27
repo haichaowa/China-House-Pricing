@@ -22,6 +22,8 @@ Use `python3 -m http.server 8000` and open <http://localhost:8000>.
 - [x] Twelve-month time slider switches national, province, city, and district cards
 - [x] Time playback advances from the oldest month and stops at the latest month
 - [x] Dragging the time slider shows a persistent value bubble, mini trend, and current MoM/YoY without hovering the main chart
+- [x] Time-panel HTML nesting and slider value-bubble edge alignment corrected
+- [x] Overlapping province/city/district map labels are hidden automatically
 - [x] Historical coverage reports 99/100 monitored cities
 - [x] No browser console errors or warnings
 

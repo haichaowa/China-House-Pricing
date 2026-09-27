@@ -171,7 +171,7 @@ h3 { font-size: 15px; }
 .time-tooltip {
   position: absolute;
   top: 0;
-  left: calc(var(--time-progress) * (100% - 82px) + 41px);
+  left: calc(var(--time-progress) * (100% - 20px) + 10px);
   display: grid;
   gap: 1px;
   min-width: 82px;
@@ -183,6 +183,9 @@ h3 { font-size: 15px; }
   transform: translateX(-50%);
   pointer-events: none;
 }
+
+.time-tooltip.is-start { transform: translateX(0); }
+.time-tooltip.is-end { transform: translateX(-100%); }
 
 .time-tooltip strong {
   color: var(--text);
