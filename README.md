@@ -9,6 +9,7 @@ China House Pricing is a lightweight interactive prototype for exploring China h
 ## Features
 
 - China province map with animated zoom on click
+- Province → city → district drill-down with dynamically loaded administrative boundaries
 - New-home and second-hand market toggle
 - Province color based on the median monitored-city sample price
 - City cards with sample average price, MoM, and YoY
@@ -50,6 +51,7 @@ The script reads:
 This is a visualization prototype, not an official statistical release.
 
 - City values are China Index Academy sample average prices, not transaction records.
+- District boundaries come from DataV GeoAtlas. There is no single authoritative nationwide district-level housing-price open dataset, so a selected district displays its parent city's sample price in this prototype.
 - Province colors use the median of monitored cities and are not an official province-wide average.
 - The 100 monitored cities over-represent Jiangsu, Guangdong, Shandong, Zhejiang, and Hebei, so province comparisons are indicative only.
 - Tibet has no city in the current monitored sample and is therefore shown as no-data.

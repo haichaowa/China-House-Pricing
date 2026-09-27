@@ -17,13 +17,14 @@
         <div>
           <p class="eyebrow">Interactive Housing Market Prototype</p>
           <h1>China House Pricing</h1>
-          <p class="subtitle">中国房价交互地图：点击省份放大查看重点城市价格、环比与同比</p>
+          <p class="subtitle">中国房价交互地图：省 → 市 → 区县连续放大与选择</p>
         </div>
         <div class="header-actions">
           <div class="segmented" role="tablist" aria-label="数据类型">
             <button class="segment is-active" data-market="newHouse" role="tab" aria-selected="true">新建住宅</button>
             <button class="segment" data-market="esfHouse" role="tab" aria-selected="false">二手住宅</button>
           </div>
+          <button id="up-level" class="ghost-button" type="button">上一级</button>
           <button id="reset-map" class="ghost-button" type="button">返回全国</button>
         </div>
       </header>
@@ -36,12 +37,13 @@
               <span>省份颜色 = 该省内监测城市样本价格中位数</span>
             </div>
             <span id="data-date" class="pill"></span>
+            <span id="map-status" class="pill status-pill" aria-live="polite"></span>
           </div>
           <div id="map" class="map"></div>
           <div class="map-footer">
             <span>地图底图：阿里云 DataV.GeoAtlas</span>
             <span>价格数据：中指研究院百城价格指数公开页</span>
-            <span>交互说明：点击省份 / 再按 Esc 返回全国</span>
+            <span>交互说明：省 → 市 → 区县连续选择；Esc 返回全国</span>
           </div>
         </section>
 
@@ -49,6 +51,7 @@
           <div class="detail-head">
             <div>
               <p class="eyebrow">Current snapshot</p>
+              <nav id="breadcrumb" class="breadcrumb" aria-label="区域路径"></nav>
               <h2 id="region-title">全国百城</h2>
             </div>
             <span id="region-type" class="pill">新建住宅</span>
@@ -77,6 +80,7 @@
             <ul class="notes">
               <li>省份值是“该省内监测城市样本价格中位数”，不是官方全省平均成交价。</li>
               <li>城市值为中指研究院公开的样本平均价格，与统计局 70 城同质价格指数口径不同。</li>
+              <li>区县支持连续选择与放大；当前公开数据源没有全国统一区县房价表，区县价格显示所属城市样本价格。</li>
               <li>地图仅用于演示交互，正式发布应使用合规地图服务并核对边界。</li>
             </ul>
           </section>
