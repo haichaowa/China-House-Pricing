@@ -280,6 +280,64 @@ function renderBreadcrumb() {
   });
 }
 
+function selectedAreaItems() {
+  const province = state.path.find((item) => item.level === "province") ?? null;
+  const city = state.path.findLast((item) => item.level === "city") ?? null;
+  const district = state.path.findLast((item) => item.level === "selected") ?? null;
+  return { province, city, district };
+}
+
+function childFeatures(item) {
+  return item?.geo?.features?.filter((feature) => feature.properties?.name) ?? [];
+}
+
+function setSelectOptions(select, placeholder, options, selectedName = null) {
+  select.innerHTML = `<option value="">${placeholder}</option>` + options
+    .map((feature) => {
+      const name = feature.properties.name;
+      return `<option value="${name}" ${name === selectedName ? "selected" : ""}>${name}</option>`;
+    })
+    .join("");
+  select.disabled = options.length === 0;
+}
+
+function renderAreaControls() {
+  const provinceSelect = document.querySelector("#area-province");
+  const citySelect = document.querySelector("#area-city");
+  const districtSelect = document.querySelector("#area-district");
+  const { province, city, district } = selectedAreaItems();
+  const selectedCityName = district?.feature?.properties?.level === "city"
+    ? district.name
+    : city?.name;
+  const provinceFeatures = state.nationalGeo.features
+    .filter((feature) => feature.properties?.level === "province" && feature.properties?.name);
+
+  setSelectOptions(provinceSelect, "请选择省份", provinceFeatures, province?.name);
+
+  const municipalityDistricts = province?.geo.features.some((feature) => feature.properties?.level === "district");
+  const cityFeatures = province && !municipalityDistricts
+    ? childFeatures(province).filter((feature) => feature.properties.level === "city")
+    : [];
+  setSelectOptions(
+    citySelect,
+    municipalityDistricts ? "直辖市：请选择区县" : province ? "请选择城市 / 州" : "请先选择省份",
+    cityFeatures,
+    selectedCityName,
+  );
+
+  const districtFeatures = city
+    ? childFeatures(city).filter((feature) => feature.properties.level === "district")
+    : municipalityDistricts
+      ? childFeatures(province).filter((feature) => feature.properties.level === "district")
+      : [];
+  setSelectOptions(
+    districtSelect,
+    city || municipalityDistricts ? "请选择区县 / 县级市" : "请先选择城市",
+    districtFeatures,
+    district?.feature?.properties?.level === "district" ? district.name : null,
+  );
+}
+
 function renderSummary() {
   const data = state.prices[state.market];
   const current = currentPathItem();
@@ -522,6 +580,7 @@ function goCountry({ silent = false } = {}) {
   state.mapZoom = 1.18;
   updateCaption();
   renderBreadcrumb();
+  renderAreaControls();
   if (!silent) {
     setMapOption();
     renderSummary();
@@ -552,6 +611,7 @@ async function enterFeature(feature) {
     fitToFeature(feature);
     updateCaption();
     renderBreadcrumb();
+    renderAreaControls();
     setMapOption();
     renderSummary();
   } catch (error) {
@@ -576,9 +636,11 @@ function selectFeature(feature) {
     geo: current.geo,
     mapName: current.mapName,
   }];
+  fitToFeature(feature);
   updateCaption();
   renderBreadcrumb();
-  setMapOption(true, true);
+  renderAreaControls();
+  setMapOption();
   renderSummary();
 }
 
@@ -598,6 +660,7 @@ function goToPathIndex(index) {
   fitToFeature(target.feature);
   updateCaption();
   renderBreadcrumb();
+  renderAreaControls();
   setMapOption();
   renderSummary();
 }
@@ -646,6 +709,21 @@ function initializeCharts() {
   state.mapChart.on("click", handleMapClick);
   document.querySelector("#reset-map").addEventListener("click", () => goCountry());
   document.querySelector("#up-level").addEventListener("click", goUp);
+  document.querySelector("#area-province").addEventListener("change", (event) => {
+    const feature = state.nationalGeo.features.find((item) => item.properties?.name === event.target.value);
+    if (feature) void enterFeature(feature);
+  });
+  document.querySelector("#area-city").addEventListener("change", (event) => {
+    const { province } = selectedAreaItems();
+    const feature = childFeatures(province).find((item) => item.properties?.name === event.target.value);
+    if (feature) void enterFeature(feature);
+  });
+  document.querySelector("#area-district").addEventListener("change", (event) => {
+    const { city, province } = selectedAreaItems();
+    const source = city ?? province;
+    const feature = childFeatures(source).find((item) => item.properties?.name === event.target.value);
+    if (feature) selectFeature(feature);
+  });
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") goCountry();
     if (event.key === "Backspace" && event.target === document.body) goUp();

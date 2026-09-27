@@ -6,6 +6,9 @@ Use `python3 -m http.server 8000` and open <http://localhost:8000>.
 
 - [x] Initial national map and price cards load without console errors
 - [x] `广东省 → 广州市 → 天河区` drill-down works
+- [x] Explicit province/city/district dropdowns work when map clicking is impractical
+- [x] `广东省 → 东莞市` works for a districtless prefecture-level city
+- [x] Selecting a district zooms the viewport to the selected district boundary
 - [x] Selecting a district preserves the current map zoom and selection
 - [x] `北京市 → 西城区` works for a municipality that goes directly to districts
 - [x] New-home and second-hand toggles update district cards while retaining the selected area

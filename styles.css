@@ -228,6 +228,38 @@ h3 { font-size: 15px; }
   padding: 16px;
 }
 
+.area-picker {
+  display: grid;
+  gap: 9px;
+}
+
+.area-picker label {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.area-picker select {
+  min-width: 0;
+  height: 34px;
+  padding: 0 9px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: rgba(8, 12, 23, 0.9);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+}
+
+.area-picker select:focus {
+  border-color: rgba(75, 212, 196, 0.7);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(75, 212, 196, 0.12);
+}
+
 .summary-card {
   padding: 14px;
   border: 1px solid var(--border);
