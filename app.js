@@ -5,6 +5,7 @@ const GEO_BASE = "https://geo.datav.aliyun.com/areas_v3/bound";
 const state = {
   market: "newHouse",
   prices: null,
+  districtPrices: null,
   nationalGeo: null,
   geoCache: new Map(),
   mapChart: null,
@@ -143,6 +144,22 @@ function findCityRecord(name, provinceName = null) {
   }) ?? null;
 }
 
+function districtPriceContext() {
+  const provinceName = currentProvinceName();
+  return currentCityName() ?? provinceName;
+}
+
+function findDistrictRecord(districtName, cityName = districtPriceContext()) {
+  if (state.market !== "esfHouse" || !districtName || !cityName) return null;
+  const cityEntries = Object.entries(state.districtPrices?.cities ?? {});
+  const cityEntry = cityEntries.find(([name, item]) => (
+    normalizeAreaName(name) === normalizeAreaName(cityName)
+    && (!currentProvinceName() || item.province === currentProvinceName())
+  )) ?? cityEntries.find(([name]) => normalizeAreaName(name) === normalizeAreaName(cityName));
+  const districts = cityEntry?.[1]?.districts ?? [];
+  return districts.find((item) => normalizeAreaName(item.name) === normalizeAreaName(districtName)) ?? null;
+}
+
 function currentProvinceName() {
   return state.path.find((item) => item.level === "province")?.name ?? null;
 }
@@ -193,16 +210,23 @@ function currentMapData() {
         city = findCityRecord(mapCurrent.name, provinceName);
       }
 
+      const isDistrict = scope === "district" || scope === "district-in-municipality";
+      const districtRecord = isDistrict ? findDistrictRecord(properties.name) : null;
+
       return {
         name: properties.name,
-        value: scope === "district" || scope === "district-in-municipality" ? NaN : city?.average ?? NaN,
+        value: isDistrict
+          ? districtRecord?.price ?? NaN
+          : city?.average ?? NaN,
         count: city ? 1 : 0,
         referencePrice: city?.average ?? null,
-        averageMom: scope === "district" || scope === "district-in-municipality" ? null : city?.mom ?? null,
-        averageYoy: scope === "district" || scope === "district-in-municipality" ? null : city?.yoy ?? null,
+        averageMom: isDistrict ? null : city?.mom ?? null,
+        averageYoy: isDistrict ? null : city?.yoy ?? null,
         referenceMom: city?.mom ?? null,
         referenceYoy: city?.yoy ?? null,
         city: city?.city ?? null,
+        districtSource: districtRecord ? "房天下二手房挂牌参考价" : null,
+        districtPeriod: districtRecord ? state.districtPrices.period : null,
         scope,
         itemStyle: properties.name === state.selectedName
           ? {
@@ -237,6 +261,14 @@ function setMapOption(animation = true, preserveView = false) {
       formatter: (params) => {
         const isDistrict = ["district", "district-in-municipality"].includes(params.data.scope);
         if (isDistrict) {
+          if (Number.isFinite(params.value)) {
+            return [
+              `<strong>${params.name}</strong>`,
+              `区县二手挂牌参考价：${priceFormatter.format(params.value)} 元/㎡`,
+              `口径：房天下房价地图 ${params.data.districtPeriod}`,
+              "注意：挂牌参考价，非官方成交价",
+            ].join("<br/>");
+          }
           return [
             `<strong>${params.name}</strong>`,
             "区县样本价：待接入",
@@ -436,12 +468,15 @@ function renderSummary() {
         ? findCityRecord(current.name, current.name)
         : findCityRecord(properties.name, current.name);
       const isDistrictRow = properties.level === "district";
+      const districtRecord = isDistrictRow ? findDistrictRecord(properties.name, current.name) : null;
       return {
         name: properties.name,
-        price: isDistrictRow ? NaN : city?.average,
+        price: isDistrictRow ? districtRecord?.price ?? NaN : city?.average,
         mom: isDistrictRow ? NaN : city?.mom,
         yoy: isDistrictRow ? NaN : city?.yoy,
-        note: isDistrictRow ? "区县价格待接入" : city ? "城市样本" : "未监测",
+        note: isDistrictRow
+          ? districtRecord ? `房天下挂牌参考 ${state.districtPrices.period}` : "区县价格待接入"
+          : city ? "城市样本" : "未监测",
         level: properties.level,
       };
     }).sort((a, b) => (b.price ?? -1) - (a.price ?? -1) || a.name.localeCompare(b.name, "zh-CN"));
@@ -468,14 +503,21 @@ function renderSummary() {
       city: cityRecord,
     };
     listTitle = effectiveCurrent?.level === "city" ? "区县 / 县级行政区" : "当前层级行政区";
-    rows = sourceFeatures.filter((feature) => feature.properties?.name).map((feature) => ({
-      name: feature.properties.name,
-      price: feature.properties.level === "district" ? NaN : cityRecord?.average,
-      mom: feature.properties.level === "district" ? NaN : cityRecord?.mom,
-      yoy: feature.properties.level === "district" ? NaN : cityRecord?.yoy,
-      note: feature.properties.level === "district" ? "区县价格待接入" : cityRecord ? "城市样本" : "未监测",
-      level: feature.properties.level,
-    })).sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
+    rows = sourceFeatures.filter((feature) => feature.properties?.name).map((feature) => {
+      const districtRecord = feature.properties.level === "district"
+        ? findDistrictRecord(feature.properties.name, districtPriceContext())
+        : null;
+      return {
+        name: feature.properties.name,
+        price: feature.properties.level === "district" ? districtRecord?.price ?? NaN : cityRecord?.average,
+        mom: feature.properties.level === "district" ? NaN : cityRecord?.mom,
+        yoy: feature.properties.level === "district" ? NaN : cityRecord?.yoy,
+        note: feature.properties.level === "district"
+          ? districtRecord ? `房天下挂牌参考 ${state.districtPrices.period}` : "区县价格待接入"
+          : cityRecord ? "城市样本" : "未监测",
+        level: feature.properties.level,
+      };
+    }).sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
   } else {
     summary = {
       count: data.cities.length,
@@ -491,11 +533,24 @@ function renderSummary() {
   document.querySelector("#city-count").textContent = `${rows.length} 个行政区`;
 
   const isDistrict = selectedFeature?.properties?.level === "district";
+  const selectedDistrictRecord = isDistrict ? findDistrictRecord(selectedFeature.properties.name) : null;
   document.querySelector("#summary-cards").innerHTML = [
     summaryCard(
-      isDistrict ? "区县样本价" : "样本价格",
-      isDistrict ? "待接入" : formatPrice(summary.medianPrice),
-      isDistrict ? "不用城市均价冒充区县价格" : summary.city ? "城市样本均价" : "样本均价 / 中位数",
+      isDistrict
+        ? state.market === "esfHouse" ? "区县挂牌参考价" : "区县新房价格"
+        : "样本价格",
+      isDistrict
+        ? selectedDistrictRecord
+          ? formatPrice(selectedDistrictRecord.price)
+          : "待接入"
+        : formatPrice(summary.medianPrice),
+      isDistrict
+        ? selectedDistrictRecord
+          ? `房天下 ${state.districtPrices.period} · 挂牌参考`
+          : state.market === "esfHouse"
+            ? "该区县暂无公开挂牌参考价"
+            : "暂无统一区县级新房公开价"
+        : summary.city ? "城市样本均价" : "样本均价 / 中位数",
     ),
     summaryCard(
       isDistrict ? "所属城市参考价" : "监测样本",
@@ -529,7 +584,9 @@ function renderSummary() {
   ].join("");
 
   document.querySelector("#city-list").innerHTML =
-    `<div class="city-header"><span>行政区</span><span>样本均价</span><span>环比</span><span>同比</span></div>` +
+    `<div class="city-header"><span>行政区</span><span>${
+      state.market === "esfHouse" && rows.some((row) => row.level === "district") ? "挂牌参考价" : "样本均价"
+    }</span><span>环比</span><span>同比</span></div>` +
     rows.map((row) => `<div class="city-row ${row.name === state.selectedName ? "is-selected" : ""}" data-name="${row.name}" data-level="${row.level ?? "district"}">
       <span class="city-name">${row.name}<small>${row.note}</small></span>
       <span class="city-price">${Number.isFinite(row.price) ? priceFormatter.format(row.price) : "--"}</span>
@@ -865,7 +922,7 @@ function updateCaption() {
     const hasDistricts = current.geo.features.some((feature) => feature.properties?.level === "district");
     setCaption(current.name, hasDistricts ? "直辖市已到区县，点击区县选择" : "点击城市进入区县边界");
   } else if (current.level === "city") {
-    setCaption(current.name, "点击区县选择；区县价格待接入，城市价仅作参考");
+    setCaption(current.name, "区县色块为房天下二手挂牌参考价；城市价仅作参考");
   } else {
     setCaption(current.name, "已选择行政区");
   }
@@ -1058,8 +1115,9 @@ function initializeCharts() {
 
 async function main() {
   try {
-    [state.prices, state.nationalGeo] = await Promise.all([
+    [state.prices, state.districtPrices, state.nationalGeo] = await Promise.all([
       loadJson("./data/prices.json", "no-store"),
+      loadJson("./data/district-prices.json", "no-store"),
       loadJson("./data/china-provinces.geojson", "no-store"),
     ]);
     initializeCharts();

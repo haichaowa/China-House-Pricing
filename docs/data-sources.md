@@ -202,6 +202,7 @@
 |---|---|---|---|
 | 中指研究院 / CREIS | <https://www.cih-index.com/> <br>新房指数：<https://www.cih-index.com/data/index/newHouse.html> <br>二手房指数：<https://www.cih-index.com/data/index/esfHouse.html> <br>租赁指数：<https://www.cih-index.com/data/index/rentIndex.html> <br>土地数据：<https://www.cih-index.com/data/land.html> | 百城价格指数、城市新房/二手房/租赁、土地、行业报告 | B/C：研究机构，业内引用多，但部分数据需授权 |
 | 中指研究院城市详情页 | `https://www.cih-index.com/data/index/city/<city>.html` | 监测城市新房/二手房近 12 个月样本均价、环比、同比；当前公开覆盖 99/100 城 | B/C：公开页面，用于时间维度 |
+| 房天下查房价 / 房价地图 | <https://fangjia.fang.com/gz/> <br>地图接口：`https://fangjia.fang.com/fangjia/map/getmapdata/{citySlug}` | 城市下区县二手挂牌参考均价；当前抓取覆盖 70 个监测城市、666 个区县 | C：平台挂牌参考价，不是官方成交价 |
 | 贝壳研究院 | <https://research.ke.com/> | 城市二手房成交、挂牌、租赁、景气度报告 | B/C：适合二手房和挂牌市场研究 |
 | 贝壳找房 / 链家 | <https://www.ke.com/> <br><https://www.lianjia.com/> | 挂牌价、小区、面积、户型、朝向、楼层、成交记录 | C：平台数据，挂牌偏差，注意合规 |
 | 安居客 / 58安居客研究院 | <https://www.anjuke.com/> | 挂牌房源、挂牌价、城市房价地图、租金 | C：挂牌感知，不等于成交 |

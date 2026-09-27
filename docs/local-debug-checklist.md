@@ -25,6 +25,8 @@ Use `python3 -m http.server 8000` and open <http://localhost:8000>.
 - [x] Time-panel HTML nesting and slider value-bubble edge alignment corrected
 - [x] Overlapping province/city/district map labels are hidden automatically
 - [x] District prices are not filled with the parent-city price; pending data and a separate city reference are shown
+- [x] Fang.com district reference prices display for second-hand mode and remain pending in new-home mode
+- [x] Municipality districts such as `北京市 → 西城区` receive the correct district-level reference price
 - [x] Historical coverage reports 99/100 monitored cities
 - [x] No browser console errors or warnings
 

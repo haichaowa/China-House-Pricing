@@ -11,6 +11,7 @@ China House Pricing is a lightweight interactive prototype for exploring China h
 - China province map with animated zoom on click
 - Province → city → district drill-down with dynamically loaded administrative boundaries
 - Twelve-month time slider and playback for historical national, province, and monitored-city prices
+- District-level second-hand listing reference prices for 70 monitored cities and 666 districts/county-level areas
 - New-home and second-hand market toggle
 - Province color based on the median monitored-city sample price
 - City cards with sample average price, MoM, and YoY
@@ -43,6 +44,13 @@ python3 scripts/fetch_data.py
 python3 scripts/validate.py
 ```
 
+To refresh district-level second-hand listing reference prices:
+
+```bash
+python3 scripts/fetch_district_prices.py
+python3 scripts/validate.py
+```
+
 The script reads:
 
 - <https://www.cih-index.com/data/index/newHouse.html>
@@ -56,6 +64,7 @@ This is a visualization prototype, not an official statistical release.
 - City values are China Index Academy sample average prices, not transaction records.
 - District boundaries come from DataV GeoAtlas. There is no single authoritative nationwide district-level housing-price open dataset, so district prices are shown as pending data. A parent city's sample price is displayed only as a clearly labeled reference.
 - Historical city values are collected from China Index Academy city detail pages. The current public source exposes 12-month histories for 99 of the 100 monitored cities; missing values are shown as `--`.
+- District values come from the Fang.com housing-price map API. They are second-hand listing reference prices, currently cover 70 monitored cities and 666 administrative districts/counties, and are not official transaction prices.
 - Province colors use the median of monitored cities and are not an official province-wide average.
 - The 100 monitored cities over-represent Jiangsu, Guangdong, Shandong, Zhejiang, and Hebei, so province comparisons are indicative only.
 - Tibet has no city in the current monitored sample and is therefore shown as no-data.

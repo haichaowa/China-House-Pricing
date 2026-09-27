@@ -1,0 +1,6232 @@
+{
+  "schemaVersion": 1,
+  "source": "Fang.com housing-price map API",
+  "sourceUrlTemplate": "https://fangjia.fang.com/fangjia/map/getmapdata/{citySlug}",
+  "indicator": "区县二手房挂牌参考均价",
+  "period": "2026-09",
+  "scrapedAt": "2026-09-27T16:51:28",
+  "cityCoverage": 70,
+  "districtCoverage": 666,
+  "cities": {
+    "三亚": {
+      "province": "海南省",
+      "fangSlug": "sanya",
+      "sourceUrl": "https://fangjia.fang.com/sanya/",
+      "districts": [
+        {
+          "name": "吉阳区",
+          "sourceName": "吉阳区",
+          "price": 27321,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sanya/a014198/",
+          "fangCode": "a014198"
+        },
+        {
+          "name": "天涯区",
+          "sourceName": "天涯区",
+          "price": 25609,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sanya/a014199/",
+          "fangCode": "a014199"
+        },
+        {
+          "name": "崖州区",
+          "sourceName": "崖州区",
+          "price": 18178,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sanya/a014200/",
+          "fangCode": "a014200"
+        },
+        {
+          "name": "海棠区",
+          "sourceName": "海棠区",
+          "price": 51713,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sanya/a014197/",
+          "fangCode": "a014197"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "万宁",
+        "乐东",
+        "五指山",
+        "保亭",
+        "其他",
+        "博鳌",
+        "琼海",
+        "陵水"
+      ]
+    },
+    "上海": {
+      "province": "上海市",
+      "fangSlug": "sh",
+      "sourceUrl": "https://fangjia.fang.com/sh/",
+      "districts": [
+        {
+          "name": "嘉定区",
+          "sourceName": "嘉定",
+          "price": 31328,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a029/",
+          "fangCode": "a029"
+        },
+        {
+          "name": "奉贤区",
+          "sourceName": "奉贤",
+          "price": 19880,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a032/",
+          "fangCode": "a032"
+        },
+        {
+          "name": "宝山区",
+          "sourceName": "宝山",
+          "price": 35864,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a030/",
+          "fangCode": "a030"
+        },
+        {
+          "name": "崇明区",
+          "sourceName": "崇明",
+          "price": 13279,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a0996/",
+          "fangCode": "a0996"
+        },
+        {
+          "name": "徐汇区",
+          "sourceName": "徐汇",
+          "price": 92669,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a019/",
+          "fangCode": "a019"
+        },
+        {
+          "name": "普陀区",
+          "sourceName": "普陀",
+          "price": 56759,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a028/",
+          "fangCode": "a028"
+        },
+        {
+          "name": "杨浦区",
+          "sourceName": "杨浦",
+          "price": 55478,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a026/",
+          "fangCode": "a026"
+        },
+        {
+          "name": "松江区",
+          "sourceName": "松江",
+          "price": 33432,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a0586/",
+          "fangCode": "a0586"
+        },
+        {
+          "name": "虹口区",
+          "sourceName": "虹口",
+          "price": 60133,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a023/",
+          "fangCode": "a023"
+        },
+        {
+          "name": "金山区",
+          "sourceName": "金山",
+          "price": 14369,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a035/",
+          "fangCode": "a035"
+        },
+        {
+          "name": "长宁区",
+          "sourceName": "长宁",
+          "price": 72875,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a020/",
+          "fangCode": "a020"
+        },
+        {
+          "name": "闵行区",
+          "sourceName": "闵行",
+          "price": 49417,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a018/",
+          "fangCode": "a018"
+        },
+        {
+          "name": "青浦区",
+          "sourceName": "青浦",
+          "price": 36203,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a031/",
+          "fangCode": "a031"
+        },
+        {
+          "name": "静安区",
+          "sourceName": "静安",
+          "price": 73405,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a021/",
+          "fangCode": "a021"
+        },
+        {
+          "name": "黄浦区",
+          "sourceName": "黄浦",
+          "price": 99268,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sh/a024/",
+          "fangCode": "a024"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "上海周边",
+        "浦东"
+      ]
+    },
+    "佛山": {
+      "province": "广东省",
+      "fangSlug": "fs",
+      "sourceUrl": "https://fangjia.fang.com/fs/",
+      "districts": [
+        {
+          "name": "三水区",
+          "sourceName": "三水",
+          "price": 6003,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fs/a0618/",
+          "fangCode": "a0618"
+        },
+        {
+          "name": "南海区",
+          "sourceName": "南海",
+          "price": 10923,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fs/a0616/",
+          "fangCode": "a0616"
+        },
+        {
+          "name": "禅城区",
+          "sourceName": "禅城",
+          "price": 11482,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fs/a0620/",
+          "fangCode": "a0620"
+        },
+        {
+          "name": "顺德区",
+          "sourceName": "顺德",
+          "price": 9402,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fs/a0617/",
+          "fangCode": "a0617"
+        },
+        {
+          "name": "高明区",
+          "sourceName": "高明",
+          "price": 4542,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fs/a0619/",
+          "fangCode": "a0619"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "佛山周边"
+      ]
+    },
+    "保定": {
+      "province": "河北省",
+      "fangSlug": "bd",
+      "sourceUrl": "https://fangjia.fang.com/bd/",
+      "districts": [
+        {
+          "name": "定兴县",
+          "sourceName": "定兴",
+          "price": 8510,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a014922/",
+          "fangCode": "a014922"
+        },
+        {
+          "name": "定州市",
+          "sourceName": "定州",
+          "price": 8097,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a012248/",
+          "fangCode": "a012248"
+        },
+        {
+          "name": "容城县",
+          "sourceName": "容城",
+          "price": 15036,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a014591/",
+          "fangCode": "a014591"
+        },
+        {
+          "name": "徐水区",
+          "sourceName": "徐水",
+          "price": 7310,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a014918/",
+          "fangCode": "a014918"
+        },
+        {
+          "name": "易县",
+          "sourceName": "易县",
+          "price": 5078,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a012345/",
+          "fangCode": "a012345"
+        },
+        {
+          "name": "曲阳县",
+          "sourceName": "曲阳",
+          "price": 6939,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a015410/",
+          "fangCode": "a015410"
+        },
+        {
+          "name": "涞水县",
+          "sourceName": "涞水",
+          "price": 9020,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a014921/",
+          "fangCode": "a014921"
+        },
+        {
+          "name": "涞源县",
+          "sourceName": "涞源县",
+          "price": 6219,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a014553/",
+          "fangCode": "a014553"
+        },
+        {
+          "name": "涿州市",
+          "sourceName": "涿州",
+          "price": 6098,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a012246/",
+          "fangCode": "a012246"
+        },
+        {
+          "name": "清苑区",
+          "sourceName": "清苑",
+          "price": 6670,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a011906/",
+          "fangCode": "a011906"
+        },
+        {
+          "name": "满城区",
+          "sourceName": "满城",
+          "price": 7871,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a011905/",
+          "fangCode": "a011905"
+        },
+        {
+          "name": "竞秀区",
+          "sourceName": "竞秀",
+          "price": 6923,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a014920/",
+          "fangCode": "a014920"
+        },
+        {
+          "name": "莲池区",
+          "sourceName": "莲池",
+          "price": 7253,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a014919/",
+          "fangCode": "a014919"
+        },
+        {
+          "name": "蠡县",
+          "sourceName": "蠡县",
+          "price": 8611,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a012341/",
+          "fangCode": "a012341"
+        },
+        {
+          "name": "高碑店市",
+          "sourceName": "高碑店",
+          "price": 7056,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bd/a012247/",
+          "fangCode": "a012247"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "其他",
+        "博野",
+        "唐县",
+        "安国市",
+        "安新",
+        "望都县",
+        "白沟新城",
+        "阜平县",
+        "雄县",
+        "雄安新区",
+        "顺平县",
+        "高阳"
+      ]
+    },
+    "兰州": {
+      "province": "甘肃省",
+      "fangSlug": "lz",
+      "sourceUrl": "https://fangjia.fang.com/lz/",
+      "districts": [
+        {
+          "name": "七里河区",
+          "sourceName": "七里河",
+          "price": 8791,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lz/a016815/",
+          "fangCode": "a016815"
+        },
+        {
+          "name": "城关区",
+          "sourceName": "城关",
+          "price": 11060,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lz/a016814/",
+          "fangCode": "a016814"
+        },
+        {
+          "name": "安宁区",
+          "sourceName": "安宁",
+          "price": 8304,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lz/a016817/",
+          "fangCode": "a016817"
+        },
+        {
+          "name": "榆中县",
+          "sourceName": "榆中",
+          "price": 4085,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lz/a016820/",
+          "fangCode": "a016820"
+        },
+        {
+          "name": "永登县",
+          "sourceName": "永登",
+          "price": 5148,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lz/a016819/",
+          "fangCode": "a016819"
+        },
+        {
+          "name": "皋兰县",
+          "sourceName": "皋兰",
+          "price": 6155,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lz/a0476/",
+          "fangCode": "a0476"
+        },
+        {
+          "name": "西固区",
+          "sourceName": "西固",
+          "price": 6150,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lz/a016816/",
+          "fangCode": "a016816"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "红古"
+      ]
+    },
+    "北京": {
+      "province": "北京市",
+      "fangSlug": "bj",
+      "sourceUrl": "https://fangjia.fang.com/bj/",
+      "districts": [
+        {
+          "name": "东城区",
+          "sourceName": "东城",
+          "price": 97023,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a02/",
+          "fangCode": "a02"
+        },
+        {
+          "name": "丰台区",
+          "sourceName": "丰台",
+          "price": 46328,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a06/",
+          "fangCode": "a06"
+        },
+        {
+          "name": "大兴区",
+          "sourceName": "大兴",
+          "price": 33816,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a0585/",
+          "fangCode": "a0585"
+        },
+        {
+          "name": "密云区",
+          "sourceName": "密云",
+          "price": 18484,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a013/",
+          "fangCode": "a013"
+        },
+        {
+          "name": "平谷区",
+          "sourceName": "平谷",
+          "price": 17641,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a016/",
+          "fangCode": "a016"
+        },
+        {
+          "name": "延庆区",
+          "sourceName": "延庆",
+          "price": 15029,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a015/",
+          "fangCode": "a015"
+        },
+        {
+          "name": "怀柔区",
+          "sourceName": "怀柔",
+          "price": 23018,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a014/",
+          "fangCode": "a014"
+        },
+        {
+          "name": "房山区",
+          "sourceName": "房山",
+          "price": 18314,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a08/",
+          "fangCode": "a08"
+        },
+        {
+          "name": "昌平区",
+          "sourceName": "昌平",
+          "price": 31901,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a012/",
+          "fangCode": "a012"
+        },
+        {
+          "name": "朝阳区",
+          "sourceName": "朝阳",
+          "price": 57576,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a01/",
+          "fangCode": "a01"
+        },
+        {
+          "name": "海淀区",
+          "sourceName": "海淀",
+          "price": 75611,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a015277/",
+          "fangCode": "a015277"
+        },
+        {
+          "name": "石景山区",
+          "sourceName": "石景山",
+          "price": 40751,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a07/",
+          "fangCode": "a07"
+        },
+        {
+          "name": "西城区",
+          "sourceName": "西城",
+          "price": 108037,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a03/",
+          "fangCode": "a03"
+        },
+        {
+          "name": "通州区",
+          "sourceName": "通州",
+          "price": 32375,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a010/",
+          "fangCode": "a010"
+        },
+        {
+          "name": "门头沟区",
+          "sourceName": "门头沟",
+          "price": 24434,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a09/",
+          "fangCode": "a09"
+        },
+        {
+          "name": "顺义区",
+          "sourceName": "顺义",
+          "price": 31162,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bj/a011/",
+          "fangCode": "a011"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "北京周边",
+        "旅游地产",
+        "燕郊"
+      ]
+    },
+    "北海": {
+      "province": "广西壮族自治区",
+      "fangSlug": "bh",
+      "sourceUrl": "https://fangjia.fang.com/bh/",
+      "districts": [
+        {
+          "name": "合浦县",
+          "sourceName": "合浦县",
+          "price": 3455,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bh/a011548/",
+          "fangCode": "a011548"
+        },
+        {
+          "name": "海城区",
+          "sourceName": "海城区",
+          "price": 4299,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bh/a011545/",
+          "fangCode": "a011545"
+        },
+        {
+          "name": "银海区",
+          "sourceName": "银海区",
+          "price": 5719,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/bh/a011546/",
+          "fangCode": "a011546"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "其他区县",
+        "铁山港"
+      ]
+    },
+    "南京": {
+      "province": "江苏省",
+      "fangSlug": "nj",
+      "sourceUrl": "https://fangjia.fang.com/nj/",
+      "districts": [
+        {
+          "name": "六合区",
+          "sourceName": "六合",
+          "price": 8082,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0269/",
+          "fangCode": "a0269"
+        },
+        {
+          "name": "建邺区",
+          "sourceName": "建邺",
+          "price": 30906,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0267/",
+          "fangCode": "a0267"
+        },
+        {
+          "name": "栖霞区",
+          "sourceName": "栖霞",
+          "price": 19386,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0271/",
+          "fangCode": "a0271"
+        },
+        {
+          "name": "江宁区",
+          "sourceName": "江宁",
+          "price": 18654,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0268/",
+          "fangCode": "a0268"
+        },
+        {
+          "name": "浦口区",
+          "sourceName": "浦口",
+          "price": 14438,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0270/",
+          "fangCode": "a0270"
+        },
+        {
+          "name": "溧水区",
+          "sourceName": "溧水",
+          "price": 6430,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0274/",
+          "fangCode": "a0274"
+        },
+        {
+          "name": "玄武区",
+          "sourceName": "玄武",
+          "price": 29487,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0264/",
+          "fangCode": "a0264"
+        },
+        {
+          "name": "秦淮区",
+          "sourceName": "秦淮",
+          "price": 27510,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0263/",
+          "fangCode": "a0263"
+        },
+        {
+          "name": "高淳区",
+          "sourceName": "高淳",
+          "price": 5725,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0275/",
+          "fangCode": "a0275"
+        },
+        {
+          "name": "鼓楼区",
+          "sourceName": "鼓楼",
+          "price": 29813,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nj/a0265/",
+          "fangCode": "a0265"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "南京周边",
+        "雨花"
+      ]
+    },
+    "南宁": {
+      "province": "广西壮族自治区",
+      "fangSlug": "nn",
+      "sourceUrl": "https://fangjia.fang.com/nn/",
+      "districts": [
+        {
+          "name": "上林县",
+          "sourceName": "上林",
+          "price": 6521,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a017363/",
+          "fangCode": "a017363"
+        },
+        {
+          "name": "兴宁区",
+          "sourceName": "兴宁",
+          "price": 7690,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a0431/",
+          "fangCode": "a0431"
+        },
+        {
+          "name": "宾阳县",
+          "sourceName": "宾阳",
+          "price": 5132,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a016705/",
+          "fangCode": "a016705"
+        },
+        {
+          "name": "横州市",
+          "sourceName": "横州",
+          "price": 16418,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a016706/",
+          "fangCode": "a016706"
+        },
+        {
+          "name": "武鸣区",
+          "sourceName": "武鸣",
+          "price": 4334,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a014677/",
+          "fangCode": "a014677"
+        },
+        {
+          "name": "江南区",
+          "sourceName": "江南",
+          "price": 7282,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a0434/",
+          "fangCode": "a0434"
+        },
+        {
+          "name": "良庆区",
+          "sourceName": "良庆",
+          "price": 8177,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a01133/",
+          "fangCode": "a01133"
+        },
+        {
+          "name": "西乡塘区",
+          "sourceName": "西乡塘",
+          "price": 7296,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a01132/",
+          "fangCode": "a01132"
+        },
+        {
+          "name": "邕宁区",
+          "sourceName": "邕宁",
+          "price": 7174,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a0436/",
+          "fangCode": "a0436"
+        },
+        {
+          "name": "隆安县",
+          "sourceName": "隆安",
+          "price": 9954,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a017428/",
+          "fangCode": "a017428"
+        },
+        {
+          "name": "青秀区",
+          "sourceName": "青秀",
+          "price": 11567,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a01131/",
+          "fangCode": "a01131"
+        },
+        {
+          "name": "马山县",
+          "sourceName": "马山",
+          "price": 5566,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nn/a017429/",
+          "fangCode": "a017429"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "其他",
+        "北海",
+        "钦州",
+        "防城港"
+      ]
+    },
+    "南昌": {
+      "province": "江西省",
+      "fangSlug": "nc",
+      "sourceUrl": "https://fangjia.fang.com/nc/",
+      "districts": [
+        {
+          "name": "东湖区",
+          "sourceName": "东湖",
+          "price": 8984,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a016796/",
+          "fangCode": "a016796"
+        },
+        {
+          "name": "南昌县",
+          "sourceName": "南昌县",
+          "price": 6213,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a0510/",
+          "fangCode": "a0510"
+        },
+        {
+          "name": "安义县",
+          "sourceName": "安义",
+          "price": 7639,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a016804/",
+          "fangCode": "a016804"
+        },
+        {
+          "name": "新建区",
+          "sourceName": "新建",
+          "price": 7135,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a016800/",
+          "fangCode": "a016800"
+        },
+        {
+          "name": "红谷滩区",
+          "sourceName": "红谷滩",
+          "price": 12427,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a016802/",
+          "fangCode": "a016802"
+        },
+        {
+          "name": "西湖区",
+          "sourceName": "西湖",
+          "price": 9213,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a016797/",
+          "fangCode": "a016797"
+        },
+        {
+          "name": "进贤县",
+          "sourceName": "进贤",
+          "price": 4710,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a016803/",
+          "fangCode": "a016803"
+        },
+        {
+          "name": "青云谱区",
+          "sourceName": "青云谱",
+          "price": 7667,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a016798/",
+          "fangCode": "a016798"
+        },
+        {
+          "name": "青山湖区",
+          "sourceName": "青山湖",
+          "price": 8450,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nc/a016801/",
+          "fangCode": "a016801"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "昌北开发区",
+        "湾里",
+        "高新开发区"
+      ]
+    },
+    "南通": {
+      "province": "江苏省",
+      "fangSlug": "nt",
+      "sourceUrl": "https://fangjia.fang.com/nt/",
+      "districts": [
+        {
+          "name": "启东市",
+          "sourceName": "启东",
+          "price": 8378,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nt/a011388/",
+          "fangCode": "a011388"
+        },
+        {
+          "name": "如东县",
+          "sourceName": "如东",
+          "price": 6437,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nt/a011391/",
+          "fangCode": "a011391"
+        },
+        {
+          "name": "如皋市",
+          "sourceName": "如皋",
+          "price": 7198,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nt/a011390/",
+          "fangCode": "a011390"
+        },
+        {
+          "name": "崇川区",
+          "sourceName": "崇川",
+          "price": 14305,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nt/a01088/",
+          "fangCode": "a01088"
+        },
+        {
+          "name": "海安市",
+          "sourceName": "海安",
+          "price": 7244,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nt/a011392/",
+          "fangCode": "a011392"
+        },
+        {
+          "name": "海门区",
+          "sourceName": "海门",
+          "price": 8760,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nt/a011389/",
+          "fangCode": "a011389"
+        },
+        {
+          "name": "通州区",
+          "sourceName": "通州",
+          "price": 7674,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nt/a01100/",
+          "fangCode": "a01100"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "开发区",
+        "港闸"
+      ]
+    },
+    "厦门": {
+      "province": "福建省",
+      "fangSlug": "xm",
+      "sourceUrl": "https://fangjia.fang.com/xm/",
+      "districts": [
+        {
+          "name": "同安区",
+          "sourceName": "同安",
+          "price": 14346,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xm/a0353/",
+          "fangCode": "a0353"
+        },
+        {
+          "name": "思明区",
+          "sourceName": "思明",
+          "price": 47198,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xm/a0352/",
+          "fangCode": "a0352"
+        },
+        {
+          "name": "海沧区",
+          "sourceName": "海沧",
+          "price": 23628,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xm/a0355/",
+          "fangCode": "a0355"
+        },
+        {
+          "name": "湖里区",
+          "sourceName": "湖里",
+          "price": 38289,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xm/a0351/",
+          "fangCode": "a0351"
+        },
+        {
+          "name": "翔安区",
+          "sourceName": "翔安",
+          "price": 18338,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xm/a0350/",
+          "fangCode": "a0350"
+        },
+        {
+          "name": "集美区",
+          "sourceName": "集美",
+          "price": 23631,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xm/a0354/",
+          "fangCode": "a0354"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "厦门周边"
+      ]
+    },
+    "合肥": {
+      "province": "安徽省",
+      "fangSlug": "hf",
+      "sourceUrl": "https://fangjia.fang.com/hf/",
+      "districts": [
+        {
+          "name": "包河区",
+          "sourceName": "包河",
+          "price": 14019,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a016788/",
+          "fangCode": "a016788"
+        },
+        {
+          "name": "巢湖市",
+          "sourceName": "巢湖",
+          "price": 7965,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a012965/",
+          "fangCode": "a012965"
+        },
+        {
+          "name": "庐江县",
+          "sourceName": "庐江",
+          "price": 7064,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a012966/",
+          "fangCode": "a012966"
+        },
+        {
+          "name": "庐阳区",
+          "sourceName": "庐阳",
+          "price": 17378,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a016787/",
+          "fangCode": "a016787"
+        },
+        {
+          "name": "瑶海区",
+          "sourceName": "瑶海",
+          "price": 9939,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a016789/",
+          "fangCode": "a016789"
+        },
+        {
+          "name": "肥东县",
+          "sourceName": "肥东",
+          "price": 6508,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a011245/",
+          "fangCode": "a011245"
+        },
+        {
+          "name": "肥西县",
+          "sourceName": "肥西",
+          "price": 8613,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a011246/",
+          "fangCode": "a011246"
+        },
+        {
+          "name": "蜀山区",
+          "sourceName": "蜀山",
+          "price": 15133,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a016790/",
+          "fangCode": "a016790"
+        },
+        {
+          "name": "长丰县",
+          "sourceName": "长丰",
+          "price": 8143,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hf/a011244/",
+          "fangCode": "a011244"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "北城",
+        "合肥周边",
+        "政务新区",
+        "新站",
+        "滨湖新区",
+        "经开",
+        "高新"
+      ]
+    },
+    "呼和浩特": {
+      "province": "内蒙古自治区",
+      "fangSlug": "nm",
+      "sourceUrl": "https://fangjia.fang.com/nm/",
+      "districts": [
+        {
+          "name": "和林格尔县",
+          "sourceName": "和林格尔县",
+          "price": 6736,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nm/a010176/",
+          "fangCode": "a010176"
+        },
+        {
+          "name": "回民区",
+          "sourceName": "回民",
+          "price": 6744,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nm/a01160/",
+          "fangCode": "a01160"
+        },
+        {
+          "name": "土默特左旗",
+          "sourceName": "土默特左旗",
+          "price": 4432,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nm/a010174/",
+          "fangCode": "a010174"
+        },
+        {
+          "name": "新城区",
+          "sourceName": "新城",
+          "price": 9326,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nm/a01167/",
+          "fangCode": "a01167"
+        },
+        {
+          "name": "清水河县",
+          "sourceName": "清水河",
+          "price": 7178,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nm/a015420/",
+          "fangCode": "a015420"
+        },
+        {
+          "name": "玉泉区",
+          "sourceName": "玉泉",
+          "price": 6903,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nm/a01168/",
+          "fangCode": "a01168"
+        },
+        {
+          "name": "赛罕区",
+          "sourceName": "赛罕",
+          "price": 8586,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nm/a01166/",
+          "fangCode": "a01166"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "如意开发区",
+        "托克托县",
+        "武川县",
+        "金山开发区",
+        "金川开发区",
+        "金桥开发区"
+      ]
+    },
+    "哈尔滨": {
+      "province": "黑龙江省",
+      "fangSlug": "hrb",
+      "sourceUrl": "https://fangjia.fang.com/hrb/",
+      "districts": [
+        {
+          "name": "五常市",
+          "sourceName": "五常",
+          "price": 3597,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a014820/",
+          "fangCode": "a014820"
+        },
+        {
+          "name": "依兰县",
+          "sourceName": "依兰",
+          "price": 7572,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a014821/",
+          "fangCode": "a014821"
+        },
+        {
+          "name": "南岗区",
+          "sourceName": "南岗",
+          "price": 8169,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a0378/",
+          "fangCode": "a0378"
+        },
+        {
+          "name": "双城区",
+          "sourceName": "双城",
+          "price": 4189,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a014814/",
+          "fangCode": "a014814"
+        },
+        {
+          "name": "呼兰区",
+          "sourceName": "呼兰",
+          "price": 4924,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a01051/",
+          "fangCode": "a01051"
+        },
+        {
+          "name": "尚志市",
+          "sourceName": "尚志",
+          "price": 4972,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a014819/",
+          "fangCode": "a014819"
+        },
+        {
+          "name": "平房区",
+          "sourceName": "平房",
+          "price": 5420,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a0380/",
+          "fangCode": "a0380"
+        },
+        {
+          "name": "方正县",
+          "sourceName": "方正",
+          "price": 2192,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a015417/",
+          "fangCode": "a015417"
+        },
+        {
+          "name": "松北区",
+          "sourceName": "松北",
+          "price": 7858,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a01050/",
+          "fangCode": "a01050"
+        },
+        {
+          "name": "道外区",
+          "sourceName": "道外",
+          "price": 5992,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a0377/",
+          "fangCode": "a0377"
+        },
+        {
+          "name": "道里区",
+          "sourceName": "道里",
+          "price": 8536,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a0376/",
+          "fangCode": "a0376"
+        },
+        {
+          "name": "阿城区",
+          "sourceName": "阿城",
+          "price": 3405,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a01052/",
+          "fangCode": "a01052"
+        },
+        {
+          "name": "香坊区",
+          "sourceName": "香坊",
+          "price": 6861,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hrb/a0381/",
+          "fangCode": "a0381"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "宾县",
+        "巴彦",
+        "延寿",
+        "木兰",
+        "通河"
+      ]
+    },
+    "唐山": {
+      "province": "河北省",
+      "fangSlug": "ts",
+      "sourceUrl": "https://fangjia.fang.com/ts/",
+      "districts": [
+        {
+          "name": "丰南区",
+          "sourceName": "丰南",
+          "price": 6199,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a0742/",
+          "fangCode": "a0742"
+        },
+        {
+          "name": "丰润区",
+          "sourceName": "丰润",
+          "price": 6094,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a0743/",
+          "fangCode": "a0743"
+        },
+        {
+          "name": "乐亭县",
+          "sourceName": "乐亭",
+          "price": 5549,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a014877/",
+          "fangCode": "a014877"
+        },
+        {
+          "name": "古冶区",
+          "sourceName": "古冶",
+          "price": 3947,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a0740/",
+          "fangCode": "a0740"
+        },
+        {
+          "name": "开平区",
+          "sourceName": "开平",
+          "price": 5470,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a0741/",
+          "fangCode": "a0741"
+        },
+        {
+          "name": "曹妃甸区",
+          "sourceName": "曹妃甸",
+          "price": 5977,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a011992/",
+          "fangCode": "a011992"
+        },
+        {
+          "name": "滦南县",
+          "sourceName": "滦南",
+          "price": 6304,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a014876/",
+          "fangCode": "a014876"
+        },
+        {
+          "name": "滦州市",
+          "sourceName": "滦州",
+          "price": 8386,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a014875/",
+          "fangCode": "a014875"
+        },
+        {
+          "name": "玉田县",
+          "sourceName": "玉田",
+          "price": 6503,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a014879/",
+          "fangCode": "a014879"
+        },
+        {
+          "name": "路北区",
+          "sourceName": "路北",
+          "price": 9047,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a0738/",
+          "fangCode": "a0738"
+        },
+        {
+          "name": "路南区",
+          "sourceName": "路南",
+          "price": 9194,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a0739/",
+          "fangCode": "a0739"
+        },
+        {
+          "name": "迁安市",
+          "sourceName": "迁安",
+          "price": 7194,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a014874/",
+          "fangCode": "a014874"
+        },
+        {
+          "name": "迁西县",
+          "sourceName": "迁西",
+          "price": 6292,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a014878/",
+          "fangCode": "a014878"
+        },
+        {
+          "name": "遵化市",
+          "sourceName": "遵化",
+          "price": 5760,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ts/a014873/",
+          "fangCode": "a014873"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "高新"
+      ]
+    },
+    "嘉兴": {
+      "province": "浙江省",
+      "fangSlug": "jx",
+      "sourceUrl": "https://fangjia.fang.com/jx/",
+      "districts": [
+        {
+          "name": "南湖区",
+          "sourceName": "南湖",
+          "price": 12297,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jx/a011542/",
+          "fangCode": "a011542"
+        },
+        {
+          "name": "嘉善县",
+          "sourceName": "嘉善",
+          "price": 9668,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jx/a0181/",
+          "fangCode": "a0181"
+        },
+        {
+          "name": "平湖市",
+          "sourceName": "平湖",
+          "price": 8747,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jx/a0182/",
+          "fangCode": "a0182"
+        },
+        {
+          "name": "桐乡市",
+          "sourceName": "桐乡",
+          "price": 11519,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jx/a0185/",
+          "fangCode": "a0185"
+        },
+        {
+          "name": "海宁市",
+          "sourceName": "海宁",
+          "price": 11418,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jx/a0184/",
+          "fangCode": "a0184"
+        },
+        {
+          "name": "海盐县",
+          "sourceName": "海盐",
+          "price": 7899,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jx/a0183/",
+          "fangCode": "a0183"
+        },
+        {
+          "name": "秀洲区",
+          "sourceName": "秀洲",
+          "price": 11467,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jx/a0186/",
+          "fangCode": "a0186"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "中心城区",
+        "嘉兴周边",
+        "国际商务区",
+        "秀湖",
+        "经济开发区",
+        "运河新区"
+      ]
+    },
+    "大连": {
+      "province": "辽宁省",
+      "fangSlug": "dl",
+      "sourceUrl": "https://fangjia.fang.com/dl/",
+      "districts": [
+        {
+          "name": "中山区",
+          "sourceName": "中山",
+          "price": 16708,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a0256/",
+          "fangCode": "a0256"
+        },
+        {
+          "name": "庄河市",
+          "sourceName": "庄河",
+          "price": 6190,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a01124/",
+          "fangCode": "a01124"
+        },
+        {
+          "name": "旅顺口区",
+          "sourceName": "旅顺口",
+          "price": 6316,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a0259/",
+          "fangCode": "a0259"
+        },
+        {
+          "name": "普兰店区",
+          "sourceName": "普兰店",
+          "price": 4920,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a01122/",
+          "fangCode": "a01122"
+        },
+        {
+          "name": "沙河口区",
+          "sourceName": "沙河口",
+          "price": 15074,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a0257/",
+          "fangCode": "a0257"
+        },
+        {
+          "name": "瓦房店市",
+          "sourceName": "瓦房店",
+          "price": 6172,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a01121/",
+          "fangCode": "a01121"
+        },
+        {
+          "name": "甘井子区",
+          "sourceName": "甘井子",
+          "price": 12588,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a0258/",
+          "fangCode": "a0258"
+        },
+        {
+          "name": "西岗区",
+          "sourceName": "西岗",
+          "price": 15214,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a0255/",
+          "fangCode": "a0255"
+        },
+        {
+          "name": "金州区",
+          "sourceName": "金州",
+          "price": 8003,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a0260/",
+          "fangCode": "a0260"
+        },
+        {
+          "name": "长海县",
+          "sourceName": "长海",
+          "price": 5938,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dl/a014853/",
+          "fangCode": "a014853"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "大连周边",
+        "开发区",
+        "长兴岛",
+        "高新园区"
+      ]
+    },
+    "天津": {
+      "province": "天津市",
+      "fangSlug": "tj",
+      "sourceUrl": "https://fangjia.fang.com/tj/",
+      "districts": [
+        {
+          "name": "东丽区",
+          "sourceName": "东丽",
+          "price": 11126,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a049/",
+          "fangCode": "a049"
+        },
+        {
+          "name": "北辰区",
+          "sourceName": "北辰",
+          "price": 11855,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a039/",
+          "fangCode": "a039"
+        },
+        {
+          "name": "南开区",
+          "sourceName": "南开",
+          "price": 25744,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a041/",
+          "fangCode": "a041"
+        },
+        {
+          "name": "和平区",
+          "sourceName": "和平",
+          "price": 53492,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a037/",
+          "fangCode": "a037"
+        },
+        {
+          "name": "宁河区",
+          "sourceName": "宁河",
+          "price": 6856,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a053/",
+          "fangCode": "a053"
+        },
+        {
+          "name": "宝坻区",
+          "sourceName": "宝坻",
+          "price": 7001,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a0615/",
+          "fangCode": "a0615"
+        },
+        {
+          "name": "武清区",
+          "sourceName": "武清",
+          "price": 9192,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a052/",
+          "fangCode": "a052"
+        },
+        {
+          "name": "河东区",
+          "sourceName": "河东",
+          "price": 17499,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a042/",
+          "fangCode": "a042"
+        },
+        {
+          "name": "河北区",
+          "sourceName": "河北",
+          "price": 17058,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a044/",
+          "fangCode": "a044"
+        },
+        {
+          "name": "河西区",
+          "sourceName": "河西",
+          "price": 28329,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a043/",
+          "fangCode": "a043"
+        },
+        {
+          "name": "津南区",
+          "sourceName": "津南",
+          "price": 9954,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a045/",
+          "fangCode": "a045"
+        },
+        {
+          "name": "滨海新区",
+          "sourceName": "滨海新区",
+          "price": 11490,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a010383/",
+          "fangCode": "a010383"
+        },
+        {
+          "name": "红桥区",
+          "sourceName": "红桥",
+          "price": 17611,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a046/",
+          "fangCode": "a046"
+        },
+        {
+          "name": "蓟州区",
+          "sourceName": "蓟州",
+          "price": 9730,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a051/",
+          "fangCode": "a051"
+        },
+        {
+          "name": "西青区",
+          "sourceName": "西青",
+          "price": 15391,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a038/",
+          "fangCode": "a038"
+        },
+        {
+          "name": "静海区",
+          "sourceName": "静海",
+          "price": 9900,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/tj/a054/",
+          "fangCode": "a054"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "天津周边"
+      ]
+    },
+    "太原": {
+      "province": "山西省",
+      "fangSlug": "ty",
+      "sourceUrl": "https://fangjia.fang.com/ty/",
+      "districts": [
+        {
+          "name": "万柏林区",
+          "sourceName": "万柏林",
+          "price": 7681,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ty/a0462/",
+          "fangCode": "a0462"
+        },
+        {
+          "name": "古交市",
+          "sourceName": "古交市",
+          "price": 3413,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ty/a010112/",
+          "fangCode": "a010112"
+        },
+        {
+          "name": "小店区",
+          "sourceName": "小店",
+          "price": 9304,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ty/a0459/",
+          "fangCode": "a0459"
+        },
+        {
+          "name": "尖草坪区",
+          "sourceName": "尖草坪",
+          "price": 6102,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ty/a0461/",
+          "fangCode": "a0461"
+        },
+        {
+          "name": "晋源区",
+          "sourceName": "晋源",
+          "price": 8907,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ty/a0463/",
+          "fangCode": "a0463"
+        },
+        {
+          "name": "杏花岭区",
+          "sourceName": "杏花岭",
+          "price": 7657,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ty/a0458/",
+          "fangCode": "a0458"
+        },
+        {
+          "name": "迎泽区",
+          "sourceName": "迎泽",
+          "price": 9510,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ty/a0460/",
+          "fangCode": "a0460"
+        },
+        {
+          "name": "阳曲县",
+          "sourceName": "阳曲",
+          "price": 6543,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ty/a010110/",
+          "fangCode": "a010110"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "其他",
+        "娄烦",
+        "榆次",
+        "清徐"
+      ]
+    },
+    "威海": {
+      "province": "山东省",
+      "fangSlug": "weihai",
+      "sourceUrl": "https://fangjia.fang.com/weihai/",
+      "districts": [
+        {
+          "name": "乳山市",
+          "sourceName": "乳山市",
+          "price": 2825,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/weihai/a0403/",
+          "fangCode": "a0403"
+        },
+        {
+          "name": "文登区",
+          "sourceName": "文登区",
+          "price": 3962,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/weihai/a0401/",
+          "fangCode": "a0401"
+        },
+        {
+          "name": "环翠区",
+          "sourceName": "环翠区",
+          "price": 8473,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/weihai/a01183/",
+          "fangCode": "a01183"
+        },
+        {
+          "name": "荣成市",
+          "sourceName": "荣成市",
+          "price": 4754,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/weihai/a01186/",
+          "fangCode": "a01186"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "临港区",
+        "经区",
+        "高区"
+      ]
+    },
+    "宁波": {
+      "province": "浙江省",
+      "fangSlug": "nb",
+      "sourceUrl": "https://fangjia.fang.com/nb/",
+      "districts": [
+        {
+          "name": "余姚市",
+          "sourceName": "余姚",
+          "price": 12364,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0169/",
+          "fangCode": "a0169"
+        },
+        {
+          "name": "北仑区",
+          "sourceName": "北仑",
+          "price": 12534,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0166/",
+          "fangCode": "a0166"
+        },
+        {
+          "name": "奉化区",
+          "sourceName": "奉化",
+          "price": 10375,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0168/",
+          "fangCode": "a0168"
+        },
+        {
+          "name": "宁海县",
+          "sourceName": "宁海",
+          "price": 16182,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0172/",
+          "fangCode": "a0172"
+        },
+        {
+          "name": "慈溪市",
+          "sourceName": "慈溪",
+          "price": 11473,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0171/",
+          "fangCode": "a0171"
+        },
+        {
+          "name": "江北区",
+          "sourceName": "江北",
+          "price": 20413,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0164/",
+          "fangCode": "a0164"
+        },
+        {
+          "name": "海曙区",
+          "sourceName": "海曙",
+          "price": 17705,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0162/",
+          "fangCode": "a0162"
+        },
+        {
+          "name": "象山县",
+          "sourceName": "象山",
+          "price": 12257,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0170/",
+          "fangCode": "a0170"
+        },
+        {
+          "name": "鄞州区",
+          "sourceName": "鄞州",
+          "price": 23122,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a01047/",
+          "fangCode": "a01047"
+        },
+        {
+          "name": "镇海区",
+          "sourceName": "镇海",
+          "price": 15765,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/nb/a0165/",
+          "fangCode": "a0165"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "杭州湾新区",
+        "高新区"
+      ]
+    },
+    "宜昌": {
+      "province": "湖北省",
+      "fangSlug": "yc",
+      "sourceUrl": "https://fangjia.fang.com/yc/",
+      "districts": [
+        {
+          "name": "伍家岗区",
+          "sourceName": "伍家岗",
+          "price": 7087,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a016865/",
+          "fangCode": "a016865"
+        },
+        {
+          "name": "兴山县",
+          "sourceName": "兴山",
+          "price": 5173,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a013276/",
+          "fangCode": "a013276"
+        },
+        {
+          "name": "夷陵区",
+          "sourceName": "夷陵",
+          "price": 4937,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a016863/",
+          "fangCode": "a016863"
+        },
+        {
+          "name": "宜都市",
+          "sourceName": "宜都",
+          "price": 3808,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a013275/",
+          "fangCode": "a013275"
+        },
+        {
+          "name": "当阳市",
+          "sourceName": "当阳",
+          "price": 3618,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a013273/",
+          "fangCode": "a013273"
+        },
+        {
+          "name": "枝江市",
+          "sourceName": "枝江",
+          "price": 4011,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a013277/",
+          "fangCode": "a013277"
+        },
+        {
+          "name": "点军区",
+          "sourceName": "点军",
+          "price": 7624,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a016866/",
+          "fangCode": "a016866"
+        },
+        {
+          "name": "猇亭区",
+          "sourceName": "猇亭",
+          "price": 4683,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a016867/",
+          "fangCode": "a016867"
+        },
+        {
+          "name": "秭归县",
+          "sourceName": "秭归",
+          "price": 5393,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a016868/",
+          "fangCode": "a016868"
+        },
+        {
+          "name": "西陵区",
+          "sourceName": "西陵",
+          "price": 6620,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a016864/",
+          "fangCode": "a016864"
+        },
+        {
+          "name": "远安县",
+          "sourceName": "远安",
+          "price": 4988,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yc/a013274/",
+          "fangCode": "a013274"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "东山开发区",
+        "五峰",
+        "长阳"
+      ]
+    },
+    "常州": {
+      "province": "江苏省",
+      "fangSlug": "cz",
+      "sourceUrl": "https://fangjia.fang.com/cz/",
+      "districts": [
+        {
+          "name": "天宁区",
+          "sourceName": "天宁",
+          "price": 14878,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cz/a0338/",
+          "fangCode": "a0338"
+        },
+        {
+          "name": "新北区",
+          "sourceName": "新北",
+          "price": 12157,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cz/a0341/",
+          "fangCode": "a0341"
+        },
+        {
+          "name": "武进区",
+          "sourceName": "武进",
+          "price": 10607,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cz/a0342/",
+          "fangCode": "a0342"
+        },
+        {
+          "name": "溧阳市",
+          "sourceName": "溧阳",
+          "price": 10751,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cz/a0344/",
+          "fangCode": "a0344"
+        },
+        {
+          "name": "金坛区",
+          "sourceName": "金坛",
+          "price": 7282,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cz/a0343/",
+          "fangCode": "a0343"
+        },
+        {
+          "name": "钟楼区",
+          "sourceName": "钟楼",
+          "price": 12785,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cz/a0339/",
+          "fangCode": "a0339"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "其他"
+      ]
+    },
+    "广州": {
+      "province": "广东省",
+      "fangSlug": "gz",
+      "sourceUrl": "https://fangjia.fang.com/gz/",
+      "districts": [
+        {
+          "name": "从化区",
+          "sourceName": "从化",
+          "price": 9916,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a079/",
+          "fangCode": "a079"
+        },
+        {
+          "name": "南沙区",
+          "sourceName": "南沙",
+          "price": 14946,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a084/",
+          "fangCode": "a084"
+        },
+        {
+          "name": "增城区",
+          "sourceName": "增城",
+          "price": 12028,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a080/",
+          "fangCode": "a080"
+        },
+        {
+          "name": "天河区",
+          "sourceName": "天河",
+          "price": 43031,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a073/",
+          "fangCode": "a073"
+        },
+        {
+          "name": "海珠区",
+          "sourceName": "海珠",
+          "price": 33913,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a074/",
+          "fangCode": "a074"
+        },
+        {
+          "name": "番禺区",
+          "sourceName": "番禺",
+          "price": 20817,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a078/",
+          "fangCode": "a078"
+        },
+        {
+          "name": "白云区",
+          "sourceName": "白云",
+          "price": 25723,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a076/",
+          "fangCode": "a076"
+        },
+        {
+          "name": "花都区",
+          "sourceName": "花都",
+          "price": 11747,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a0639/",
+          "fangCode": "a0639"
+        },
+        {
+          "name": "荔湾区",
+          "sourceName": "荔湾",
+          "price": 29909,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a071/",
+          "fangCode": "a071"
+        },
+        {
+          "name": "越秀区",
+          "sourceName": "越秀",
+          "price": 46227,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a072/",
+          "fangCode": "a072"
+        },
+        {
+          "name": "黄埔区",
+          "sourceName": "黄埔",
+          "price": 21056,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gz/a075/",
+          "fangCode": "a075"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "广州周边"
+      ]
+    },
+    "廊坊": {
+      "province": "河北省",
+      "fangSlug": "lf",
+      "sourceUrl": "https://fangjia.fang.com/lf/",
+      "districts": [
+        {
+          "name": "三河市",
+          "sourceName": "三河",
+          "price": 11195,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010271/",
+          "fangCode": "a010271"
+        },
+        {
+          "name": "固安县",
+          "sourceName": "固安",
+          "price": 7443,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010275/",
+          "fangCode": "a010275"
+        },
+        {
+          "name": "大城县",
+          "sourceName": "大城",
+          "price": 6760,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010277/",
+          "fangCode": "a010277"
+        },
+        {
+          "name": "安次区",
+          "sourceName": "安次",
+          "price": 6845,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010269/",
+          "fangCode": "a010269"
+        },
+        {
+          "name": "广阳区",
+          "sourceName": "广阳",
+          "price": 7396,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010270/",
+          "fangCode": "a010270"
+        },
+        {
+          "name": "文安县",
+          "sourceName": "文安",
+          "price": 7457,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010276/",
+          "fangCode": "a010276"
+        },
+        {
+          "name": "永清县",
+          "sourceName": "永清",
+          "price": 4532,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010274/",
+          "fangCode": "a010274"
+        },
+        {
+          "name": "霸州市",
+          "sourceName": "霸州",
+          "price": 6621,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010272/",
+          "fangCode": "a010272"
+        },
+        {
+          "name": "香河县",
+          "sourceName": "香河",
+          "price": 6007,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lf/a010273/",
+          "fangCode": "a010273"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "大厂",
+        "开发区",
+        "燕郊"
+      ]
+    },
+    "张家口": {
+      "province": "河北省",
+      "fangSlug": "zhangjiakou",
+      "sourceUrl": "https://fangjia.fang.com/zhangjiakou/",
+      "districts": [
+        {
+          "name": "万全区",
+          "sourceName": "万全",
+          "price": 3359,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011433/",
+          "fangCode": "a011433"
+        },
+        {
+          "name": "下花园区",
+          "sourceName": "下花园",
+          "price": 4152,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a014963/",
+          "fangCode": "a014963"
+        },
+        {
+          "name": "宣化区",
+          "sourceName": "宣化",
+          "price": 4345,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011423/",
+          "fangCode": "a011423"
+        },
+        {
+          "name": "尚义县",
+          "sourceName": "尚义",
+          "price": 3983,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011429/",
+          "fangCode": "a011429"
+        },
+        {
+          "name": "崇礼区",
+          "sourceName": "崇礼",
+          "price": 4304,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011437/",
+          "fangCode": "a011437"
+        },
+        {
+          "name": "康保县",
+          "sourceName": "康保",
+          "price": 4475,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011427/",
+          "fangCode": "a011427"
+        },
+        {
+          "name": "张北县",
+          "sourceName": "张北",
+          "price": 3702,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011426/",
+          "fangCode": "a011426"
+        },
+        {
+          "name": "怀安县",
+          "sourceName": "怀安",
+          "price": 3379,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011432/",
+          "fangCode": "a011432"
+        },
+        {
+          "name": "怀来县",
+          "sourceName": "怀来",
+          "price": 6346,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011434/",
+          "fangCode": "a011434"
+        },
+        {
+          "name": "桥东区",
+          "sourceName": "桥东",
+          "price": 5317,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a014961/",
+          "fangCode": "a014961"
+        },
+        {
+          "name": "桥西区",
+          "sourceName": "桥西",
+          "price": 5154,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a014962/",
+          "fangCode": "a014962"
+        },
+        {
+          "name": "沽源县",
+          "sourceName": "沽源",
+          "price": 4172,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011428/",
+          "fangCode": "a011428"
+        },
+        {
+          "name": "涿鹿县",
+          "sourceName": "涿鹿",
+          "price": 5006,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011435/",
+          "fangCode": "a011435"
+        },
+        {
+          "name": "蔚县",
+          "sourceName": "蔚县",
+          "price": 3278,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011430/",
+          "fangCode": "a011430"
+        },
+        {
+          "name": "阳原县",
+          "sourceName": "阳原",
+          "price": 6801,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhangjiakou/a011431/",
+          "fangCode": "a011431"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "经济开发区",
+        "赤城",
+        "高新技术产业开发区"
+      ]
+    },
+    "徐州": {
+      "province": "江苏省",
+      "fangSlug": "xz",
+      "sourceUrl": "https://fangjia.fang.com/xz/",
+      "districts": [
+        {
+          "name": "丰县",
+          "sourceName": "丰县",
+          "price": 4284,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a01125/",
+          "fangCode": "a01125"
+        },
+        {
+          "name": "云龙区",
+          "sourceName": "云龙",
+          "price": 8299,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a01093/",
+          "fangCode": "a01093"
+        },
+        {
+          "name": "新沂市",
+          "sourceName": "新沂",
+          "price": 4846,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a016827/",
+          "fangCode": "a016827"
+        },
+        {
+          "name": "沛县",
+          "sourceName": "沛县",
+          "price": 4667,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a01096/",
+          "fangCode": "a01096"
+        },
+        {
+          "name": "泉山区",
+          "sourceName": "泉山",
+          "price": 8569,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a01094/",
+          "fangCode": "a01094"
+        },
+        {
+          "name": "睢宁县",
+          "sourceName": "睢宁",
+          "price": 5219,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a016419/",
+          "fangCode": "a016419"
+        },
+        {
+          "name": "贾汪区",
+          "sourceName": "贾汪",
+          "price": 3622,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a01090/",
+          "fangCode": "a01090"
+        },
+        {
+          "name": "邳州市",
+          "sourceName": "邳州",
+          "price": 4665,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a016826/",
+          "fangCode": "a016826"
+        },
+        {
+          "name": "铜山区",
+          "sourceName": "铜山",
+          "price": 7858,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a016829/",
+          "fangCode": "a016829"
+        },
+        {
+          "name": "鼓楼区",
+          "sourceName": "鼓楼",
+          "price": 7203,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xz/a01089/",
+          "fangCode": "a01089"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "新城",
+        "淮海国际港务区",
+        "金山桥开发区"
+      ]
+    },
+    "德州": {
+      "province": "山东省",
+      "fangSlug": "dz",
+      "sourceUrl": "https://fangjia.fang.com/dz/",
+      "districts": [
+        {
+          "name": "临邑县",
+          "sourceName": "临邑",
+          "price": 9576,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010339/",
+          "fangCode": "a010339"
+        },
+        {
+          "name": "乐陵市",
+          "sourceName": "乐陵",
+          "price": 6044,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010332/",
+          "fangCode": "a010332"
+        },
+        {
+          "name": "夏津县",
+          "sourceName": "夏津",
+          "price": 5403,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010336/",
+          "fangCode": "a010336"
+        },
+        {
+          "name": "宁津县",
+          "sourceName": "宁津",
+          "price": 7251,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010340/",
+          "fangCode": "a010340"
+        },
+        {
+          "name": "平原县",
+          "sourceName": "平原",
+          "price": 2920,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010335/",
+          "fangCode": "a010335"
+        },
+        {
+          "name": "庆云县",
+          "sourceName": "庆云",
+          "price": 5887,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010341/",
+          "fangCode": "a010341"
+        },
+        {
+          "name": "德城区",
+          "sourceName": "德城区",
+          "price": 8894,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010331/",
+          "fangCode": "a010331"
+        },
+        {
+          "name": "武城县",
+          "sourceName": "武城",
+          "price": 8114,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010337/",
+          "fangCode": "a010337"
+        },
+        {
+          "name": "禹城市",
+          "sourceName": "禹城",
+          "price": 6525,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010333/",
+          "fangCode": "a010333"
+        },
+        {
+          "name": "陵城区",
+          "sourceName": "陵城区",
+          "price": 5878,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010338/",
+          "fangCode": "a010338"
+        },
+        {
+          "name": "齐河县",
+          "sourceName": "齐河",
+          "price": 5898,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/dz/a010334/",
+          "fangCode": "a010334"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "其他",
+        "经济开发区",
+        "运河开发区"
+      ]
+    },
+    "惠州": {
+      "province": "广东省",
+      "fangSlug": "huizhou",
+      "sourceUrl": "https://fangjia.fang.com/huizhou/",
+      "districts": [
+        {
+          "name": "博罗县",
+          "sourceName": "博罗",
+          "price": 5233,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huizhou/a093/",
+          "fangCode": "a093"
+        },
+        {
+          "name": "惠东县",
+          "sourceName": "惠东",
+          "price": 7142,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huizhou/a092/",
+          "fangCode": "a092"
+        },
+        {
+          "name": "惠城区",
+          "sourceName": "惠城",
+          "price": 8025,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huizhou/a0638/",
+          "fangCode": "a0638"
+        },
+        {
+          "name": "惠阳区",
+          "sourceName": "惠阳",
+          "price": 6174,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huizhou/a091/",
+          "fangCode": "a091"
+        },
+        {
+          "name": "龙门县",
+          "sourceName": "龙门",
+          "price": 7529,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huizhou/a094/",
+          "fangCode": "a094"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "仲恺",
+        "大亚湾"
+      ]
+    },
+    "成都": {
+      "province": "四川省",
+      "fangSlug": "cd",
+      "sourceUrl": "https://fangjia.fang.com/cd/",
+      "districts": [
+        {
+          "name": "双流区",
+          "sourceName": "双流",
+          "price": 10356,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a013066/",
+          "fangCode": "a013066"
+        },
+        {
+          "name": "大邑县",
+          "sourceName": "大邑",
+          "price": 7544,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0143/",
+          "fangCode": "a0143"
+        },
+        {
+          "name": "崇州市",
+          "sourceName": "崇州",
+          "price": 6670,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0145/",
+          "fangCode": "a0145"
+        },
+        {
+          "name": "彭州市",
+          "sourceName": "彭州",
+          "price": 4516,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0148/",
+          "fangCode": "a0148"
+        },
+        {
+          "name": "成华区",
+          "sourceName": "成华",
+          "price": 13411,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0133/",
+          "fangCode": "a0133"
+        },
+        {
+          "name": "新津区",
+          "sourceName": "新津",
+          "price": 6690,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0142/",
+          "fangCode": "a0142"
+        },
+        {
+          "name": "新都区",
+          "sourceName": "新都",
+          "price": 7990,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0138/",
+          "fangCode": "a0138"
+        },
+        {
+          "name": "武侯区",
+          "sourceName": "武侯",
+          "price": 14168,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0132/",
+          "fangCode": "a0132"
+        },
+        {
+          "name": "温江区",
+          "sourceName": "温江",
+          "price": 8981,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0939/",
+          "fangCode": "a0939"
+        },
+        {
+          "name": "简阳市",
+          "sourceName": "简阳",
+          "price": 5647,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a016624/",
+          "fangCode": "a016624"
+        },
+        {
+          "name": "蒲江县",
+          "sourceName": "蒲江",
+          "price": 11339,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0147/",
+          "fangCode": "a0147"
+        },
+        {
+          "name": "邛崃市",
+          "sourceName": "邛崃",
+          "price": 6716,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0146/",
+          "fangCode": "a0146"
+        },
+        {
+          "name": "郫都区",
+          "sourceName": "郫都",
+          "price": 7818,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a016750/",
+          "fangCode": "a016750"
+        },
+        {
+          "name": "都江堰市",
+          "sourceName": "都江堰",
+          "price": 5590,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a013064/",
+          "fangCode": "a013064"
+        },
+        {
+          "name": "金堂县",
+          "sourceName": "金堂",
+          "price": 3983,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0137/",
+          "fangCode": "a0137"
+        },
+        {
+          "name": "金牛区",
+          "sourceName": "金牛",
+          "price": 12191,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0131/",
+          "fangCode": "a0131"
+        },
+        {
+          "name": "锦江区",
+          "sourceName": "锦江",
+          "price": 17313,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0130/",
+          "fangCode": "a0130"
+        },
+        {
+          "name": "青白江区",
+          "sourceName": "青白江",
+          "price": 4270,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0135/",
+          "fangCode": "a0135"
+        },
+        {
+          "name": "青羊区",
+          "sourceName": "青羊",
+          "price": 16891,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0129/",
+          "fangCode": "a0129"
+        },
+        {
+          "name": "龙泉驿区",
+          "sourceName": "龙泉驿",
+          "price": 8636,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cd/a0134/",
+          "fangCode": "a0134"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "天府新区",
+        "成都周边",
+        "高新",
+        "高新西区"
+      ]
+    },
+    "扬州": {
+      "province": "江苏省",
+      "fangSlug": "yz",
+      "sourceUrl": "https://fangjia.fang.com/yz/",
+      "districts": [
+        {
+          "name": "仪征市",
+          "sourceName": "仪征",
+          "price": 9422,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yz/a016813/",
+          "fangCode": "a016813"
+        },
+        {
+          "name": "宝应县",
+          "sourceName": "宝应",
+          "price": 11988,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yz/a013272/",
+          "fangCode": "a013272"
+        },
+        {
+          "name": "广陵区",
+          "sourceName": "广陵",
+          "price": 12377,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yz/a016809/",
+          "fangCode": "a016809"
+        },
+        {
+          "name": "江都区",
+          "sourceName": "江都",
+          "price": 10549,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yz/a016812/",
+          "fangCode": "a016812"
+        },
+        {
+          "name": "邗江区",
+          "sourceName": "邗江",
+          "price": 11108,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yz/a016811/",
+          "fangCode": "a016811"
+        },
+        {
+          "name": "高邮市",
+          "sourceName": "高邮",
+          "price": 11715,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yz/a016810/",
+          "fangCode": "a016810"
+        }
+      ],
+      "unmatchedSourceNames": []
+    },
+    "无锡": {
+      "province": "江苏省",
+      "fangSlug": "wuxi",
+      "sourceUrl": "https://fangjia.fang.com/wuxi/",
+      "districts": [
+        {
+          "name": "宜兴市",
+          "sourceName": "宜兴市",
+          "price": 10797,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuxi/a01036/",
+          "fangCode": "a01036"
+        },
+        {
+          "name": "惠山区",
+          "sourceName": "惠山区",
+          "price": 10615,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuxi/a0774/",
+          "fangCode": "a0774"
+        },
+        {
+          "name": "新吴区",
+          "sourceName": "新吴区",
+          "price": 11795,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuxi/a016327/",
+          "fangCode": "a016327"
+        },
+        {
+          "name": "梁溪区",
+          "sourceName": "梁溪区",
+          "price": 15123,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuxi/a016326/",
+          "fangCode": "a016326"
+        },
+        {
+          "name": "江阴市",
+          "sourceName": "江阴市",
+          "price": 9216,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuxi/a01037/",
+          "fangCode": "a01037"
+        },
+        {
+          "name": "滨湖区",
+          "sourceName": "滨湖区",
+          "price": 16937,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuxi/a0771/",
+          "fangCode": "a0771"
+        },
+        {
+          "name": "锡山区",
+          "sourceName": "锡山区",
+          "price": 11527,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuxi/a0776/",
+          "fangCode": "a0776"
+        }
+      ],
+      "unmatchedSourceNames": []
+    },
+    "昆明": {
+      "province": "云南省",
+      "fangSlug": "km",
+      "sourceUrl": "https://fangjia.fang.com/km/",
+      "districts": [
+        {
+          "name": "五华区",
+          "sourceName": "五华",
+          "price": 11129,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a016832/",
+          "fangCode": "a016832"
+        },
+        {
+          "name": "呈贡区",
+          "sourceName": "呈贡",
+          "price": 8118,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a01071/",
+          "fangCode": "a01071"
+        },
+        {
+          "name": "安宁市",
+          "sourceName": "安宁",
+          "price": 5586,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a01069/",
+          "fangCode": "a01069"
+        },
+        {
+          "name": "官渡区",
+          "sourceName": "官渡",
+          "price": 8996,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a016830/",
+          "fangCode": "a016830"
+        },
+        {
+          "name": "宜良县",
+          "sourceName": "宜良",
+          "price": 5499,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a011163/",
+          "fangCode": "a011163"
+        },
+        {
+          "name": "富民县",
+          "sourceName": "富民",
+          "price": 4979,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a011160/",
+          "fangCode": "a011160"
+        },
+        {
+          "name": "嵩明县",
+          "sourceName": "嵩明",
+          "price": 5025,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a011162/",
+          "fangCode": "a011162"
+        },
+        {
+          "name": "晋宁区",
+          "sourceName": "晋宁",
+          "price": 4947,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a011161/",
+          "fangCode": "a011161"
+        },
+        {
+          "name": "盘龙区",
+          "sourceName": "盘龙",
+          "price": 9848,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a016831/",
+          "fangCode": "a016831"
+        },
+        {
+          "name": "西山区",
+          "sourceName": "西山",
+          "price": 11270,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/km/a016833/",
+          "fangCode": "a016833"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "东川",
+        "其他",
+        "寻甸",
+        "石林",
+        "禄劝"
+      ]
+    },
+    "杭州": {
+      "province": "浙江省",
+      "fangSlug": "hz",
+      "sourceUrl": "https://fangjia.fang.com/hz/",
+      "districts": [
+        {
+          "name": "上城区",
+          "sourceName": "上城",
+          "price": 40050,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0149/",
+          "fangCode": "a0149"
+        },
+        {
+          "name": "临安区",
+          "sourceName": "临安",
+          "price": 10820,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0159/",
+          "fangCode": "a0159"
+        },
+        {
+          "name": "临平区",
+          "sourceName": "临平",
+          "price": 16913,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a017367/",
+          "fangCode": "a017367"
+        },
+        {
+          "name": "余杭区",
+          "sourceName": "余杭",
+          "price": 24886,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0155/",
+          "fangCode": "a0155"
+        },
+        {
+          "name": "富阳区",
+          "sourceName": "富阳",
+          "price": 16509,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0157/",
+          "fangCode": "a0157"
+        },
+        {
+          "name": "建德市",
+          "sourceName": "建德",
+          "price": 9589,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0161/",
+          "fangCode": "a0161"
+        },
+        {
+          "name": "拱墅区",
+          "sourceName": "拱墅",
+          "price": 35077,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0152/",
+          "fangCode": "a0152"
+        },
+        {
+          "name": "桐庐县",
+          "sourceName": "桐庐",
+          "price": 10305,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0158/",
+          "fangCode": "a0158"
+        },
+        {
+          "name": "淳安县",
+          "sourceName": "淳安",
+          "price": 14413,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0160/",
+          "fangCode": "a0160"
+        },
+        {
+          "name": "滨江区",
+          "sourceName": "滨江",
+          "price": 36559,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0154/",
+          "fangCode": "a0154"
+        },
+        {
+          "name": "萧山区",
+          "sourceName": "萧山",
+          "price": 24399,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0156/",
+          "fangCode": "a0156"
+        },
+        {
+          "name": "西湖区",
+          "sourceName": "西湖",
+          "price": 40813,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a0151/",
+          "fangCode": "a0151"
+        },
+        {
+          "name": "钱塘区",
+          "sourceName": "钱塘",
+          "price": 18363,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hz/a016704/",
+          "fangCode": "a016704"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "杭州周边"
+      ]
+    },
+    "柳州": {
+      "province": "广西壮族自治区",
+      "fangSlug": "liuzhou",
+      "sourceUrl": "https://fangjia.fang.com/liuzhou/",
+      "districts": [
+        {
+          "name": "城中区",
+          "sourceName": "城中",
+          "price": 7043,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/liuzhou/a011551/",
+          "fangCode": "a011551"
+        },
+        {
+          "name": "柳北区",
+          "sourceName": "柳北",
+          "price": 5436,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/liuzhou/a011549/",
+          "fangCode": "a011549"
+        },
+        {
+          "name": "柳南区",
+          "sourceName": "柳南",
+          "price": 5038,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/liuzhou/a011550/",
+          "fangCode": "a011550"
+        },
+        {
+          "name": "柳城县",
+          "sourceName": "柳城",
+          "price": 2818,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/liuzhou/a011553/",
+          "fangCode": "a011553"
+        },
+        {
+          "name": "柳江区",
+          "sourceName": "柳江",
+          "price": 4316,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/liuzhou/a011556/",
+          "fangCode": "a011556"
+        },
+        {
+          "name": "融安县",
+          "sourceName": "融安",
+          "price": 3524,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/liuzhou/a011557/",
+          "fangCode": "a011557"
+        },
+        {
+          "name": "鱼峰区",
+          "sourceName": "鱼峰",
+          "price": 5437,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/liuzhou/a011552/",
+          "fangCode": "a011552"
+        },
+        {
+          "name": "鹿寨县",
+          "sourceName": "鹿寨",
+          "price": 3381,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/liuzhou/a011554/",
+          "fangCode": "a011554"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "三江",
+        "其它",
+        "柳东新区",
+        "融水"
+      ]
+    },
+    "株洲": {
+      "province": "湖南省",
+      "fangSlug": "zhuzhou",
+      "sourceUrl": "https://fangjia.fang.com/zhuzhou/",
+      "districts": [
+        {
+          "name": "天元区",
+          "sourceName": "天元",
+          "price": 4388,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhuzhou/a011478/",
+          "fangCode": "a011478"
+        },
+        {
+          "name": "攸县",
+          "sourceName": "攸县",
+          "price": 1918,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhuzhou/a011482/",
+          "fangCode": "a011482"
+        },
+        {
+          "name": "渌口区",
+          "sourceName": "渌口",
+          "price": 3809,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhuzhou/a016850/",
+          "fangCode": "a016850"
+        },
+        {
+          "name": "石峰区",
+          "sourceName": "石峰",
+          "price": 2800,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhuzhou/a011479/",
+          "fangCode": "a011479"
+        },
+        {
+          "name": "芦淞区",
+          "sourceName": "芦淞",
+          "price": 3260,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhuzhou/a011477/",
+          "fangCode": "a011477"
+        },
+        {
+          "name": "荷塘区",
+          "sourceName": "荷塘",
+          "price": 3155,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhuzhou/a011476/",
+          "fangCode": "a011476"
+        },
+        {
+          "name": "醴陵市",
+          "sourceName": "醴陵",
+          "price": 4062,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhuzhou/a011480/",
+          "fangCode": "a011480"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "云龙示范区",
+        "炎陵",
+        "茶陵"
+      ]
+    },
+    "桂林": {
+      "province": "广西壮族自治区",
+      "fangSlug": "guilin",
+      "sourceUrl": "https://fangjia.fang.com/guilin/",
+      "districts": [
+        {
+          "name": "七星区",
+          "sourceName": "七星区",
+          "price": 6613,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/guilin/a0441/",
+          "fangCode": "a0441"
+        },
+        {
+          "name": "临桂区",
+          "sourceName": "临桂区",
+          "price": 3493,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/guilin/a011884/",
+          "fangCode": "a011884"
+        },
+        {
+          "name": "叠彩区",
+          "sourceName": "叠彩区",
+          "price": 5300,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/guilin/a0439/",
+          "fangCode": "a0439"
+        },
+        {
+          "name": "灵川县",
+          "sourceName": "灵川",
+          "price": 3383,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/guilin/a012958/",
+          "fangCode": "a012958"
+        },
+        {
+          "name": "秀峰区",
+          "sourceName": "秀峰区",
+          "price": 7153,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/guilin/a0438/",
+          "fangCode": "a0438"
+        },
+        {
+          "name": "象山区",
+          "sourceName": "象山区",
+          "price": 5222,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/guilin/a0440/",
+          "fangCode": "a0440"
+        },
+        {
+          "name": "阳朔县",
+          "sourceName": "阳朔",
+          "price": 8722,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/guilin/a017369/",
+          "fangCode": "a017369"
+        },
+        {
+          "name": "雁山区",
+          "sourceName": "雁山区",
+          "price": 4273,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/guilin/a0442/",
+          "fangCode": "a0442"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "全州县",
+        "兴安",
+        "其他",
+        "平乐",
+        "恭城",
+        "永福",
+        "灌阳县",
+        "荔浦",
+        "资源县",
+        "龙胜"
+      ]
+    },
+    "武汉": {
+      "province": "湖北省",
+      "fangSlug": "wuhan",
+      "sourceUrl": "https://fangjia.fang.com/wuhan/",
+      "districts": [
+        {
+          "name": "东西湖区",
+          "sourceName": "东西湖",
+          "price": 8720,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016758/",
+          "fangCode": "a016758"
+        },
+        {
+          "name": "新洲区",
+          "sourceName": "新洲",
+          "price": 4011,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016761/",
+          "fangCode": "a016761"
+        },
+        {
+          "name": "武昌区",
+          "sourceName": "武昌",
+          "price": 16187,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016755/",
+          "fangCode": "a016755"
+        },
+        {
+          "name": "汉南区",
+          "sourceName": "汉南",
+          "price": 3726,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016762/",
+          "fangCode": "a016762"
+        },
+        {
+          "name": "汉阳区",
+          "sourceName": "汉阳",
+          "price": 11338,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016754/",
+          "fangCode": "a016754"
+        },
+        {
+          "name": "江夏区",
+          "sourceName": "江夏",
+          "price": 8285,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016760/",
+          "fangCode": "a016760"
+        },
+        {
+          "name": "江岸区",
+          "sourceName": "江岸",
+          "price": 14965,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016752/",
+          "fangCode": "a016752"
+        },
+        {
+          "name": "江汉区",
+          "sourceName": "江汉",
+          "price": 13828,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016751/",
+          "fangCode": "a016751"
+        },
+        {
+          "name": "洪山区",
+          "sourceName": "洪山",
+          "price": 12999,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016756/",
+          "fangCode": "a016756"
+        },
+        {
+          "name": "硚口区",
+          "sourceName": "硚口",
+          "price": 12133,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016753/",
+          "fangCode": "a016753"
+        },
+        {
+          "name": "蔡甸区",
+          "sourceName": "蔡甸",
+          "price": 5335,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016763/",
+          "fangCode": "a016763"
+        },
+        {
+          "name": "青山区",
+          "sourceName": "青山",
+          "price": 10552,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016757/",
+          "fangCode": "a016757"
+        },
+        {
+          "name": "黄陂区",
+          "sourceName": "黄陂",
+          "price": 6439,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhan/a016759/",
+          "fangCode": "a016759"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "东湖高新区",
+        "武汉周边",
+        "沌口"
+      ]
+    },
+    "江门": {
+      "province": "广东省",
+      "fangSlug": "jm",
+      "sourceUrl": "https://fangjia.fang.com/jm/",
+      "districts": [
+        {
+          "name": "台山市",
+          "sourceName": "台山",
+          "price": 4532,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jm/a011748/",
+          "fangCode": "a011748"
+        },
+        {
+          "name": "开平市",
+          "sourceName": "开平市",
+          "price": 4743,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jm/a011751/",
+          "fangCode": "a011751"
+        },
+        {
+          "name": "恩平市",
+          "sourceName": "恩平",
+          "price": 5217,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jm/a011749/",
+          "fangCode": "a011749"
+        },
+        {
+          "name": "新会区",
+          "sourceName": "新会区",
+          "price": 5693,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jm/a011745/",
+          "fangCode": "a011745"
+        },
+        {
+          "name": "江海区",
+          "sourceName": "江海区",
+          "price": 6235,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jm/a011747/",
+          "fangCode": "a011747"
+        },
+        {
+          "name": "蓬江区",
+          "sourceName": "蓬江区",
+          "price": 6074,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jm/a011746/",
+          "fangCode": "a011746"
+        },
+        {
+          "name": "鹤山市",
+          "sourceName": "鹤山",
+          "price": 4850,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jm/a011750/",
+          "fangCode": "a011750"
+        }
+      ],
+      "unmatchedSourceNames": []
+    },
+    "沈阳": {
+      "province": "辽宁省",
+      "fangSlug": "sy",
+      "sourceUrl": "https://fangjia.fang.com/sy/",
+      "districts": [
+        {
+          "name": "于洪区",
+          "sourceName": "于洪",
+          "price": 7119,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a0250/",
+          "fangCode": "a0250"
+        },
+        {
+          "name": "和平区",
+          "sourceName": "和平",
+          "price": 10659,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a0242/",
+          "fangCode": "a0242"
+        },
+        {
+          "name": "大东区",
+          "sourceName": "大东",
+          "price": 7116,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a0245/",
+          "fangCode": "a0245"
+        },
+        {
+          "name": "康平县",
+          "sourceName": "康平",
+          "price": 5531,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a010045/",
+          "fangCode": "a010045"
+        },
+        {
+          "name": "新民市",
+          "sourceName": "新民",
+          "price": 4169,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a010043/",
+          "fangCode": "a010043"
+        },
+        {
+          "name": "沈北新区",
+          "sourceName": "沈北新区",
+          "price": 5937,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a0887/",
+          "fangCode": "a0887"
+        },
+        {
+          "name": "沈河区",
+          "sourceName": "沈河",
+          "price": 8269,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a0243/",
+          "fangCode": "a0243"
+        },
+        {
+          "name": "法库县",
+          "sourceName": "法库",
+          "price": 2985,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a010046/",
+          "fangCode": "a010046"
+        },
+        {
+          "name": "浑南区",
+          "sourceName": "浑南",
+          "price": 8379,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a014854/",
+          "fangCode": "a014854"
+        },
+        {
+          "name": "皇姑区",
+          "sourceName": "皇姑",
+          "price": 8096,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a0244/",
+          "fangCode": "a0244"
+        },
+        {
+          "name": "苏家屯区",
+          "sourceName": "苏家屯",
+          "price": 4962,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a0247/",
+          "fangCode": "a0247"
+        },
+        {
+          "name": "辽中区",
+          "sourceName": "辽中",
+          "price": 4749,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a010044/",
+          "fangCode": "a010044"
+        },
+        {
+          "name": "铁西区",
+          "sourceName": "铁西",
+          "price": 7393,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sy/a0246/",
+          "fangCode": "a0246"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "沈阳周边"
+      ]
+    },
+    "泉州": {
+      "province": "福建省",
+      "fangSlug": "qz",
+      "sourceUrl": "https://fangjia.fang.com/qz/",
+      "districts": [
+        {
+          "name": "丰泽区",
+          "sourceName": "丰泽",
+          "price": 15524,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016886/",
+          "fangCode": "a016886"
+        },
+        {
+          "name": "南安市",
+          "sourceName": "南安",
+          "price": 6302,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016891/",
+          "fangCode": "a016891"
+        },
+        {
+          "name": "安溪县",
+          "sourceName": "安溪",
+          "price": 13015,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016884/",
+          "fangCode": "a016884"
+        },
+        {
+          "name": "德化县",
+          "sourceName": "德化",
+          "price": 9719,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016885/",
+          "fangCode": "a016885"
+        },
+        {
+          "name": "惠安县",
+          "sourceName": "惠安",
+          "price": 6789,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016887/",
+          "fangCode": "a016887"
+        },
+        {
+          "name": "晋江市",
+          "sourceName": "晋江",
+          "price": 9871,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016888/",
+          "fangCode": "a016888"
+        },
+        {
+          "name": "永春县",
+          "sourceName": "永春",
+          "price": 13274,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016894/",
+          "fangCode": "a016894"
+        },
+        {
+          "name": "泉港区",
+          "sourceName": "泉港",
+          "price": 3869,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016892/",
+          "fangCode": "a016892"
+        },
+        {
+          "name": "洛江区",
+          "sourceName": "洛江",
+          "price": 9901,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016890/",
+          "fangCode": "a016890"
+        },
+        {
+          "name": "石狮市",
+          "sourceName": "石狮",
+          "price": 7057,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016893/",
+          "fangCode": "a016893"
+        },
+        {
+          "name": "鲤城区",
+          "sourceName": "鲤城",
+          "price": 17550,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qz/a016889/",
+          "fangCode": "a016889"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "台商",
+        "清濛开发区",
+        "金门县"
+      ]
+    },
+    "洛阳": {
+      "province": "河南省",
+      "fangSlug": "ly",
+      "sourceUrl": "https://fangjia.fang.com/ly/",
+      "districts": [
+        {
+          "name": "伊川县",
+          "sourceName": "伊川",
+          "price": 4799,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014906/",
+          "fangCode": "a014906"
+        },
+        {
+          "name": "偃师区",
+          "sourceName": "偃师",
+          "price": 3935,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014903/",
+          "fangCode": "a014903"
+        },
+        {
+          "name": "孟津区",
+          "sourceName": "孟津",
+          "price": 7128,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014900/",
+          "fangCode": "a014900"
+        },
+        {
+          "name": "宜阳县",
+          "sourceName": "宜阳",
+          "price": 5005,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014904/",
+          "fangCode": "a014904"
+        },
+        {
+          "name": "洛宁县",
+          "sourceName": "洛宁",
+          "price": 5142,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014899/",
+          "fangCode": "a014899"
+        },
+        {
+          "name": "洛龙区",
+          "sourceName": "洛龙",
+          "price": 8554,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014896/",
+          "fangCode": "a014896"
+        },
+        {
+          "name": "涧西区",
+          "sourceName": "涧西",
+          "price": 6164,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014892/",
+          "fangCode": "a014892"
+        },
+        {
+          "name": "老城区",
+          "sourceName": "老城",
+          "price": 4931,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014894/",
+          "fangCode": "a014894"
+        },
+        {
+          "name": "西工区",
+          "sourceName": "西工",
+          "price": 5620,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/ly/a014893/",
+          "fangCode": "a014893"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "伊滨",
+        "嵩县",
+        "新安",
+        "栾川",
+        "汝阳",
+        "瀍河"
+      ]
+    },
+    "济南": {
+      "province": "山东省",
+      "fangSlug": "jn",
+      "sourceUrl": "https://fangjia.fang.com/jn/",
+      "districts": [
+        {
+          "name": "历下区",
+          "sourceName": "历下",
+          "price": 20275,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0386/",
+          "fangCode": "a0386"
+        },
+        {
+          "name": "历城区",
+          "sourceName": "历城",
+          "price": 13520,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0388/",
+          "fangCode": "a0388"
+        },
+        {
+          "name": "商河县",
+          "sourceName": "商河",
+          "price": 7202,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0646/",
+          "fangCode": "a0646"
+        },
+        {
+          "name": "天桥区",
+          "sourceName": "天桥",
+          "price": 10199,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0385/",
+          "fangCode": "a0385"
+        },
+        {
+          "name": "市中区",
+          "sourceName": "市中",
+          "price": 15691,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0384/",
+          "fangCode": "a0384"
+        },
+        {
+          "name": "平阴县",
+          "sourceName": "平阴",
+          "price": 5305,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0647/",
+          "fangCode": "a0647"
+        },
+        {
+          "name": "槐荫区",
+          "sourceName": "槐荫",
+          "price": 10543,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0387/",
+          "fangCode": "a0387"
+        },
+        {
+          "name": "济阳区",
+          "sourceName": "济阳",
+          "price": 6795,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0648/",
+          "fangCode": "a0648"
+        },
+        {
+          "name": "章丘区",
+          "sourceName": "章丘",
+          "price": 6768,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0649/",
+          "fangCode": "a0649"
+        },
+        {
+          "name": "莱芜区",
+          "sourceName": "莱芜",
+          "price": 5613,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a014785/",
+          "fangCode": "a014785"
+        },
+        {
+          "name": "长清区",
+          "sourceName": "长清",
+          "price": 6266,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/jn/a0645/",
+          "fangCode": "a0645"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "济南周边",
+        "钢城",
+        "高新"
+      ]
+    },
+    "淄博": {
+      "province": "山东省",
+      "fangSlug": "zb",
+      "sourceUrl": "https://fangjia.fang.com/zb/",
+      "districts": [
+        {
+          "name": "临淄区",
+          "sourceName": "临淄",
+          "price": 6222,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zb/a0419/",
+          "fangCode": "a0419"
+        },
+        {
+          "name": "博山区",
+          "sourceName": "博山",
+          "price": 5679,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zb/a010262/",
+          "fangCode": "a010262"
+        },
+        {
+          "name": "周村区",
+          "sourceName": "周村",
+          "price": 5737,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zb/a0418/",
+          "fangCode": "a0418"
+        },
+        {
+          "name": "张店区",
+          "sourceName": "张店区",
+          "price": 5876,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zb/a010260/",
+          "fangCode": "a010260"
+        },
+        {
+          "name": "桓台县",
+          "sourceName": "桓台",
+          "price": 5483,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zb/a0421/",
+          "fangCode": "a0421"
+        },
+        {
+          "name": "沂源县",
+          "sourceName": "沂源",
+          "price": 5876,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zb/a0422/",
+          "fangCode": "a0422"
+        },
+        {
+          "name": "淄川区",
+          "sourceName": "淄川",
+          "price": 3676,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zb/a0420/",
+          "fangCode": "a0420"
+        },
+        {
+          "name": "高青县",
+          "sourceName": "高青",
+          "price": 5425,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zb/a0423/",
+          "fangCode": "a0423"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "淄博新区",
+        "高新区"
+      ]
+    },
+    "淮安": {
+      "province": "江苏省",
+      "fangSlug": "huaian",
+      "sourceUrl": "https://fangjia.fang.com/huaian/",
+      "districts": [
+        {
+          "name": "洪泽区",
+          "sourceName": "洪泽",
+          "price": 1867,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huaian/a016846/",
+          "fangCode": "a016846"
+        },
+        {
+          "name": "涟水县",
+          "sourceName": "涟水",
+          "price": 4045,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huaian/a016845/",
+          "fangCode": "a016845"
+        },
+        {
+          "name": "淮安区",
+          "sourceName": "淮安",
+          "price": 6431,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huaian/a016842/",
+          "fangCode": "a016842"
+        },
+        {
+          "name": "淮阴区",
+          "sourceName": "淮阴",
+          "price": 6125,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huaian/a016841/",
+          "fangCode": "a016841"
+        },
+        {
+          "name": "清江浦区",
+          "sourceName": "清江浦",
+          "price": 7551,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huaian/a016840/",
+          "fangCode": "a016840"
+        },
+        {
+          "name": "盱眙县",
+          "sourceName": "盱眙",
+          "price": 9797,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huaian/a016844/",
+          "fangCode": "a016844"
+        },
+        {
+          "name": "金湖县",
+          "sourceName": "金湖",
+          "price": 4047,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huaian/a016843/",
+          "fangCode": "a016843"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "开发区",
+        "文旅"
+      ]
+    },
+    "深圳": {
+      "province": "广东省",
+      "fangSlug": "sz",
+      "sourceUrl": "https://fangjia.fang.com/sz/",
+      "districts": [
+        {
+          "name": "光明区",
+          "sourceName": "光明区",
+          "price": 33845,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a013079/",
+          "fangCode": "a013079"
+        },
+        {
+          "name": "南山区",
+          "sourceName": "南山",
+          "price": 79405,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a087/",
+          "fangCode": "a087"
+        },
+        {
+          "name": "坪山区",
+          "sourceName": "坪山区",
+          "price": 26043,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a013081/",
+          "fangCode": "a013081"
+        },
+        {
+          "name": "宝安区",
+          "sourceName": "宝安",
+          "price": 51014,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a089/",
+          "fangCode": "a089"
+        },
+        {
+          "name": "盐田区",
+          "sourceName": "盐田",
+          "price": 40170,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a088/",
+          "fangCode": "a088"
+        },
+        {
+          "name": "福田区",
+          "sourceName": "福田",
+          "price": 69929,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a085/",
+          "fangCode": "a085"
+        },
+        {
+          "name": "罗湖区",
+          "sourceName": "罗湖",
+          "price": 47698,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a086/",
+          "fangCode": "a086"
+        },
+        {
+          "name": "龙华区",
+          "sourceName": "龙华区",
+          "price": 51629,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a013080/",
+          "fangCode": "a013080"
+        },
+        {
+          "name": "龙岗区",
+          "sourceName": "龙岗",
+          "price": 35600,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sz/a090/",
+          "fangCode": "a090"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "东莞",
+        "大鹏新区",
+        "惠州",
+        "深圳周边",
+        "深汕合作区"
+      ]
+    },
+    "湖州": {
+      "province": "浙江省",
+      "fangSlug": "huzhou",
+      "sourceUrl": "https://fangjia.fang.com/huzhou/",
+      "districts": [
+        {
+          "name": "南浔区",
+          "sourceName": "南浔",
+          "price": 6958,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huzhou/a016896/",
+          "fangCode": "a016896"
+        },
+        {
+          "name": "吴兴区",
+          "sourceName": "吴兴",
+          "price": 9278,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huzhou/a016900/",
+          "fangCode": "a016900"
+        },
+        {
+          "name": "安吉县",
+          "sourceName": "安吉",
+          "price": 9655,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huzhou/a016899/",
+          "fangCode": "a016899"
+        },
+        {
+          "name": "德清县",
+          "sourceName": "德清",
+          "price": 11999,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huzhou/a016897/",
+          "fangCode": "a016897"
+        },
+        {
+          "name": "长兴县",
+          "sourceName": "长兴",
+          "price": 9000,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/huzhou/a016898/",
+          "fangCode": "a016898"
+        }
+      ],
+      "unmatchedSourceNames": []
+    },
+    "湘潭": {
+      "province": "湖南省",
+      "fangSlug": "xt",
+      "sourceUrl": "https://fangjia.fang.com/xt/",
+      "districts": [
+        {
+          "name": "岳塘区",
+          "sourceName": "岳塘",
+          "price": 3460,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xt/a011486/",
+          "fangCode": "a011486"
+        },
+        {
+          "name": "湘潭县",
+          "sourceName": "湘潭县",
+          "price": 2821,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xt/a011487/",
+          "fangCode": "a011487"
+        },
+        {
+          "name": "雨湖区",
+          "sourceName": "雨湖",
+          "price": 3550,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xt/a011485/",
+          "fangCode": "a011485"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "九华经济开发区",
+        "湘乡",
+        "韶山"
+      ]
+    },
+    "潍坊": {
+      "province": "山东省",
+      "fangSlug": "wf",
+      "sourceUrl": "https://fangjia.fang.com/wf/",
+      "districts": [
+        {
+          "name": "临朐县",
+          "sourceName": "临朐",
+          "price": 5497,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a012063/",
+          "fangCode": "a012063"
+        },
+        {
+          "name": "坊子区",
+          "sourceName": "坊子",
+          "price": 5228,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a0655/",
+          "fangCode": "a0655"
+        },
+        {
+          "name": "奎文区",
+          "sourceName": "奎文",
+          "price": 6697,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a0656/",
+          "fangCode": "a0656"
+        },
+        {
+          "name": "安丘市",
+          "sourceName": "安丘",
+          "price": 5711,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a012062/",
+          "fangCode": "a012062"
+        },
+        {
+          "name": "寒亭区",
+          "sourceName": "寒亭",
+          "price": 4943,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a0654/",
+          "fangCode": "a0654"
+        },
+        {
+          "name": "寿光市",
+          "sourceName": "寿光",
+          "price": 5090,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a012057/",
+          "fangCode": "a012057"
+        },
+        {
+          "name": "昌乐县",
+          "sourceName": "昌乐",
+          "price": 4557,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a012064/",
+          "fangCode": "a012064"
+        },
+        {
+          "name": "昌邑市",
+          "sourceName": "昌邑",
+          "price": 5478,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a012060/",
+          "fangCode": "a012060"
+        },
+        {
+          "name": "潍城区",
+          "sourceName": "潍城",
+          "price": 5128,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a0653/",
+          "fangCode": "a0653"
+        },
+        {
+          "name": "诸城市",
+          "sourceName": "诸城",
+          "price": 6023,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a012058/",
+          "fangCode": "a012058"
+        },
+        {
+          "name": "青州市",
+          "sourceName": "青州",
+          "price": 5408,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a012061/",
+          "fangCode": "a012061"
+        },
+        {
+          "name": "高密市",
+          "sourceName": "高密",
+          "price": 5819,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wf/a012059/",
+          "fangCode": "a012059"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "峡山",
+        "滨海",
+        "经济开发区",
+        "高新"
+      ]
+    },
+    "烟台": {
+      "province": "山东省",
+      "fangSlug": "yt",
+      "sourceUrl": "https://fangjia.fang.com/yt/",
+      "districts": [
+        {
+          "name": "招远市",
+          "sourceName": "招远",
+          "price": 5300,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a014882/",
+          "fangCode": "a014882"
+        },
+        {
+          "name": "栖霞市",
+          "sourceName": "栖霞",
+          "price": 4434,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a0720/",
+          "fangCode": "a0720"
+        },
+        {
+          "name": "海阳市",
+          "sourceName": "海阳",
+          "price": 4659,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a0716/",
+          "fangCode": "a0716"
+        },
+        {
+          "name": "牟平区",
+          "sourceName": "牟平",
+          "price": 5329,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a0719/",
+          "fangCode": "a0719"
+        },
+        {
+          "name": "福山区",
+          "sourceName": "福山",
+          "price": 5759,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a01054/",
+          "fangCode": "a01054"
+        },
+        {
+          "name": "芝罘区",
+          "sourceName": "芝罘",
+          "price": 8615,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a01053/",
+          "fangCode": "a01053"
+        },
+        {
+          "name": "莱山区",
+          "sourceName": "莱山",
+          "price": 11731,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a0718/",
+          "fangCode": "a0718"
+        },
+        {
+          "name": "莱州市",
+          "sourceName": "莱州",
+          "price": 6519,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a014881/",
+          "fangCode": "a014881"
+        },
+        {
+          "name": "莱阳市",
+          "sourceName": "莱阳",
+          "price": 4978,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a014883/",
+          "fangCode": "a014883"
+        },
+        {
+          "name": "蓬莱区",
+          "sourceName": "蓬莱",
+          "price": 5561,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a0409/",
+          "fangCode": "a0409"
+        },
+        {
+          "name": "龙口市",
+          "sourceName": "龙口",
+          "price": 3679,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yt/a0406/",
+          "fangCode": "a0406"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "开发区",
+        "长岛",
+        "高新区"
+      ]
+    },
+    "珠海": {
+      "province": "广东省",
+      "fangSlug": "zh",
+      "sourceUrl": "https://fangjia.fang.com/zh/",
+      "districts": [
+        {
+          "name": "斗门区",
+          "sourceName": "斗门",
+          "price": 7492,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zh/a0733/",
+          "fangCode": "a0733"
+        },
+        {
+          "name": "金湾区",
+          "sourceName": "金湾",
+          "price": 9313,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zh/a0730/",
+          "fangCode": "a0730"
+        },
+        {
+          "name": "香洲区",
+          "sourceName": "香洲",
+          "price": 18969,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zh/a0671/",
+          "fangCode": "a0671"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "南朗",
+        "坦洲",
+        "横琴",
+        "珠海周边",
+        "高新区",
+        "高栏港"
+      ]
+    },
+    "石家庄": {
+      "province": "河北省",
+      "fangSlug": "sjz",
+      "sourceUrl": "https://fangjia.fang.com/sjz/",
+      "districts": [
+        {
+          "name": "井陉县",
+          "sourceName": "井陉",
+          "price": 3503,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a011254/",
+          "fangCode": "a011254"
+        },
+        {
+          "name": "元氏县",
+          "sourceName": "元氏",
+          "price": 6302,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a011256/",
+          "fangCode": "a011256"
+        },
+        {
+          "name": "平山县",
+          "sourceName": "平山",
+          "price": 2834,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0633/",
+          "fangCode": "a0633"
+        },
+        {
+          "name": "新乐市",
+          "sourceName": "新乐",
+          "price": 5237,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a011261/",
+          "fangCode": "a011261"
+        },
+        {
+          "name": "新华区",
+          "sourceName": "新华",
+          "price": 10827,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0358/",
+          "fangCode": "a0358"
+        },
+        {
+          "name": "晋州市",
+          "sourceName": "晋州",
+          "price": 5268,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a011262/",
+          "fangCode": "a011262"
+        },
+        {
+          "name": "栾城区",
+          "sourceName": "栾城",
+          "price": 6484,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0630/",
+          "fangCode": "a0630"
+        },
+        {
+          "name": "桥西区",
+          "sourceName": "桥西",
+          "price": 10773,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0357/",
+          "fangCode": "a0357"
+        },
+        {
+          "name": "正定县",
+          "sourceName": "正定",
+          "price": 9094,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0629/",
+          "fangCode": "a0629"
+        },
+        {
+          "name": "深泽县",
+          "sourceName": "深泽",
+          "price": 6623,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a011260/",
+          "fangCode": "a011260"
+        },
+        {
+          "name": "灵寿县",
+          "sourceName": "灵寿",
+          "price": 4692,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a011255/",
+          "fangCode": "a011255"
+        },
+        {
+          "name": "藁城区",
+          "sourceName": "藁城",
+          "price": 6085,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0632/",
+          "fangCode": "a0632"
+        },
+        {
+          "name": "裕华区",
+          "sourceName": "裕华",
+          "price": 12958,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0359/",
+          "fangCode": "a0359"
+        },
+        {
+          "name": "辛集市",
+          "sourceName": "辛集",
+          "price": 5803,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a011253/",
+          "fangCode": "a011253"
+        },
+        {
+          "name": "长安区",
+          "sourceName": "长安",
+          "price": 10502,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0360/",
+          "fangCode": "a0360"
+        },
+        {
+          "name": "鹿泉区",
+          "sourceName": "鹿泉",
+          "price": 7441,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/sjz/a0628/",
+          "fangCode": "a0628"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "井陉矿区",
+        "其他",
+        "无极",
+        "石家庄周边",
+        "行唐",
+        "赞皇",
+        "赵县",
+        "高新",
+        "高邑"
+      ]
+    },
+    "福州": {
+      "province": "福建省",
+      "fangSlug": "fz",
+      "sourceUrl": "https://fangjia.fang.com/fz/",
+      "districts": [
+        {
+          "name": "仓山区",
+          "sourceName": "仓山",
+          "price": 18724,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a0347/",
+          "fangCode": "a0347"
+        },
+        {
+          "name": "台江区",
+          "sourceName": "台江",
+          "price": 19181,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a0869/",
+          "fangCode": "a0869"
+        },
+        {
+          "name": "平潭县",
+          "sourceName": "平潭",
+          "price": 11548,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a016766/",
+          "fangCode": "a016766"
+        },
+        {
+          "name": "晋安区",
+          "sourceName": "晋安",
+          "price": 17445,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a0348/",
+          "fangCode": "a0348"
+        },
+        {
+          "name": "永泰县",
+          "sourceName": "永泰",
+          "price": 9001,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a016767/",
+          "fangCode": "a016767"
+        },
+        {
+          "name": "福清市",
+          "sourceName": "福清",
+          "price": 9011,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a011757/",
+          "fangCode": "a011757"
+        },
+        {
+          "name": "罗源县",
+          "sourceName": "罗源",
+          "price": 5316,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a016765/",
+          "fangCode": "a016765"
+        },
+        {
+          "name": "连江县",
+          "sourceName": "连江",
+          "price": 7893,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a013282/",
+          "fangCode": "a013282"
+        },
+        {
+          "name": "长乐区",
+          "sourceName": "长乐",
+          "price": 9964,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a0985/",
+          "fangCode": "a0985"
+        },
+        {
+          "name": "闽侯县",
+          "sourceName": "闽侯",
+          "price": 10572,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a016764/",
+          "fangCode": "a016764"
+        },
+        {
+          "name": "闽清县",
+          "sourceName": "闽清",
+          "price": 3491,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a016768/",
+          "fangCode": "a016768"
+        },
+        {
+          "name": "马尾区",
+          "sourceName": "马尾",
+          "price": 9374,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a0349/",
+          "fangCode": "a0349"
+        },
+        {
+          "name": "鼓楼区",
+          "sourceName": "鼓楼",
+          "price": 27181,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/fz/a0346/",
+          "fangCode": "a0346"
+        }
+      ],
+      "unmatchedSourceNames": []
+    },
+    "秦皇岛": {
+      "province": "河北省",
+      "fangSlug": "qhd",
+      "sourceUrl": "https://fangjia.fang.com/qhd/",
+      "districts": [
+        {
+          "name": "北戴河区",
+          "sourceName": "北戴河",
+          "price": 10455,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qhd/a01151/",
+          "fangCode": "a01151"
+        },
+        {
+          "name": "卢龙县",
+          "sourceName": "卢龙",
+          "price": 5524,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qhd/a014888/",
+          "fangCode": "a014888"
+        },
+        {
+          "name": "山海关区",
+          "sourceName": "山海关",
+          "price": 5809,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qhd/a01152/",
+          "fangCode": "a01152"
+        },
+        {
+          "name": "抚宁区",
+          "sourceName": "抚宁",
+          "price": 7355,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qhd/a014887/",
+          "fangCode": "a014887"
+        },
+        {
+          "name": "昌黎县",
+          "sourceName": "昌黎",
+          "price": 6368,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qhd/a014886/",
+          "fangCode": "a014886"
+        },
+        {
+          "name": "海港区",
+          "sourceName": "海港",
+          "price": 8493,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qhd/a01147/",
+          "fangCode": "a01147"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "开发区",
+        "青龙"
+      ]
+    },
+    "聊城": {
+      "province": "山东省",
+      "fangSlug": "lc",
+      "sourceUrl": "https://fangjia.fang.com/lc/",
+      "districts": [
+        {
+          "name": "东昌府区",
+          "sourceName": "东昌府",
+          "price": 10079,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/lc/a010294/",
+          "fangCode": "a010294"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "东阿",
+        "临清",
+        "冠县",
+        "开发区",
+        "江北水城旅游度假区",
+        "茌平",
+        "莘县",
+        "阳谷",
+        "高唐",
+        "高新区"
+      ]
+    },
+    "芜湖": {
+      "province": "安徽省",
+      "fangSlug": "wuhu",
+      "sourceUrl": "https://fangjia.fang.com/wuhu/",
+      "districts": [
+        {
+          "name": "南陵县",
+          "sourceName": "南陵",
+          "price": 5725,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhu/a016875/",
+          "fangCode": "a016875"
+        },
+        {
+          "name": "弋江区",
+          "sourceName": "弋江",
+          "price": 8358,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhu/a016870/",
+          "fangCode": "a016870"
+        },
+        {
+          "name": "无为市",
+          "sourceName": "无为",
+          "price": 6368,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhu/a016877/",
+          "fangCode": "a016877"
+        },
+        {
+          "name": "湾沚区",
+          "sourceName": "湾沚",
+          "price": 10256,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhu/a011596/",
+          "fangCode": "a011596"
+        },
+        {
+          "name": "繁昌区",
+          "sourceName": "繁昌",
+          "price": 5635,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhu/a016874/",
+          "fangCode": "a016874"
+        },
+        {
+          "name": "镜湖区",
+          "sourceName": "镜湖",
+          "price": 9655,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhu/a016869/",
+          "fangCode": "a016869"
+        },
+        {
+          "name": "鸠江区",
+          "sourceName": "鸠江",
+          "price": 7932,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/wuhu/a016871/",
+          "fangCode": "a016871"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "三山",
+        "开发",
+        "芜湖"
+      ]
+    },
+    "苏州": {
+      "province": "江苏省",
+      "fangSlug": "suzhou",
+      "sourceUrl": "https://fangjia.fang.com/suzhou/",
+      "districts": [
+        {
+          "name": "吴中区",
+          "sourceName": "吴中",
+          "price": 17168,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/suzhou/a0283/",
+          "fangCode": "a0283"
+        },
+        {
+          "name": "吴江区",
+          "sourceName": "吴江",
+          "price": 11844,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/suzhou/a0584/",
+          "fangCode": "a0584"
+        },
+        {
+          "name": "太仓市",
+          "sourceName": "太仓",
+          "price": 12705,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/suzhou/a0286/",
+          "fangCode": "a0286"
+        },
+        {
+          "name": "姑苏区",
+          "sourceName": "姑苏",
+          "price": 24433,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/suzhou/a013102/",
+          "fangCode": "a013102"
+        },
+        {
+          "name": "常熟市",
+          "sourceName": "常熟",
+          "price": 11693,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/suzhou/a01041/",
+          "fangCode": "a01041"
+        },
+        {
+          "name": "张家港市",
+          "sourceName": "张家港",
+          "price": 10747,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/suzhou/a0287/",
+          "fangCode": "a0287"
+        },
+        {
+          "name": "昆山市",
+          "sourceName": "昆山",
+          "price": 17483,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/suzhou/a0986/",
+          "fangCode": "a0986"
+        },
+        {
+          "name": "相城区",
+          "sourceName": "相城",
+          "price": 15818,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/suzhou/a0288/",
+          "fangCode": "a0288"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "工业园区",
+        "苏州周边",
+        "高新"
+      ]
+    },
+    "菏泽": {
+      "province": "山东省",
+      "fangSlug": "heze",
+      "sourceUrl": "https://fangjia.fang.com/heze/",
+      "districts": [
+        {
+          "name": "单县",
+          "sourceName": "单县",
+          "price": 4229,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/heze/a010288/",
+          "fangCode": "a010288"
+        },
+        {
+          "name": "定陶区",
+          "sourceName": "定陶区",
+          "price": 4407,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/heze/a010286/",
+          "fangCode": "a010286"
+        },
+        {
+          "name": "巨野县",
+          "sourceName": "巨野",
+          "price": 4640,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/heze/a010289/",
+          "fangCode": "a010289"
+        },
+        {
+          "name": "成武县",
+          "sourceName": "成武",
+          "price": 3116,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/heze/a010287/",
+          "fangCode": "a010287"
+        },
+        {
+          "name": "曹县",
+          "sourceName": "曹县",
+          "price": 4620,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/heze/a010285/",
+          "fangCode": "a010285"
+        },
+        {
+          "name": "牡丹区",
+          "sourceName": "牡丹区",
+          "price": 5828,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/heze/a010284/",
+          "fangCode": "a010284"
+        },
+        {
+          "name": "郓城县",
+          "sourceName": "郓城",
+          "price": 3740,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/heze/a010290/",
+          "fangCode": "a010290"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "东明",
+        "开发区",
+        "鄄城"
+      ]
+    },
+    "衡水": {
+      "province": "河北省",
+      "fangSlug": "hs",
+      "sourceUrl": "https://fangjia.fang.com/hs/",
+      "districts": [
+        {
+          "name": "冀州区",
+          "sourceName": "冀州",
+          "price": 5740,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014937/",
+          "fangCode": "a014937"
+        },
+        {
+          "name": "安平县",
+          "sourceName": "安平",
+          "price": 5738,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014943/",
+          "fangCode": "a014943"
+        },
+        {
+          "name": "故城县",
+          "sourceName": "故城",
+          "price": 6424,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014944/",
+          "fangCode": "a014944"
+        },
+        {
+          "name": "景县",
+          "sourceName": "景县",
+          "price": 7531,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a011225/",
+          "fangCode": "a011225"
+        },
+        {
+          "name": "枣强县",
+          "sourceName": "枣强",
+          "price": 5353,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014939/",
+          "fangCode": "a014939"
+        },
+        {
+          "name": "桃城区",
+          "sourceName": "桃城",
+          "price": 5650,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014936/",
+          "fangCode": "a014936"
+        },
+        {
+          "name": "武邑县",
+          "sourceName": "武邑",
+          "price": 4777,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014940/",
+          "fangCode": "a014940"
+        },
+        {
+          "name": "深州市",
+          "sourceName": "深州",
+          "price": 4129,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014938/",
+          "fangCode": "a014938"
+        },
+        {
+          "name": "阜城县",
+          "sourceName": "阜城",
+          "price": 6621,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014945/",
+          "fangCode": "a014945"
+        },
+        {
+          "name": "饶阳县",
+          "sourceName": "饶阳",
+          "price": 6440,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/hs/a014942/",
+          "fangCode": "a014942"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "开发区",
+        "武强",
+        "滨湖新区"
+      ]
+    },
+    "西安": {
+      "province": "陕西省",
+      "fangSlug": "xian",
+      "sourceUrl": "https://fangjia.fang.com/xian/",
+      "districts": [
+        {
+          "name": "临潼区",
+          "sourceName": "临潼",
+          "price": 6250,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a0918/",
+          "fangCode": "a0918"
+        },
+        {
+          "name": "周至县",
+          "sourceName": "周至",
+          "price": 6014,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a0920/",
+          "fangCode": "a0920"
+        },
+        {
+          "name": "新城区",
+          "sourceName": "新城",
+          "price": 9866,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a016700/",
+          "fangCode": "a016700"
+        },
+        {
+          "name": "未央区",
+          "sourceName": "未央",
+          "price": 9939,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a016703/",
+          "fangCode": "a016703"
+        },
+        {
+          "name": "灞桥区",
+          "sourceName": "灞桥",
+          "price": 7992,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a0924/",
+          "fangCode": "a0924"
+        },
+        {
+          "name": "碑林区",
+          "sourceName": "碑林",
+          "price": 9979,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a016699/",
+          "fangCode": "a016699"
+        },
+        {
+          "name": "莲湖区",
+          "sourceName": "莲湖",
+          "price": 9405,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a016701/",
+          "fangCode": "a016701"
+        },
+        {
+          "name": "蓝田县",
+          "sourceName": "蓝田",
+          "price": 7181,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a0921/",
+          "fangCode": "a0921"
+        },
+        {
+          "name": "鄠邑区",
+          "sourceName": "鄠邑",
+          "price": 9112,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a016808/",
+          "fangCode": "a016808"
+        },
+        {
+          "name": "长安区",
+          "sourceName": "长安",
+          "price": 10036,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a0483/",
+          "fangCode": "a0483"
+        },
+        {
+          "name": "阎良区",
+          "sourceName": "阎良",
+          "price": 6225,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a0922/",
+          "fangCode": "a0922"
+        },
+        {
+          "name": "雁塔区",
+          "sourceName": "雁塔",
+          "price": 10783,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a016698/",
+          "fangCode": "a016698"
+        },
+        {
+          "name": "高陵区",
+          "sourceName": "高陵",
+          "price": 6130,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/xian/a016807/",
+          "fangCode": "a016807"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "咸阳",
+        "曲江新区",
+        "浐灞国际港",
+        "经开",
+        "航天新城",
+        "西咸新区",
+        "西安周边",
+        "高新"
+      ]
+    },
+    "贵阳": {
+      "province": "贵州省",
+      "fangSlug": "gy",
+      "sourceUrl": "https://fangjia.fang.com/gy/",
+      "districts": [
+        {
+          "name": "乌当区",
+          "sourceName": "乌当",
+          "price": 5629,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a0234/",
+          "fangCode": "a0234"
+        },
+        {
+          "name": "云岩区",
+          "sourceName": "云岩",
+          "price": 6772,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a0229/",
+          "fangCode": "a0229"
+        },
+        {
+          "name": "修文县",
+          "sourceName": "修文",
+          "price": 5537,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a011078/",
+          "fangCode": "a011078"
+        },
+        {
+          "name": "南明区",
+          "sourceName": "南明",
+          "price": 6822,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a0230/",
+          "fangCode": "a0230"
+        },
+        {
+          "name": "开阳县",
+          "sourceName": "开阳",
+          "price": 5635,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a011077/",
+          "fangCode": "a011077"
+        },
+        {
+          "name": "息烽县",
+          "sourceName": "息烽",
+          "price": 9103,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a011079/",
+          "fangCode": "a011079"
+        },
+        {
+          "name": "清镇市",
+          "sourceName": "清镇",
+          "price": 4378,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a0236/",
+          "fangCode": "a0236"
+        },
+        {
+          "name": "白云区",
+          "sourceName": "白云",
+          "price": 5696,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a0235/",
+          "fangCode": "a0235"
+        },
+        {
+          "name": "花溪区",
+          "sourceName": "花溪",
+          "price": 5543,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a0233/",
+          "fangCode": "a0233"
+        },
+        {
+          "name": "观山湖区",
+          "sourceName": "观山湖",
+          "price": 9997,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/gy/a0241/",
+          "fangCode": "a0241"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "小河",
+        "贵安新区",
+        "贵阳周边"
+      ]
+    },
+    "郑州": {
+      "province": "河南省",
+      "fangSlug": "zz",
+      "sourceUrl": "https://fangjia.fang.com/zz/",
+      "districts": [
+        {
+          "name": "上街区",
+          "sourceName": "上街",
+          "price": 2709,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014872/",
+          "fangCode": "a014872"
+        },
+        {
+          "name": "中原区",
+          "sourceName": "中原",
+          "price": 8824,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014862/",
+          "fangCode": "a014862"
+        },
+        {
+          "name": "中牟县",
+          "sourceName": "中牟",
+          "price": 5286,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014866/",
+          "fangCode": "a014866"
+        },
+        {
+          "name": "二七区",
+          "sourceName": "二七",
+          "price": 8065,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014864/",
+          "fangCode": "a014864"
+        },
+        {
+          "name": "巩义市",
+          "sourceName": "巩义",
+          "price": 4804,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014824/",
+          "fangCode": "a014824"
+        },
+        {
+          "name": "惠济区",
+          "sourceName": "惠济",
+          "price": 10571,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014865/",
+          "fangCode": "a014865"
+        },
+        {
+          "name": "新密市",
+          "sourceName": "新密",
+          "price": 4966,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014868/",
+          "fangCode": "a014868"
+        },
+        {
+          "name": "新郑市",
+          "sourceName": "新郑",
+          "price": 4973,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014869/",
+          "fangCode": "a014869"
+        },
+        {
+          "name": "登封市",
+          "sourceName": "登封",
+          "price": 6329,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014823/",
+          "fangCode": "a014823"
+        },
+        {
+          "name": "荥阳市",
+          "sourceName": "荥阳",
+          "price": 3652,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014867/",
+          "fangCode": "a014867"
+        },
+        {
+          "name": "金水区",
+          "sourceName": "金水",
+          "price": 9969,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zz/a014861/",
+          "fangCode": "a014861"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "其他",
+        "管城",
+        "经开",
+        "航空港区",
+        "郑东新区",
+        "高新"
+      ]
+    },
+    "重庆": {
+      "province": "重庆市",
+      "fangSlug": "cq",
+      "sourceUrl": "https://fangjia.fang.com/cq/",
+      "districts": [
+        {
+          "name": "万州区",
+          "sourceName": "万州",
+          "price": 4212,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011837/",
+          "fangCode": "a011837"
+        },
+        {
+          "name": "丰都县",
+          "sourceName": "丰都",
+          "price": 4335,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016707/",
+          "fangCode": "a016707"
+        },
+        {
+          "name": "九龙坡区",
+          "sourceName": "九龙坡",
+          "price": 8323,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a061/",
+          "fangCode": "a061"
+        },
+        {
+          "name": "云阳县",
+          "sourceName": "云阳",
+          "price": 7058,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016713/",
+          "fangCode": "a016713"
+        },
+        {
+          "name": "北碚区",
+          "sourceName": "北碚",
+          "price": 7183,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a063/",
+          "fangCode": "a063"
+        },
+        {
+          "name": "南岸区",
+          "sourceName": "南岸",
+          "price": 9188,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a059/",
+          "fangCode": "a059"
+        },
+        {
+          "name": "南川区",
+          "sourceName": "南川",
+          "price": 5338,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011829/",
+          "fangCode": "a011829"
+        },
+        {
+          "name": "合川区",
+          "sourceName": "合川",
+          "price": 5881,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011841/",
+          "fangCode": "a011841"
+        },
+        {
+          "name": "垫江县",
+          "sourceName": "垫江",
+          "price": 4580,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011827/",
+          "fangCode": "a011827"
+        },
+        {
+          "name": "大渡口区",
+          "sourceName": "大渡口",
+          "price": 7124,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a062/",
+          "fangCode": "a062"
+        },
+        {
+          "name": "大足区",
+          "sourceName": "大足",
+          "price": 5221,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011826/",
+          "fangCode": "a011826"
+        },
+        {
+          "name": "奉节县",
+          "sourceName": "奉节",
+          "price": 7254,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016708/",
+          "fangCode": "a016708"
+        },
+        {
+          "name": "巫山县",
+          "sourceName": "巫山",
+          "price": 5295,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016712/",
+          "fangCode": "a016712"
+        },
+        {
+          "name": "巫溪县",
+          "sourceName": "巫溪",
+          "price": 4218,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016719/",
+          "fangCode": "a016719"
+        },
+        {
+          "name": "巴南区",
+          "sourceName": "巴南",
+          "price": 6759,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a064/",
+          "fangCode": "a064"
+        },
+        {
+          "name": "开州区",
+          "sourceName": "开州",
+          "price": 8630,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016748/",
+          "fangCode": "a016748"
+        },
+        {
+          "name": "忠县",
+          "sourceName": "忠县",
+          "price": 5475,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016714/",
+          "fangCode": "a016714"
+        },
+        {
+          "name": "梁平区",
+          "sourceName": "梁平",
+          "price": 4636,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016709/",
+          "fangCode": "a016709"
+        },
+        {
+          "name": "武隆区",
+          "sourceName": "武隆",
+          "price": 8277,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011838/",
+          "fangCode": "a011838"
+        },
+        {
+          "name": "永川区",
+          "sourceName": "永川",
+          "price": 6638,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011839/",
+          "fangCode": "a011839"
+        },
+        {
+          "name": "江津区",
+          "sourceName": "江津",
+          "price": 4315,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011833/",
+          "fangCode": "a011833"
+        },
+        {
+          "name": "沙坪坝区",
+          "sourceName": "沙坪坝",
+          "price": 8977,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a060/",
+          "fangCode": "a060"
+        },
+        {
+          "name": "涪陵区",
+          "sourceName": "涪陵",
+          "price": 5708,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011828/",
+          "fangCode": "a011828"
+        },
+        {
+          "name": "渝中区",
+          "sourceName": "渝中",
+          "price": 10663,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a056/",
+          "fangCode": "a056"
+        },
+        {
+          "name": "潼南区",
+          "sourceName": "潼南",
+          "price": 6348,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011835/",
+          "fangCode": "a011835"
+        },
+        {
+          "name": "璧山区",
+          "sourceName": "璧山",
+          "price": 4364,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011840/",
+          "fangCode": "a011840"
+        },
+        {
+          "name": "綦江区",
+          "sourceName": "綦江",
+          "price": 5330,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011831/",
+          "fangCode": "a011831"
+        },
+        {
+          "name": "荣昌区",
+          "sourceName": "荣昌",
+          "price": 6505,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011832/",
+          "fangCode": "a011832"
+        },
+        {
+          "name": "铜梁区",
+          "sourceName": "铜梁",
+          "price": 6204,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011834/",
+          "fangCode": "a011834"
+        },
+        {
+          "name": "长寿区",
+          "sourceName": "长寿",
+          "price": 3188,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a011825/",
+          "fangCode": "a011825"
+        },
+        {
+          "name": "黔江区",
+          "sourceName": "黔江",
+          "price": 7369,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cq/a016710/",
+          "fangCode": "a016710"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "两江新区",
+        "城口",
+        "彭水",
+        "石柱",
+        "秀山",
+        "酉阳"
+      ]
+    },
+    "银川": {
+      "province": "宁夏回族自治区",
+      "fangSlug": "yinchuan",
+      "sourceUrl": "https://fangjia.fang.com/yinchuan/",
+      "districts": [
+        {
+          "name": "兴庆区",
+          "sourceName": "兴庆区",
+          "price": 5396,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yinchuan/a011701/",
+          "fangCode": "a011701"
+        },
+        {
+          "name": "永宁县",
+          "sourceName": "永宁县",
+          "price": 2817,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yinchuan/a011704/",
+          "fangCode": "a011704"
+        },
+        {
+          "name": "灵武市",
+          "sourceName": "灵武市",
+          "price": 4591,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yinchuan/a011706/",
+          "fangCode": "a011706"
+        },
+        {
+          "name": "西夏区",
+          "sourceName": "西夏区",
+          "price": 4644,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yinchuan/a011703/",
+          "fangCode": "a011703"
+        },
+        {
+          "name": "贺兰县",
+          "sourceName": "贺兰县",
+          "price": 4508,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yinchuan/a011705/",
+          "fangCode": "a011705"
+        },
+        {
+          "name": "金凤区",
+          "sourceName": "金凤区",
+          "price": 6639,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/yinchuan/a011702/",
+          "fangCode": "a011702"
+        }
+      ],
+      "unmatchedSourceNames": []
+    },
+    "镇江": {
+      "province": "江苏省",
+      "fangSlug": "zhenjiang",
+      "sourceUrl": "https://fangjia.fang.com/zhenjiang/",
+      "districts": [
+        {
+          "name": "丹徒区",
+          "sourceName": "丹徒",
+          "price": 6455,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhenjiang/a016881/",
+          "fangCode": "a016881"
+        },
+        {
+          "name": "丹阳市",
+          "sourceName": "丹阳",
+          "price": 6336,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhenjiang/a016878/",
+          "fangCode": "a016878"
+        },
+        {
+          "name": "京口区",
+          "sourceName": "京口",
+          "price": 8653,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhenjiang/a016882/",
+          "fangCode": "a016882"
+        },
+        {
+          "name": "句容市",
+          "sourceName": "句容",
+          "price": 6013,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhenjiang/a016879/",
+          "fangCode": "a016879"
+        },
+        {
+          "name": "扬中市",
+          "sourceName": "扬中",
+          "price": 6325,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhenjiang/a016880/",
+          "fangCode": "a016880"
+        },
+        {
+          "name": "润州区",
+          "sourceName": "润州",
+          "price": 7665,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/zhenjiang/a016883/",
+          "fangCode": "a016883"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "镇江新区"
+      ]
+    },
+    "长春": {
+      "province": "吉林省",
+      "fangSlug": "cc",
+      "sourceUrl": "https://fangjia.fang.com/cc/",
+      "districts": [
+        {
+          "name": "九台区",
+          "sourceName": "九台",
+          "price": 3596,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a014815/",
+          "fangCode": "a014815"
+        },
+        {
+          "name": "二道区",
+          "sourceName": "二道",
+          "price": 6576,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a0370/",
+          "fangCode": "a0370"
+        },
+        {
+          "name": "公主岭市",
+          "sourceName": "公主岭",
+          "price": 3027,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a014837/",
+          "fangCode": "a014837"
+        },
+        {
+          "name": "农安县",
+          "sourceName": "农安",
+          "price": 3510,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a014857/",
+          "fangCode": "a014857"
+        },
+        {
+          "name": "南关区",
+          "sourceName": "南关",
+          "price": 7745,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a0371/",
+          "fangCode": "a0371"
+        },
+        {
+          "name": "双阳区",
+          "sourceName": "双阳",
+          "price": 5214,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a010068/",
+          "fangCode": "a010068"
+        },
+        {
+          "name": "宽城区",
+          "sourceName": "宽城",
+          "price": 6100,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a0369/",
+          "fangCode": "a0369"
+        },
+        {
+          "name": "德惠市",
+          "sourceName": "德惠",
+          "price": 4923,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a014856/",
+          "fangCode": "a014856"
+        },
+        {
+          "name": "朝阳区",
+          "sourceName": "朝阳",
+          "price": 9051,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a0368/",
+          "fangCode": "a0368"
+        },
+        {
+          "name": "绿园区",
+          "sourceName": "绿园",
+          "price": 6528,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cc/a0372/",
+          "fangCode": "a0372"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "净月",
+        "合隆",
+        "榆树",
+        "汽开",
+        "经开",
+        "经开北区",
+        "高新",
+        "高新北区"
+      ]
+    },
+    "长沙": {
+      "province": "湖南省",
+      "fangSlug": "cs",
+      "sourceUrl": "https://fangjia.fang.com/cs/",
+      "districts": [
+        {
+          "name": "天心区",
+          "sourceName": "天心",
+          "price": 8895,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a0499/",
+          "fangCode": "a0499"
+        },
+        {
+          "name": "宁乡市",
+          "sourceName": "宁乡",
+          "price": 4435,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a013283/",
+          "fangCode": "a013283"
+        },
+        {
+          "name": "岳麓区",
+          "sourceName": "岳麓",
+          "price": 10220,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a0498/",
+          "fangCode": "a0498"
+        },
+        {
+          "name": "开福区",
+          "sourceName": "开福",
+          "price": 8851,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a0501/",
+          "fangCode": "a0501"
+        },
+        {
+          "name": "望城区",
+          "sourceName": "望城",
+          "price": 7785,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a012964/",
+          "fangCode": "a012964"
+        },
+        {
+          "name": "浏阳市",
+          "sourceName": "浏阳",
+          "price": 5469,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a016493/",
+          "fangCode": "a016493"
+        },
+        {
+          "name": "芙蓉区",
+          "sourceName": "芙蓉",
+          "price": 7890,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a0502/",
+          "fangCode": "a0502"
+        },
+        {
+          "name": "长沙县",
+          "sourceName": "长沙县",
+          "price": 7582,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a016494/",
+          "fangCode": "a016494"
+        },
+        {
+          "name": "雨花区",
+          "sourceName": "雨花",
+          "price": 8228,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/cs/a0500/",
+          "fangCode": "a0500"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "星沙",
+        "长沙周边"
+      ]
+    },
+    "青岛": {
+      "province": "山东省",
+      "fangSlug": "qd",
+      "sourceUrl": "https://fangjia.fang.com/qd/",
+      "districts": [
+        {
+          "name": "即墨区",
+          "sourceName": "即墨",
+          "price": 8406,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a0396/",
+          "fangCode": "a0396"
+        },
+        {
+          "name": "城阳区",
+          "sourceName": "城阳",
+          "price": 11206,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a0394/",
+          "fangCode": "a0394"
+        },
+        {
+          "name": "崂山区",
+          "sourceName": "崂山",
+          "price": 37917,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a0393/",
+          "fangCode": "a0393"
+        },
+        {
+          "name": "市北区",
+          "sourceName": "市北",
+          "price": 16655,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a0390/",
+          "fangCode": "a0390"
+        },
+        {
+          "name": "市南区",
+          "sourceName": "市南",
+          "price": 28922,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a0389/",
+          "fangCode": "a0389"
+        },
+        {
+          "name": "平度市",
+          "sourceName": "平度",
+          "price": 7083,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a014782/",
+          "fangCode": "a014782"
+        },
+        {
+          "name": "李沧区",
+          "sourceName": "李沧",
+          "price": 15091,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a0392/",
+          "fangCode": "a0392"
+        },
+        {
+          "name": "胶州市",
+          "sourceName": "胶州",
+          "price": 6239,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a014780/",
+          "fangCode": "a014780"
+        },
+        {
+          "name": "莱西市",
+          "sourceName": "莱西",
+          "price": 5977,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a014781/",
+          "fangCode": "a014781"
+        },
+        {
+          "name": "黄岛区",
+          "sourceName": "黄岛",
+          "price": 10825,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/qd/a01142/",
+          "fangCode": "a01142"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "青岛周边"
+      ]
+    },
+    "马鞍山": {
+      "province": "安徽省",
+      "fangSlug": "mas",
+      "sourceUrl": "https://fangjia.fang.com/mas/",
+      "districts": [
+        {
+          "name": "博望区",
+          "sourceName": "博望",
+          "price": 4412,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/mas/a016838/",
+          "fangCode": "a016838"
+        },
+        {
+          "name": "含山县",
+          "sourceName": "含山",
+          "price": 5317,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/mas/a016837/",
+          "fangCode": "a016837"
+        },
+        {
+          "name": "和县",
+          "sourceName": "和县",
+          "price": 5208,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/mas/a012974/",
+          "fangCode": "a012974"
+        },
+        {
+          "name": "当涂县",
+          "sourceName": "当涂",
+          "price": 4426,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/mas/a016834/",
+          "fangCode": "a016834"
+        },
+        {
+          "name": "花山区",
+          "sourceName": "花山",
+          "price": 6350,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/mas/a016835/",
+          "fangCode": "a016835"
+        },
+        {
+          "name": "雨山区",
+          "sourceName": "雨山",
+          "price": 5983,
+          "unit": "元/平方米",
+          "sourceUrl": "https://fangjia.fang.com/mas/a016836/",
+          "fangCode": "a016836"
+        }
+      ],
+      "unmatchedSourceNames": [
+        "开发区"
+      ]
+    }
+  },
+  "warnings": [
+    "东莞: no county-level administrative children",
+    "东营: map data could not be matched to administrative districts",
+    "中山: no county-level administrative children",
+    "临沂: no Fang map data or supported slug",
+    "乌鲁木齐: no Fang map data or supported slug",
+    "包头: no Fang map data or supported slug",
+    "台州: no Fang map data or supported slug",
+    "宿迁: no Fang map data or supported slug",
+    "常熟: no Fang map data or supported slug",
+    "张家港: city feature not found in 江苏省",
+    "新乡: no Fang map data or supported slug",
+    "昆山: city feature not found in 江苏省",
+    "汕头: no Fang map data or supported slug",
+    "江阴: city feature not found in 江苏省",
+    "泰州: no Fang map data or supported slug",
+    "济宁: no Fang map data or supported slug",
+    "海口: no Fang map data or supported slug",
+    "温州: no Fang map data or supported slug",
+    "湛江: no Fang map data or supported slug",
+    "漳州: no Fang map data or supported slug",
+    "盐城: no Fang map data or supported slug",
+    "绍兴: no Fang map data or supported slug",
+    "绵阳: no Fang map data or supported slug",
+    "肇庆: no Fang map data or supported slug",
+    "西宁: no Fang map data or supported slug",
+    "赣州: no Fang map data or supported slug",
+    "连云港: no Fang map data or supported slug",
+    "邯郸: no Fang map data or supported slug",
+    "金华: no Fang map data or supported slug",
+    "阜阳: no Fang map data or supported slug"
+  ]
+}
