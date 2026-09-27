@@ -54,7 +54,7 @@ The script reads:
 This is a visualization prototype, not an official statistical release.
 
 - City values are China Index Academy sample average prices, not transaction records.
-- District boundaries come from DataV GeoAtlas. There is no single authoritative nationwide district-level housing-price open dataset, so a selected district displays its parent city's sample price in this prototype.
+- District boundaries come from DataV GeoAtlas. There is no single authoritative nationwide district-level housing-price open dataset, so district prices are shown as pending data. A parent city's sample price is displayed only as a clearly labeled reference.
 - Historical city values are collected from China Index Academy city detail pages. The current public source exposes 12-month histories for 99 of the 100 monitored cities; missing values are shown as `--`.
 - Province colors use the median of monitored cities and are not an official province-wide average.
 - The 100 monitored cities over-represent Jiangsu, Guangdong, Shandong, Zhejiang, and Hebei, so province comparisons are indicative only.

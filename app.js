@@ -195,10 +195,13 @@ function currentMapData() {
 
       return {
         name: properties.name,
-        value: city?.average ?? NaN,
+        value: scope === "district" || scope === "district-in-municipality" ? NaN : city?.average ?? NaN,
         count: city ? 1 : 0,
-        averageMom: city?.mom ?? null,
-        averageYoy: city?.yoy ?? null,
+        referencePrice: city?.average ?? null,
+        averageMom: scope === "district" || scope === "district-in-municipality" ? null : city?.mom ?? null,
+        averageYoy: scope === "district" || scope === "district-in-municipality" ? null : city?.yoy ?? null,
+        referenceMom: city?.mom ?? null,
+        referenceYoy: city?.yoy ?? null,
         city: city?.city ?? null,
         scope,
         itemStyle: properties.name === state.selectedName
@@ -216,6 +219,7 @@ function setMapOption(animation = true, preserveView = false) {
   const current = currentPathItem();
   const mapName = current?.mapName ?? "china";
   const level = current?.level ?? "country";
+  const mapData = currentMapData();
 
   if (preserveView) {
     const existingSeries = state.mapChart?.getOption()?.series?.find((series) => series.id === "admin-map");
@@ -231,8 +235,18 @@ function setMapOption(animation = true, preserveView = false) {
       borderColor: "rgba(125, 154, 210, 0.35)",
       textStyle: { color: "#eef3ff", fontSize: 12 },
       formatter: (params) => {
-        if (!Number.isFinite(params.value)) return `<strong>${params.name}</strong><br/>该行政区未在百城样本中`;
         const isDistrict = ["district", "district-in-municipality"].includes(params.data.scope);
+        if (isDistrict) {
+          return [
+            `<strong>${params.name}</strong>`,
+            "区县样本价：待接入",
+            `所属城市：${params.data.city ?? "--"}`,
+            `城市参考价：${Number.isFinite(params.data.referencePrice) ? `${priceFormatter.format(params.data.referencePrice)} 元/㎡` : "--"}`,
+            `城市环比：${formatChange(params.data.referenceMom)}`,
+            `城市同比：${formatChange(params.data.referenceYoy)}`,
+          ].join("<br/>");
+        }
+        if (!Number.isFinite(params.value)) return `<strong>${params.name}</strong><br/>该行政区未在百城样本中`;
         return [
           `<strong>${params.name}</strong>`,
           isDistrict ? `所属城市：${params.data.city ?? "--"}` : "城市样本",
@@ -242,11 +256,12 @@ function setMapOption(animation = true, preserveView = false) {
         ].join("<br/>");
       },
     },
-    visualMap: {
+      visualMap: {
       type: "piecewise",
       min: 5000,
       max: 65000,
-      splitNumber: 7,
+        splitNumber: 7,
+        show: mapData.some((item) => Number.isFinite(item.value)),
       left: 14,
       bottom: 52,
       calculable: true,
@@ -282,7 +297,7 @@ function setMapOption(animation = true, preserveView = false) {
         borderColor: "rgba(169, 190, 229, 0.42)",
         borderWidth: 0.7,
       },
-      data: currentMapData(),
+          data: mapData,
     }],
     animation,
     animationDuration: 850,
@@ -420,12 +435,13 @@ function renderSummary() {
       const city = properties.level === "district"
         ? findCityRecord(current.name, current.name)
         : findCityRecord(properties.name, current.name);
+      const isDistrictRow = properties.level === "district";
       return {
         name: properties.name,
-        price: city?.average,
-        mom: city?.mom,
-        yoy: city?.yoy,
-        note: city ? "城市样本" : "未监测",
+        price: isDistrictRow ? NaN : city?.average,
+        mom: isDistrictRow ? NaN : city?.mom,
+        yoy: isDistrictRow ? NaN : city?.yoy,
+        note: isDistrictRow ? "区县价格待接入" : city ? "城市样本" : "未监测",
         level: properties.level,
       };
     }).sort((a, b) => (b.price ?? -1) - (a.price ?? -1) || a.name.localeCompare(b.name, "zh-CN"));
@@ -454,10 +470,10 @@ function renderSummary() {
     listTitle = effectiveCurrent?.level === "city" ? "区县 / 县级行政区" : "当前层级行政区";
     rows = sourceFeatures.filter((feature) => feature.properties?.name).map((feature) => ({
       name: feature.properties.name,
-      price: cityRecord?.average,
-      mom: cityRecord?.mom,
-      yoy: cityRecord?.yoy,
-      note: cityRecord ? `继承${cityRecord.city}样本` : "未监测",
+      price: feature.properties.level === "district" ? NaN : cityRecord?.average,
+      mom: feature.properties.level === "district" ? NaN : cityRecord?.mom,
+      yoy: feature.properties.level === "district" ? NaN : cityRecord?.yoy,
+      note: feature.properties.level === "district" ? "区县价格待接入" : cityRecord ? "城市样本" : "未监测",
       level: feature.properties.level,
     })).sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
   } else {
@@ -474,18 +490,18 @@ function renderSummary() {
   document.querySelector("#city-list-title").textContent = listTitle;
   document.querySelector("#city-count").textContent = `${rows.length} 个行政区`;
 
-  const isDistrict = Boolean(selectedFeature);
+  const isDistrict = selectedFeature?.properties?.level === "district";
   document.querySelector("#summary-cards").innerHTML = [
     summaryCard(
-      isDistrict ? "所属城市样本价" : "样本价格",
-      formatPrice(summary.medianPrice),
-      isDistrict ? "全国无统一区县公开价，显示所属城市" : summary.city ? "城市样本均价" : "样本均价 / 中位数",
+      isDistrict ? "区县样本价" : "样本价格",
+      isDistrict ? "待接入" : formatPrice(summary.medianPrice),
+      isDistrict ? "不用城市均价冒充区县价格" : summary.city ? "城市样本均价" : "样本均价 / 中位数",
     ),
     summaryCard(
-      "监测样本",
-      `${summary.count} 个`,
+      isDistrict ? "所属城市参考价" : "监测样本",
+      isDistrict ? formatPrice(summary.city?.average) : `${summary.count} 个`,
       isDistrict
-        ? "百城价格指数城市"
+        ? `${summary.city?.city ?? "--"}样本均价`
         : current?.level === "province"
           ? "该省有历史数据的监测城市"
           : current?.level === "city"
@@ -493,15 +509,21 @@ function renderSummary() {
             : "全国监测城市",
     ),
     summaryCard(
-      "环比变化",
+      isDistrict ? "城市参考环比" : "环比变化",
       formatChange(summary.averageMom),
-      isDistrict ? "所属城市环比" : "当前口径环比",
+      isDistrict ? "所属城市样本，非区县环比" : "当前口径环比",
       changeClass(summary.averageMom),
     ),
     summaryCard(
-      "同比变化",
+      isDistrict ? "城市参考同比" : "同比变化",
       formatChange(summary.averageYoy),
-      isDistrict ? "所属城市同比" : "全国百城同比",
+      isDistrict
+        ? "所属城市样本，非区县同比"
+        : current?.level === "province"
+          ? "该省监测城市同比均值"
+          : current?.level === "city"
+            ? "该市样本同比"
+            : "全国百城同比",
       changeClass(summary.averageYoy),
     ),
   ].join("");
@@ -527,10 +549,15 @@ function renderTrend() {
   const provinceName = currentProvinceName();
   const selected = activeFeature();
   const focusCityName = currentCityName()
-    ?? (selected?.feature?.properties?.level === "city" ? selected.name : null)
-    ?? (selected?.feature?.properties?.level === "district" ? provinceName : null);
+    ?? (selected?.properties?.level === "city" ? selected.name : null)
+    ?? (selected?.properties?.level === "district" ? provinceName : null);
   const focusCity = focusCityName ? findCityRecord(focusCityName, provinceName) : null;
-  const focusName = current?.level === "province" ? provinceName : focusCity?.city ?? "当前地区";
+  const districtSelected = selected?.properties?.level === "district";
+  const focusName = current?.level === "province"
+    ? provinceName
+    : districtSelected
+      ? `${focusCity?.city ?? "所属城市"}参考`
+      : focusCity?.city ?? "当前地区";
   const provinceTrend = provinceName ? trend.map((item) => {
     const values = state.prices[state.market].cities
       .filter((city) => city.province === provinceName)
@@ -622,29 +649,31 @@ function activeFocusTrend() {
   if (current?.level === "province" && provinceName) {
     return {
       name: provinceName,
-      records: trend.map((item) => ({
-        date: item.date,
-        average: median(state.prices[state.market].cities
+      records: trend.map((item) => {
+        const provinceCities = state.prices[state.market].cities
           .filter((city) => city.province === provinceName)
-          .map((city) => city.history?.find((history) => history.date === item.date)?.average ?? (
-            item.date === state.prices[state.market].date ? city.average : NaN
-          ))),
-        mom: null,
-        yoy: null,
-      })),
+          .map((city) => city.history?.find((history) => history.date === item.date));
+        return {
+          date: item.date,
+          average: median(provinceCities.map((history) => history?.average)),
+          mom: average(provinceCities.map((history) => history?.mom)),
+          yoy: average(provinceCities.map((history) => history?.yoy)),
+        };
+      }),
     };
   }
 
   const focusCityName = currentCityName()
-    ?? (selected?.feature?.properties?.level === "city" ? selected.name : null)
-    ?? (selected?.feature?.properties?.level === "district" ? provinceName : null);
+    ?? (selected?.properties?.level === "city" ? selected.name : null)
+    ?? (selected?.properties?.level === "district" ? provinceName : null);
   const city = focusCityName
     ? state.prices[state.market].cities.find((item) => item.province === (provinceName ?? item.province) && normalizeAreaName(item.city) === normalizeAreaName(focusCityName))
     : null;
 
   if (city) {
+    const districtSelected = selected?.properties?.level === "district";
     return {
-      name: city.city,
+      name: districtSelected ? `${city.city}参考` : city.city,
       records: trend.map((item) => {
         const history = city.history?.find((history) => history.date === item.date);
         return history ?? {
@@ -683,11 +712,12 @@ function renderTimeFeedback() {
   document.querySelector("#time-focus-name").textContent = focus.name;
   document.querySelector("#time-tooltip-price").textContent = formatPrice(record.average);
   document.querySelector("#time-tooltip-change").textContent = `环比 ${formatChange(record.mom)}`;
+  const districtSelected = activeFeature()?.properties?.level === "district";
 
   document.querySelector("#time-metrics").innerHTML = [
-    { label: "当前均价", value: formatPrice(record.average), className: "" },
-    { label: "环比", value: formatChange(record.mom), className: changeClass(record.mom) },
-    { label: "同比", value: formatChange(record.yoy), className: changeClass(record.yoy) },
+    { label: districtSelected ? "城市参考均价" : "当前均价", value: formatPrice(record.average), className: "" },
+    { label: districtSelected ? "城市环比" : "环比", value: formatChange(record.mom), className: changeClass(record.mom) },
+    { label: districtSelected ? "城市同比" : "同比", value: formatChange(record.yoy), className: changeClass(record.yoy) },
   ].map((metric) => `<div class="time-metric">
     <span>${metric.label}</span>
     <strong class="${metric.className}">${metric.value}</strong>
@@ -835,7 +865,7 @@ function updateCaption() {
     const hasDistricts = current.geo.features.some((feature) => feature.properties?.level === "district");
     setCaption(current.name, hasDistricts ? "直辖市已到区县，点击区县选择" : "点击城市进入区县边界");
   } else if (current.level === "city") {
-    setCaption(current.name, "点击区县选择；右侧可查看所属城市样本价格");
+    setCaption(current.name, "点击区县选择；区县价格待接入，城市价仅作参考");
   } else {
     setCaption(current.name, "已选择行政区");
   }
