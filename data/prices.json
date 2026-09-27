@@ -1,0 +1,2218 @@
+{
+  "schemaVersion": 1,
+  "source": "China Index Academy public price index pages",
+  "sourceUrls": {
+    "newHouse": "https://www.cih-index.com/data/index/newHouse.html",
+    "esfHouse": "https://www.cih-index.com/data/index/esfHouse.html",
+    "map": "https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json"
+  },
+  "scrapedAt": "2026-09-27T13:33:35",
+  "newHouse": {
+    "date": "2026.08",
+    "summary": {
+      "date": "08",
+      "publishDate": "2026-09-01",
+      "average": 17255,
+      "averageUnit": "元/平方米",
+      "averageHuanBi": 0.1509,
+      "averageHuanBiUnit": null,
+      "averageTongBi": null,
+      "averageTongBiUnit": null,
+      "median": 9720,
+      "medianUnit": "元/平方米",
+      "medianHuanBi": -0.89,
+      "medianTongBi": null,
+      "upCity": "上海",
+      "upCityId": "52907f4c-7222-4b38-b50a-3d5346852b53",
+      "upCityPrice": 65058,
+      "upCityHuanBi": 0.5341,
+      "upCityTongBi": null,
+      "downCity": "南通",
+      "downCityId": "32eada80-6589-4a6d-b1b1-1bd83a98d397",
+      "downCityPrice": 13908,
+      "downCityHuanBi": -0.4943,
+      "downCityTongBi": null,
+      "upCityNum": 32,
+      "downCityNum": 68,
+      "flatCityNum": 7,
+      "simpleUpCityNum": 25
+    },
+    "cities": [
+      {
+        "city": "三亚",
+        "province": "海南省",
+        "average": 23466,
+        "unit": "元/平方米",
+        "mom": -0.027,
+        "yoy": -1.7131,
+        "median": 18000
+      },
+      {
+        "city": "上海",
+        "province": "上海市",
+        "average": 65058,
+        "unit": "元/平方米",
+        "mom": 0.5341,
+        "yoy": 8.0734,
+        "median": 60780
+      },
+      {
+        "city": "东莞",
+        "province": "广东省",
+        "average": 17815,
+        "unit": "元/平方米",
+        "mom": -0.0981,
+        "yoy": -3.1846,
+        "median": 18000
+      },
+      {
+        "city": "东营",
+        "province": "山东省",
+        "average": 5955,
+        "unit": "元/平方米",
+        "mom": -0.0168,
+        "yoy": -0.7665,
+        "median": 7500
+      },
+      {
+        "city": "中山",
+        "province": "广东省",
+        "average": 9659,
+        "unit": "元/平方米",
+        "mom": -0.3769,
+        "yoy": -4.3379,
+        "median": 10000
+      },
+      {
+        "city": "临沂",
+        "province": "山东省",
+        "average": 9215,
+        "unit": "元/平方米",
+        "mom": -0.1409,
+        "yoy": -3.5987,
+        "median": 7800
+      },
+      {
+        "city": "乌鲁木齐",
+        "province": "新疆维吾尔自治区",
+        "average": 8171,
+        "unit": "元/平方米",
+        "mom": 0.2822,
+        "yoy": -0.2442,
+        "median": 8800
+      },
+      {
+        "city": "佛山",
+        "province": "广东省",
+        "average": 13434,
+        "unit": "元/平方米",
+        "mom": 0.0539,
+        "yoy": -1.1988,
+        "median": 15000
+      },
+      {
+        "city": "保定",
+        "province": "河北省",
+        "average": 8531,
+        "unit": "元/平方米",
+        "mom": -0.0117,
+        "yoy": -3.0678,
+        "median": 9500
+      },
+      {
+        "city": "兰州",
+        "province": "甘肃省",
+        "average": 8789,
+        "unit": "元/平方米",
+        "mom": -0.1477,
+        "yoy": -2.2358,
+        "median": 8300
+      },
+      {
+        "city": "包头",
+        "province": "内蒙古自治区",
+        "average": 6274,
+        "unit": "元/平方米",
+        "mom": -0.0915,
+        "yoy": -1.5071,
+        "median": 6800
+      },
+      {
+        "city": "北京",
+        "province": "北京市",
+        "average": 47313,
+        "unit": "元/平方米",
+        "mom": 0.2528,
+        "yoy": 1.7834,
+        "median": 53000
+      },
+      {
+        "city": "北海",
+        "province": "广西壮族自治区",
+        "average": 7230,
+        "unit": "元/平方米",
+        "mom": -0.1243,
+        "yoy": -5.7858,
+        "median": 6280
+      },
+      {
+        "city": "南京",
+        "province": "江苏省",
+        "average": 26121,
+        "unit": "元/平方米",
+        "mom": 0.2418,
+        "yoy": 1.9953,
+        "median": 27800
+      },
+      {
+        "city": "南宁",
+        "province": "广西壮族自治区",
+        "average": 10665,
+        "unit": "元/平方米",
+        "mom": -0.2898,
+        "yoy": -2.3977,
+        "median": 9566
+      },
+      {
+        "city": "南昌",
+        "province": "江西省",
+        "average": 12115,
+        "unit": "元/平方米",
+        "mom": 0.3395,
+        "yoy": -1.7517,
+        "median": 10000
+      },
+      {
+        "city": "南通",
+        "province": "江苏省",
+        "average": 13908,
+        "unit": "元/平方米",
+        "mom": -0.4943,
+        "yoy": -4.4649,
+        "median": 16000
+      },
+      {
+        "city": "厦门",
+        "province": "福建省",
+        "average": 28242,
+        "unit": "元/平方米",
+        "mom": -0.0961,
+        "yoy": -2.1278,
+        "median": 26000
+      },
+      {
+        "city": "台州",
+        "province": "浙江省",
+        "average": 13713,
+        "unit": "元/平方米",
+        "mom": 0.2119,
+        "yoy": -2.6204,
+        "median": 16000
+      },
+      {
+        "city": "合肥",
+        "province": "安徽省",
+        "average": 15935,
+        "unit": "元/平方米",
+        "mom": -0.1066,
+        "yoy": 3.4539,
+        "median": 18000
+      },
+      {
+        "city": "呼和浩特",
+        "province": "内蒙古自治区",
+        "average": 8607,
+        "unit": "元/平方米",
+        "mom": -0.0232,
+        "yoy": -0.7152,
+        "median": 11350
+      },
+      {
+        "city": "哈尔滨",
+        "province": "黑龙江省",
+        "average": 8834,
+        "unit": "元/平方米",
+        "mom": -0.1582,
+        "yoy": -1.6587,
+        "median": 9000
+      },
+      {
+        "city": "唐山",
+        "province": "河北省",
+        "average": 8375,
+        "unit": "元/平方米",
+        "mom": -0.0119,
+        "yoy": -2.0811,
+        "median": 9000
+      },
+      {
+        "city": "嘉兴",
+        "province": "浙江省",
+        "average": 13485,
+        "unit": "元/平方米",
+        "mom": -0.1481,
+        "yoy": -1.4974,
+        "median": 17000
+      },
+      {
+        "city": "大连",
+        "province": "辽宁省",
+        "average": 13225,
+        "unit": "元/平方米",
+        "mom": 0.1818,
+        "yoy": -2.6643,
+        "median": 12500
+      },
+      {
+        "city": "天津",
+        "province": "天津市",
+        "average": 15641,
+        "unit": "元/平方米",
+        "mom": 0.348,
+        "yoy": 1.0335,
+        "median": 17000
+      },
+      {
+        "city": "太原",
+        "province": "山西省",
+        "average": 10108,
+        "unit": "元/平方米",
+        "mom": -0.1777,
+        "yoy": 0.099,
+        "median": 12000
+      },
+      {
+        "city": "威海",
+        "province": "山东省",
+        "average": 8632,
+        "unit": "元/平方米",
+        "mom": -0.4498,
+        "yoy": -2.3198,
+        "median": 8500
+      },
+      {
+        "city": "宁波",
+        "province": "浙江省",
+        "average": 21129,
+        "unit": "元/平方米",
+        "mom": 0.1185,
+        "yoy": 2.9327,
+        "median": 18000
+      },
+      {
+        "city": "宜昌",
+        "province": "湖北省",
+        "average": 7537,
+        "unit": "元/平方米",
+        "mom": -0.159,
+        "yoy": -1.862,
+        "median": 8500
+      },
+      {
+        "city": "宿迁",
+        "province": "江苏省",
+        "average": 5600,
+        "unit": "元/平方米",
+        "mom": -0.2788,
+        "yoy": -1.3042,
+        "median": 8900
+      },
+      {
+        "city": "常州",
+        "province": "江苏省",
+        "average": 12492,
+        "unit": "元/平方米",
+        "mom": -0.3654,
+        "yoy": -3.1252,
+        "median": 15778
+      },
+      {
+        "city": "常熟",
+        "province": "江苏省",
+        "average": 14999,
+        "unit": "元/平方米",
+        "mom": -0.0333,
+        "yoy": -0.7937,
+        "median": 16000
+      },
+      {
+        "city": "广州",
+        "province": "广东省",
+        "average": 25463,
+        "unit": "元/平方米",
+        "mom": 0.1344,
+        "yoy": 2.0234,
+        "median": 26000
+      },
+      {
+        "city": "廊坊",
+        "province": "河北省",
+        "average": 11199,
+        "unit": "元/平方米",
+        "mom": -0.3204,
+        "yoy": -1.504,
+        "median": 8800
+      },
+      {
+        "city": "张家口",
+        "province": "河北省",
+        "average": 8146,
+        "unit": "元/平方米",
+        "mom": -0.1226,
+        "yoy": -1.5351,
+        "median": 7000
+      },
+      {
+        "city": "张家港",
+        "province": "江苏省",
+        "average": 11025,
+        "unit": "元/平方米",
+        "mom": 0,
+        "yoy": -0.1811,
+        "median": 11500
+      },
+      {
+        "city": "徐州",
+        "province": "江苏省",
+        "average": 9685,
+        "unit": "元/平方米",
+        "mom": -0.0619,
+        "yoy": -1.5352,
+        "median": 10900
+      },
+      {
+        "city": "德州",
+        "province": "山东省",
+        "average": 6512,
+        "unit": "元/平方米",
+        "mom": -0.1227,
+        "yoy": -1.7057,
+        "median": 7288
+      },
+      {
+        "city": "惠州",
+        "province": "广东省",
+        "average": 10657,
+        "unit": "元/平方米",
+        "mom": -0.0408,
+        "yoy": -2.4263,
+        "median": 8000
+      },
+      {
+        "city": "成都",
+        "province": "四川省",
+        "average": 15516,
+        "unit": "元/平方米",
+        "mom": 0.3919,
+        "yoy": 8.0276,
+        "median": 18346
+      },
+      {
+        "city": "扬州",
+        "province": "江苏省",
+        "average": 12764,
+        "unit": "元/平方米",
+        "mom": -0.2813,
+        "yoy": -2.6912,
+        "median": 12600
+      },
+      {
+        "city": "新乡",
+        "province": "河南省",
+        "average": 5730,
+        "unit": "元/平方米",
+        "mom": 0,
+        "yoy": -1.5633,
+        "median": 7000
+      },
+      {
+        "city": "无锡",
+        "province": "江苏省",
+        "average": 14462,
+        "unit": "元/平方米",
+        "mom": 0.1112,
+        "yoy": -0.4817,
+        "median": 23250
+      },
+      {
+        "city": "昆山",
+        "province": "江苏省",
+        "average": 15438,
+        "unit": "元/平方米",
+        "mom": 0,
+        "yoy": -1.4491,
+        "median": 16500
+      },
+      {
+        "city": "昆明",
+        "province": "云南省",
+        "average": 11109,
+        "unit": "元/平方米",
+        "mom": 0.1803,
+        "yoy": 0.3614,
+        "median": 11950
+      },
+      {
+        "city": "杭州",
+        "province": "浙江省",
+        "average": 34180,
+        "unit": "元/平方米",
+        "mom": 0.4733,
+        "yoy": 6.973,
+        "median": 31229
+      },
+      {
+        "city": "柳州",
+        "province": "广西壮族自治区",
+        "average": 8690,
+        "unit": "元/平方米",
+        "mom": -0.1379,
+        "yoy": -3.2832,
+        "median": 8700
+      },
+      {
+        "city": "株洲",
+        "province": "湖南省",
+        "average": 5914,
+        "unit": "元/平方米",
+        "mom": -0.0338,
+        "yoy": -1.499,
+        "median": 5600
+      },
+      {
+        "city": "桂林",
+        "province": "广西壮族自治区",
+        "average": 6266,
+        "unit": "元/平方米",
+        "mom": -0.1593,
+        "yoy": -2.0937,
+        "median": 5400
+      },
+      {
+        "city": "武汉",
+        "province": "湖北省",
+        "average": 13454,
+        "unit": "元/平方米",
+        "mom": -0.1079,
+        "yoy": 1.77,
+        "median": 13500
+      },
+      {
+        "city": "汕头",
+        "province": "广东省",
+        "average": 10145,
+        "unit": "元/平方米",
+        "mom": -0.0591,
+        "yoy": -3.583,
+        "median": 9000
+      },
+      {
+        "city": "江门",
+        "province": "广东省",
+        "average": 7957,
+        "unit": "元/平方米",
+        "mom": -0.2882,
+        "yoy": -2.9989,
+        "median": 8300
+      },
+      {
+        "city": "江阴",
+        "province": "江苏省",
+        "average": 10202,
+        "unit": "元/平方米",
+        "mom": 0,
+        "yoy": -1.2869,
+        "median": 10500
+      },
+      {
+        "city": "沈阳",
+        "province": "辽宁省",
+        "average": 9754,
+        "unit": "元/平方米",
+        "mom": 0.4945,
+        "yoy": -0.2862,
+        "median": 11000
+      },
+      {
+        "city": "泉州",
+        "province": "福建省",
+        "average": 9018,
+        "unit": "元/平方米",
+        "mom": -0.0554,
+        "yoy": -1.8823,
+        "median": 10150
+      },
+      {
+        "city": "泰州",
+        "province": "江苏省",
+        "average": 8105,
+        "unit": "元/平方米",
+        "mom": 0,
+        "yoy": -1.5069,
+        "median": 10000
+      },
+      {
+        "city": "洛阳",
+        "province": "河南省",
+        "average": 7610,
+        "unit": "元/平方米",
+        "mom": -0.1705,
+        "yoy": -4.97,
+        "median": 6700
+      },
+      {
+        "city": "济南",
+        "province": "山东省",
+        "average": 12035,
+        "unit": "元/平方米",
+        "mom": -0.0214,
+        "yoy": -0.356,
+        "median": 15000
+      },
+      {
+        "city": "济宁",
+        "province": "山东省",
+        "average": 7760,
+        "unit": "元/平方米",
+        "mom": -0.0129,
+        "yoy": -1.9335,
+        "median": 8000
+      },
+      {
+        "city": "海口",
+        "province": "海南省",
+        "average": 15134,
+        "unit": "元/平方米",
+        "mom": 0.0595,
+        "yoy": -1.2463,
+        "median": 16650
+      },
+      {
+        "city": "淄博",
+        "province": "山东省",
+        "average": 7742,
+        "unit": "元/平方米",
+        "mom": -0.0516,
+        "yoy": -1.2248,
+        "median": 8000
+      },
+      {
+        "city": "淮安",
+        "province": "江苏省",
+        "average": 6113,
+        "unit": "元/平方米",
+        "mom": -0.1292,
+        "yoy": -3.0298,
+        "median": 8000
+      },
+      {
+        "city": "深圳",
+        "province": "广东省",
+        "average": 53674,
+        "unit": "元/平方米",
+        "mom": 0.0047,
+        "yoy": 2.2206,
+        "median": 47000
+      },
+      {
+        "city": "温州",
+        "province": "浙江省",
+        "average": 18268,
+        "unit": "元/平方米",
+        "mom": -0.0656,
+        "yoy": -1.366,
+        "median": 15385
+      },
+      {
+        "city": "湖州",
+        "province": "浙江省",
+        "average": 10936,
+        "unit": "元/平方米",
+        "mom": -0.1461,
+        "yoy": -2.2349,
+        "median": 12500
+      },
+      {
+        "city": "湘潭",
+        "province": "湖南省",
+        "average": 5189,
+        "unit": "元/平方米",
+        "mom": -0.0193,
+        "yoy": -0.4222,
+        "median": 5450
+      },
+      {
+        "city": "湛江",
+        "province": "广东省",
+        "average": 9757,
+        "unit": "元/平方米",
+        "mom": 0,
+        "yoy": -0.5504,
+        "median": 9300
+      },
+      {
+        "city": "漳州",
+        "province": "福建省",
+        "average": 10657,
+        "unit": "元/平方米",
+        "mom": -0.0656,
+        "yoy": -1.6519,
+        "median": 10000
+      },
+      {
+        "city": "潍坊",
+        "province": "山东省",
+        "average": 6631,
+        "unit": "元/平方米",
+        "mom": -0.1656,
+        "yoy": -1.6464,
+        "median": 7700
+      },
+      {
+        "city": "烟台",
+        "province": "山东省",
+        "average": 8973,
+        "unit": "元/平方米",
+        "mom": -0.0334,
+        "yoy": -1.4389,
+        "median": 8250
+      },
+      {
+        "city": "珠海",
+        "province": "广东省",
+        "average": 20055,
+        "unit": "元/平方米",
+        "mom": -0.052,
+        "yoy": -3.9005,
+        "median": 21000
+      },
+      {
+        "city": "盐城",
+        "province": "江苏省",
+        "average": 8220,
+        "unit": "元/平方米",
+        "mom": -0.1475,
+        "yoy": -2.4795,
+        "median": 8650
+      },
+      {
+        "city": "石家庄",
+        "province": "河北省",
+        "average": 12193,
+        "unit": "元/平方米",
+        "mom": -0.0738,
+        "yoy": 0.3291,
+        "median": 13000
+      },
+      {
+        "city": "福州",
+        "province": "福建省",
+        "average": 16886,
+        "unit": "元/平方米",
+        "mom": -0.2281,
+        "yoy": -0.6998,
+        "median": 16000
+      },
+      {
+        "city": "秦皇岛",
+        "province": "河北省",
+        "average": 9204,
+        "unit": "元/平方米",
+        "mom": -0.0543,
+        "yoy": -2.7061,
+        "median": 9300
+      },
+      {
+        "city": "绍兴",
+        "province": "浙江省",
+        "average": 15597,
+        "unit": "元/平方米",
+        "mom": -0.4341,
+        "yoy": -2.9253,
+        "median": 16753
+      },
+      {
+        "city": "绵阳",
+        "province": "四川省",
+        "average": 6803,
+        "unit": "元/平方米",
+        "mom": -0.1614,
+        "yoy": -2.5637,
+        "median": 8232
+      },
+      {
+        "city": "聊城",
+        "province": "山东省",
+        "average": 6726,
+        "unit": "元/平方米",
+        "mom": 0.0277,
+        "yoy": -0.2669,
+        "median": 7400
+      },
+      {
+        "city": "肇庆",
+        "province": "广东省",
+        "average": 6838,
+        "unit": "元/平方米",
+        "mom": 0,
+        "yoy": -1.4839,
+        "median": 6800
+      },
+      {
+        "city": "芜湖",
+        "province": "安徽省",
+        "average": 8156,
+        "unit": "元/平方米",
+        "mom": -0.188,
+        "yoy": -3.0778,
+        "median": 9350
+      },
+      {
+        "city": "苏州",
+        "province": "江苏省",
+        "average": 19474,
+        "unit": "元/平方米",
+        "mom": -0.1323,
+        "yoy": 2.7923,
+        "median": 25000
+      },
+      {
+        "city": "菏泽",
+        "province": "山东省",
+        "average": 5418,
+        "unit": "元/平方米",
+        "mom": 0.1109,
+        "yoy": 0.5008,
+        "median": 5300
+      },
+      {
+        "city": "衡水",
+        "province": "河北省",
+        "average": 6403,
+        "unit": "元/平方米",
+        "mom": 0.1251,
+        "yoy": -0.4973,
+        "median": 6700
+      },
+      {
+        "city": "西宁",
+        "province": "青海省",
+        "average": 7294,
+        "unit": "元/平方米",
+        "mom": -0.0822,
+        "yoy": -1.6849,
+        "median": 9700
+      },
+      {
+        "city": "西安",
+        "province": "陕西省",
+        "average": 13477,
+        "unit": "元/平方米",
+        "mom": 0.1263,
+        "yoy": 2.7524,
+        "median": 15150
+      },
+      {
+        "city": "贵阳",
+        "province": "贵州省",
+        "average": 6884,
+        "unit": "元/平方米",
+        "mom": -0.1479,
+        "yoy": -0.4771,
+        "median": 8267
+      },
+      {
+        "city": "赣州",
+        "province": "江西省",
+        "average": 8105,
+        "unit": "元/平方米",
+        "mom": -0.3443,
+        "yoy": -1.303,
+        "median": 8000
+      },
+      {
+        "city": "连云港",
+        "province": "江苏省",
+        "average": 7587,
+        "unit": "元/平方米",
+        "mom": -0.1579,
+        "yoy": -2.0653,
+        "median": 8500
+      },
+      {
+        "city": "邯郸",
+        "province": "河北省",
+        "average": 6929,
+        "unit": "元/平方米",
+        "mom": -0.0289,
+        "yoy": -0.5169,
+        "median": 8800
+      },
+      {
+        "city": "郑州",
+        "province": "河南省",
+        "average": 12353,
+        "unit": "元/平方米",
+        "mom": -0.0641,
+        "yoy": -0.3228,
+        "median": 12900
+      },
+      {
+        "city": "重庆",
+        "province": "重庆市",
+        "average": 11360,
+        "unit": "元/平方米",
+        "mom": -0.1046,
+        "yoy": -1.4231,
+        "median": 12000
+      },
+      {
+        "city": "金华",
+        "province": "浙江省",
+        "average": 13141,
+        "unit": "元/平方米",
+        "mom": -0.1055,
+        "yoy": -0.3715,
+        "median": 16000
+      },
+      {
+        "city": "银川",
+        "province": "宁夏回族自治区",
+        "average": 6679,
+        "unit": "元/平方米",
+        "mom": -0.1346,
+        "yoy": -1.5042,
+        "median": 8000
+      },
+      {
+        "city": "镇江",
+        "province": "江苏省",
+        "average": 9274,
+        "unit": "元/平方米",
+        "mom": -0.0815,
+        "yoy": -0.7279,
+        "median": 9500
+      },
+      {
+        "city": "长春",
+        "province": "吉林省",
+        "average": 8592,
+        "unit": "元/平方米",
+        "mom": 0.1983,
+        "yoy": -0.3017,
+        "median": 9000
+      },
+      {
+        "city": "长沙",
+        "province": "湖南省",
+        "average": 9653,
+        "unit": "元/平方米",
+        "mom": -0.2761,
+        "yoy": -0.1758,
+        "median": 11000
+      },
+      {
+        "city": "阜阳",
+        "province": "安徽省",
+        "average": 7374,
+        "unit": "元/平方米",
+        "mom": 0.2447,
+        "yoy": -0.9537,
+        "median": 7200
+      },
+      {
+        "city": "青岛",
+        "province": "山东省",
+        "average": 14203,
+        "unit": "元/平方米",
+        "mom": 0.332,
+        "yoy": 1.8867,
+        "median": 13000
+      },
+      {
+        "city": "马鞍山",
+        "province": "安徽省",
+        "average": 7233,
+        "unit": "元/平方米",
+        "mom": -0.0691,
+        "yoy": -2.7692,
+        "median": 7837
+      }
+    ],
+    "trend": [
+      {
+        "city": "全国(百城)",
+        "average": 16926,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.0946,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.6814,
+        "averageTongBiUnit": "%",
+        "date": "2025-09",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9807,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 16973,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.2777,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.6676,
+        "averageTongBiUnit": "%",
+        "date": "2025-10",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9801,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17036,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.3712,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.676,
+        "averageTongBiUnit": "%",
+        "date": "2025-11",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9790,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17084,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.2818,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.582,
+        "averageTongBiUnit": "%",
+        "date": "2025-12",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9780,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17114,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.1756,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.522,
+        "averageTongBiUnit": "%",
+        "date": "2026-01",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9769,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17107,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.0409,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.3697,
+        "averageTongBiUnit": "%",
+        "date": "2026-02",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9753,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17115,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.0468,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.2401,
+        "averageTongBiUnit": "%",
+        "date": "2026-03",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9739,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17129,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.0818,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.1773,
+        "averageTongBiUnit": "%",
+        "date": "2026-04",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9708,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17156,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.1576,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.028,
+        "averageTongBiUnit": "%",
+        "date": "2026-05",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9698,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17184,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.1632,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.0004,
+        "averageTongBiUnit": "%",
+        "date": "2026-06",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9702,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17229,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.2619,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.0857,
+        "averageTongBiUnit": "%",
+        "date": "2026-07",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9701,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 17255,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": 0.1509,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": 2.0402,
+        "averageTongBiUnit": "%",
+        "date": "2026-08",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9720,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      }
+    ],
+    "sourceUrl": "https://www.cih-index.com/data/index/newHouse.html"
+  },
+  "esfHouse": {
+    "date": "2026.08",
+    "summary": {
+      "date": "08",
+      "publishDate": "2026-09-01",
+      "average": 12527,
+      "averageUnit": "元/平方米",
+      "averageHuanBi": -0.453,
+      "averageHuanBiUnit": null,
+      "averageTongBi": null,
+      "averageTongBiUnit": null,
+      "median": 9416,
+      "medianUnit": "元/平方米",
+      "medianHuanBi": -6.53,
+      "medianTongBi": null,
+      "upCity": "江阴",
+      "upCityId": "c32bc7f8-1514-4604-8f69-85eeebbf5f7c",
+      "upCityPrice": 8476,
+      "upCityHuanBi": 0.4839,
+      "upCityTongBi": null,
+      "downCity": "扬州",
+      "downCityId": "ffcf9c2a-357f-4295-8d02-9e4ae5d0a119",
+      "downCityPrice": 10671,
+      "downCityHuanBi": -1.4732,
+      "downCityTongBi": null,
+      "upCityNum": 7,
+      "downCityNum": 93,
+      "flatCityNum": 0,
+      "simpleUpCityNum": 7
+    },
+    "cities": [
+      {
+        "city": "三亚",
+        "province": "海南省",
+        "average": 26213,
+        "unit": "元/平方米",
+        "mom": -0.4063,
+        "yoy": -7.0303,
+        "median": 24526
+      },
+      {
+        "city": "上海",
+        "province": "上海市",
+        "average": 55262,
+        "unit": "元/平方米",
+        "mom": -0.0274,
+        "yoy": -5.0282,
+        "median": 50126
+      },
+      {
+        "city": "东莞",
+        "province": "广东省",
+        "average": 15304,
+        "unit": "元/平方米",
+        "mom": -0.2985,
+        "yoy": -7.4437,
+        "median": 13974
+      },
+      {
+        "city": "东营",
+        "province": "山东省",
+        "average": 7322,
+        "unit": "元/平方米",
+        "mom": 0.4623,
+        "yoy": -1.1375,
+        "median": 6614
+      },
+      {
+        "city": "中山",
+        "province": "广东省",
+        "average": 8251,
+        "unit": "元/平方米",
+        "mom": -0.7465,
+        "yoy": -6.6213,
+        "median": 7609
+      },
+      {
+        "city": "临沂",
+        "province": "山东省",
+        "average": 7924,
+        "unit": "元/平方米",
+        "mom": -0.1131,
+        "yoy": -7.3539,
+        "median": 7094
+      },
+      {
+        "city": "乌鲁木齐",
+        "province": "新疆维吾尔自治区",
+        "average": 8518,
+        "unit": "元/平方米",
+        "mom": -0.3354,
+        "yoy": -2.8003,
+        "median": 7510
+      },
+      {
+        "city": "佛山",
+        "province": "广东省",
+        "average": 11963,
+        "unit": "元/平方米",
+        "mom": -0.4042,
+        "yoy": -6.0142,
+        "median": 10973
+      },
+      {
+        "city": "保定",
+        "province": "河北省",
+        "average": 8034,
+        "unit": "元/平方米",
+        "mom": -0.3278,
+        "yoy": -7.9033,
+        "median": 7355
+      },
+      {
+        "city": "兰州",
+        "province": "甘肃省",
+        "average": 9465,
+        "unit": "元/平方米",
+        "mom": -0.5613,
+        "yoy": -7.8425,
+        "median": 8903
+      },
+      {
+        "city": "包头",
+        "province": "内蒙古自治区",
+        "average": 6314,
+        "unit": "元/平方米",
+        "mom": -1.1919,
+        "yoy": -9.9823,
+        "median": 6047
+      },
+      {
+        "city": "北京",
+        "province": "北京市",
+        "average": 61038,
+        "unit": "元/平方米",
+        "mom": -0.5938,
+        "yoy": -8.7807,
+        "median": 54629
+      },
+      {
+        "city": "北海",
+        "province": "广西壮族自治区",
+        "average": 5173,
+        "unit": "元/平方米",
+        "mom": -0.416,
+        "yoy": -4.6204,
+        "median": 4867
+      },
+      {
+        "city": "南京",
+        "province": "江苏省",
+        "average": 24894,
+        "unit": "元/平方米",
+        "mom": -0.8823,
+        "yoy": -11.2016,
+        "median": 22887
+      },
+      {
+        "city": "南宁",
+        "province": "广西壮族自治区",
+        "average": 9649,
+        "unit": "元/平方米",
+        "mom": -0.2962,
+        "yoy": -5.5469,
+        "median": 8730
+      },
+      {
+        "city": "南昌",
+        "province": "江西省",
+        "average": 9608,
+        "unit": "元/平方米",
+        "mom": -0.5671,
+        "yoy": -8.2312,
+        "median": 9045
+      },
+      {
+        "city": "南通",
+        "province": "江苏省",
+        "average": 10683,
+        "unit": "元/平方米",
+        "mom": -0.4269,
+        "yoy": -8.6593,
+        "median": 9815
+      },
+      {
+        "city": "厦门",
+        "province": "福建省",
+        "average": 38620,
+        "unit": "元/平方米",
+        "mom": -0.5443,
+        "yoy": -10.6264,
+        "median": 37796
+      },
+      {
+        "city": "台州",
+        "province": "浙江省",
+        "average": 13488,
+        "unit": "元/平方米",
+        "mom": -0.8852,
+        "yoy": -9.187,
+        "median": 12614
+      },
+      {
+        "city": "合肥",
+        "province": "安徽省",
+        "average": 15120,
+        "unit": "元/平方米",
+        "mom": -0.442,
+        "yoy": -7.0919,
+        "median": 13342
+      },
+      {
+        "city": "呼和浩特",
+        "province": "内蒙古自治区",
+        "average": 7988,
+        "unit": "元/平方米",
+        "mom": -0.5541,
+        "yoy": -8.4414,
+        "median": 7481
+      },
+      {
+        "city": "哈尔滨",
+        "province": "黑龙江省",
+        "average": 8012,
+        "unit": "元/平方米",
+        "mom": -0.4641,
+        "yoy": -4.8046,
+        "median": 7023
+      },
+      {
+        "city": "唐山",
+        "province": "河北省",
+        "average": 8376,
+        "unit": "元/平方米",
+        "mom": -0.5649,
+        "yoy": -6.7837,
+        "median": 8059
+      },
+      {
+        "city": "嘉兴",
+        "province": "浙江省",
+        "average": 10568,
+        "unit": "元/平方米",
+        "mom": -0.4798,
+        "yoy": -3.8278,
+        "median": 9981
+      },
+      {
+        "city": "大连",
+        "province": "辽宁省",
+        "average": 12465,
+        "unit": "元/平方米",
+        "mom": -0.0979,
+        "yoy": -5.6413,
+        "median": 10797
+      },
+      {
+        "city": "天津",
+        "province": "天津市",
+        "average": 20040,
+        "unit": "元/平方米",
+        "mom": -0.6419,
+        "yoy": -8.5933,
+        "median": 15659
+      },
+      {
+        "city": "太原",
+        "province": "山西省",
+        "average": 9806,
+        "unit": "元/平方米",
+        "mom": -0.1814,
+        "yoy": -2.7143,
+        "median": 9033
+      },
+      {
+        "city": "威海",
+        "province": "山东省",
+        "average": 7640,
+        "unit": "元/平方米",
+        "mom": -0.6347,
+        "yoy": -6.9517,
+        "median": 7384
+      },
+      {
+        "city": "宁波",
+        "province": "浙江省",
+        "average": 19602,
+        "unit": "元/平方米",
+        "mom": -0.6535,
+        "yoy": -7.3232,
+        "median": 18802
+      },
+      {
+        "city": "宜昌",
+        "province": "湖北省",
+        "average": 6962,
+        "unit": "元/平方米",
+        "mom": -0.2151,
+        "yoy": -4.0554,
+        "median": 6516
+      },
+      {
+        "city": "宿迁",
+        "province": "江苏省",
+        "average": 8470,
+        "unit": "元/平方米",
+        "mom": -0.5839,
+        "yoy": -5.909,
+        "median": 8655
+      },
+      {
+        "city": "常州",
+        "province": "江苏省",
+        "average": 11273,
+        "unit": "元/平方米",
+        "mom": -1.3474,
+        "yoy": -8.6612,
+        "median": 10014
+      },
+      {
+        "city": "常熟",
+        "province": "江苏省",
+        "average": 11167,
+        "unit": "元/平方米",
+        "mom": 0.3224,
+        "yoy": -5.6293,
+        "median": 10272
+      },
+      {
+        "city": "广州",
+        "province": "广东省",
+        "average": 32537,
+        "unit": "元/平方米",
+        "mom": -0.6239,
+        "yoy": -7.6449,
+        "median": 28824
+      },
+      {
+        "city": "廊坊",
+        "province": "河北省",
+        "average": 9451,
+        "unit": "元/平方米",
+        "mom": -0.436,
+        "yoy": -7.6277,
+        "median": 8105
+      },
+      {
+        "city": "张家口",
+        "province": "河北省",
+        "average": 6281,
+        "unit": "元/平方米",
+        "mom": -0.5722,
+        "yoy": -6.5386,
+        "median": 6231
+      },
+      {
+        "city": "张家港",
+        "province": "江苏省",
+        "average": 9656,
+        "unit": "元/平方米",
+        "mom": -0.4428,
+        "yoy": -6.8218,
+        "median": 9188
+      },
+      {
+        "city": "徐州",
+        "province": "江苏省",
+        "average": 9037,
+        "unit": "元/平方米",
+        "mom": -0.1614,
+        "yoy": -7.527,
+        "median": 8159
+      },
+      {
+        "city": "德州",
+        "province": "山东省",
+        "average": 7412,
+        "unit": "元/平方米",
+        "mom": -0.2379,
+        "yoy": -4.6443,
+        "median": 7098
+      },
+      {
+        "city": "惠州",
+        "province": "广东省",
+        "average": 8141,
+        "unit": "元/平方米",
+        "mom": -0.4446,
+        "yoy": -5.9863,
+        "median": 7497
+      },
+      {
+        "city": "成都",
+        "province": "四川省",
+        "average": 16199,
+        "unit": "元/平方米",
+        "mom": -0.5409,
+        "yoy": -6.3206,
+        "median": 14791
+      },
+      {
+        "city": "扬州",
+        "province": "江苏省",
+        "average": 10671,
+        "unit": "元/平方米",
+        "mom": -1.4732,
+        "yoy": -10.9823,
+        "median": 9634
+      },
+      {
+        "city": "新乡",
+        "province": "河南省",
+        "average": 6130,
+        "unit": "元/平方米",
+        "mom": -0.8021,
+        "yoy": -6.545,
+        "median": 6070
+      },
+      {
+        "city": "无锡",
+        "province": "江苏省",
+        "average": 13746,
+        "unit": "元/平方米",
+        "mom": -0.3764,
+        "yoy": -8.3412,
+        "median": 12642
+      },
+      {
+        "city": "昆山",
+        "province": "江苏省",
+        "average": 13326,
+        "unit": "元/平方米",
+        "mom": 0.2515,
+        "yoy": -8.5783,
+        "median": 11768
+      },
+      {
+        "city": "昆明",
+        "province": "云南省",
+        "average": 10513,
+        "unit": "元/平方米",
+        "mom": -0.3631,
+        "yoy": -6.7197,
+        "median": 9311
+      },
+      {
+        "city": "杭州",
+        "province": "浙江省",
+        "average": 31612,
+        "unit": "元/平方米",
+        "mom": -0.5757,
+        "yoy": -6.5151,
+        "median": 28283
+      },
+      {
+        "city": "柳州",
+        "province": "广西壮族自治区",
+        "average": 6793,
+        "unit": "元/平方米",
+        "mom": -0.5647,
+        "yoy": -4.934,
+        "median": 6345
+      },
+      {
+        "city": "株洲",
+        "province": "湖南省",
+        "average": 4321,
+        "unit": "元/平方米",
+        "mom": -0.2011,
+        "yoy": -7.3281,
+        "median": 4318
+      },
+      {
+        "city": "桂林",
+        "province": "广西壮族自治区",
+        "average": 6492,
+        "unit": "元/平方米",
+        "mom": -0.1964,
+        "yoy": -4.6943,
+        "median": 5746
+      },
+      {
+        "city": "武汉",
+        "province": "湖北省",
+        "average": 12805,
+        "unit": "元/平方米",
+        "mom": -0.6843,
+        "yoy": -9.9335,
+        "median": 11407
+      },
+      {
+        "city": "汕头",
+        "province": "广东省",
+        "average": 10589,
+        "unit": "元/平方米",
+        "mom": -0.315,
+        "yoy": -3.7129,
+        "median": 10018
+      },
+      {
+        "city": "江门",
+        "province": "广东省",
+        "average": 6672,
+        "unit": "元/平方米",
+        "mom": -0.1855,
+        "yoy": -4.5414,
+        "median": 6796
+      },
+      {
+        "city": "江阴",
+        "province": "江苏省",
+        "average": 8476,
+        "unit": "元/平方米",
+        "mom": 0.4839,
+        "yoy": -5.4144,
+        "median": 8118
+      },
+      {
+        "city": "沈阳",
+        "province": "辽宁省",
+        "average": 9307,
+        "unit": "元/平方米",
+        "mom": -0.4433,
+        "yoy": -4.8896,
+        "median": 8502
+      },
+      {
+        "city": "泉州",
+        "province": "福建省",
+        "average": 14729,
+        "unit": "元/平方米",
+        "mom": -0.6171,
+        "yoy": -6.9773,
+        "median": 13797
+      },
+      {
+        "city": "泰州",
+        "province": "江苏省",
+        "average": 9126,
+        "unit": "元/平方米",
+        "mom": -0.8801,
+        "yoy": -7.5102,
+        "median": 9097
+      },
+      {
+        "city": "洛阳",
+        "province": "河南省",
+        "average": 7162,
+        "unit": "元/平方米",
+        "mom": 0.0319,
+        "yoy": -3.0814,
+        "median": 7073
+      },
+      {
+        "city": "济南",
+        "province": "山东省",
+        "average": 14996,
+        "unit": "元/平方米",
+        "mom": -0.4091,
+        "yoy": -5.837,
+        "median": 13555
+      },
+      {
+        "city": "济宁",
+        "province": "山东省",
+        "average": 7141,
+        "unit": "元/平方米",
+        "mom": -0.3393,
+        "yoy": -8.0756,
+        "median": 6989
+      },
+      {
+        "city": "海口",
+        "province": "海南省",
+        "average": 12415,
+        "unit": "元/平方米",
+        "mom": -1.2935,
+        "yoy": -8.3403,
+        "median": 11943
+      },
+      {
+        "city": "淄博",
+        "province": "山东省",
+        "average": 7869,
+        "unit": "元/平方米",
+        "mom": -0.2083,
+        "yoy": -6.3488,
+        "median": 7716
+      },
+      {
+        "city": "淮安",
+        "province": "江苏省",
+        "average": 7251,
+        "unit": "元/平方米",
+        "mom": -0.6152,
+        "yoy": -9.8417,
+        "median": 6304
+      },
+      {
+        "city": "深圳",
+        "province": "广东省",
+        "average": 63150,
+        "unit": "元/平方米",
+        "mom": -0.2514,
+        "yoy": -4.6325,
+        "median": 56124
+      },
+      {
+        "city": "温州",
+        "province": "浙江省",
+        "average": 15911,
+        "unit": "元/平方米",
+        "mom": -0.8491,
+        "yoy": -11.0337,
+        "median": 14534
+      },
+      {
+        "city": "湖州",
+        "province": "浙江省",
+        "average": 8829,
+        "unit": "元/平方米",
+        "mom": -0.5937,
+        "yoy": -5.6828,
+        "median": 8432
+      },
+      {
+        "city": "湘潭",
+        "province": "湖南省",
+        "average": 4435,
+        "unit": "元/平方米",
+        "mom": 0.0197,
+        "yoy": -4.1937,
+        "median": 4447
+      },
+      {
+        "city": "湛江",
+        "province": "广东省",
+        "average": 7924,
+        "unit": "元/平方米",
+        "mom": -0.3576,
+        "yoy": -7.5107,
+        "median": 7843
+      },
+      {
+        "city": "漳州",
+        "province": "福建省",
+        "average": 12047,
+        "unit": "元/平方米",
+        "mom": -0.1184,
+        "yoy": -4.671,
+        "median": 11534
+      },
+      {
+        "city": "潍坊",
+        "province": "山东省",
+        "average": 5706,
+        "unit": "元/平方米",
+        "mom": -0.4069,
+        "yoy": -5.8623,
+        "median": 5400
+      },
+      {
+        "city": "烟台",
+        "province": "山东省",
+        "average": 8331,
+        "unit": "元/平方米",
+        "mom": -0.7076,
+        "yoy": -8.4546,
+        "median": 7360
+      },
+      {
+        "city": "珠海",
+        "province": "广东省",
+        "average": 18349,
+        "unit": "元/平方米",
+        "mom": -0.7305,
+        "yoy": -9.2713,
+        "median": 17604
+      },
+      {
+        "city": "盐城",
+        "province": "江苏省",
+        "average": 8332,
+        "unit": "元/平方米",
+        "mom": -0.4498,
+        "yoy": -11.6257,
+        "median": 7453
+      },
+      {
+        "city": "石家庄",
+        "province": "河北省",
+        "average": 11130,
+        "unit": "元/平方米",
+        "mom": -0.6084,
+        "yoy": -7.8729,
+        "median": 10499
+      },
+      {
+        "city": "福州",
+        "province": "福建省",
+        "average": 21114,
+        "unit": "元/平方米",
+        "mom": -0.4044,
+        "yoy": -7.2716,
+        "median": 18644
+      },
+      {
+        "city": "秦皇岛",
+        "province": "河北省",
+        "average": 8724,
+        "unit": "元/平方米",
+        "mom": 0.1127,
+        "yoy": -3.4228,
+        "median": 8286
+      },
+      {
+        "city": "绍兴",
+        "province": "浙江省",
+        "average": 13950,
+        "unit": "元/平方米",
+        "mom": -0.4314,
+        "yoy": -8.725,
+        "median": 13294
+      },
+      {
+        "city": "绵阳",
+        "province": "四川省",
+        "average": 7008,
+        "unit": "元/平方米",
+        "mom": -0.2658,
+        "yoy": -5.8148,
+        "median": 7141
+      },
+      {
+        "city": "聊城",
+        "province": "山东省",
+        "average": 9201,
+        "unit": "元/平方米",
+        "mom": -0.1383,
+        "yoy": -4.0434,
+        "median": 8827
+      },
+      {
+        "city": "肇庆",
+        "province": "广东省",
+        "average": 5936,
+        "unit": "元/平方米",
+        "mom": -0.3955,
+        "yoy": -6.676,
+        "median": 6028
+      },
+      {
+        "city": "芜湖",
+        "province": "安徽省",
+        "average": 9382,
+        "unit": "元/平方米",
+        "mom": -0.2066,
+        "yoy": -7.9696,
+        "median": 9184
+      },
+      {
+        "city": "苏州",
+        "province": "江苏省",
+        "average": 20375,
+        "unit": "元/平方米",
+        "mom": -0.2804,
+        "yoy": -7.6563,
+        "median": 17609
+      },
+      {
+        "city": "菏泽",
+        "province": "山东省",
+        "average": 5624,
+        "unit": "元/平方米",
+        "mom": -0.893,
+        "yoy": -5.6159,
+        "median": 5680
+      },
+      {
+        "city": "衡水",
+        "province": "河北省",
+        "average": 6543,
+        "unit": "元/平方米",
+        "mom": -0.0291,
+        "yoy": -5.0226,
+        "median": 6523
+      },
+      {
+        "city": "西宁",
+        "province": "青海省",
+        "average": 8346,
+        "unit": "元/平方米",
+        "mom": -0.7023,
+        "yoy": -3.2033,
+        "median": 8693
+      },
+      {
+        "city": "西安",
+        "province": "陕西省",
+        "average": 12430,
+        "unit": "元/平方米",
+        "mom": -0.9755,
+        "yoy": -9.6033,
+        "median": 10915
+      },
+      {
+        "city": "贵阳",
+        "province": "贵州省",
+        "average": 6974,
+        "unit": "元/平方米",
+        "mom": -0.257,
+        "yoy": -6.0863,
+        "median": 6439
+      },
+      {
+        "city": "赣州",
+        "province": "江西省",
+        "average": 10651,
+        "unit": "元/平方米",
+        "mom": -0.2419,
+        "yoy": -5.376,
+        "median": 10692
+      },
+      {
+        "city": "连云港",
+        "province": "江苏省",
+        "average": 9817,
+        "unit": "元/平方米",
+        "mom": -0.7631,
+        "yoy": -7.8904,
+        "median": 8946
+      },
+      {
+        "city": "邯郸",
+        "province": "河北省",
+        "average": 8012,
+        "unit": "元/平方米",
+        "mom": -0.3419,
+        "yoy": -6.1864,
+        "median": 8134
+      },
+      {
+        "city": "郑州",
+        "province": "河南省",
+        "average": 11850,
+        "unit": "元/平方米",
+        "mom": -0.594,
+        "yoy": -6.5811,
+        "median": 10009
+      },
+      {
+        "city": "重庆",
+        "province": "重庆市",
+        "average": 10480,
+        "unit": "元/平方米",
+        "mom": -0.4408,
+        "yoy": -8.1665,
+        "median": 9830
+      },
+      {
+        "city": "金华",
+        "province": "浙江省",
+        "average": 13786,
+        "unit": "元/平方米",
+        "mom": -0.1519,
+        "yoy": -9.6353,
+        "median": 12001
+      },
+      {
+        "city": "银川",
+        "province": "宁夏回族自治区",
+        "average": 6910,
+        "unit": "元/平方米",
+        "mom": -0.2819,
+        "yoy": -3.8341,
+        "median": 6549
+      },
+      {
+        "city": "镇江",
+        "province": "江苏省",
+        "average": 7131,
+        "unit": "元/平方米",
+        "mom": -0.0682,
+        "yoy": -5.3222,
+        "median": 6532
+      },
+      {
+        "city": "长春",
+        "province": "吉林省",
+        "average": 7497,
+        "unit": "元/平方米",
+        "mom": -0.4922,
+        "yoy": -6.963,
+        "median": 7016
+      },
+      {
+        "city": "长沙",
+        "province": "湖南省",
+        "average": 9472,
+        "unit": "元/平方米",
+        "mom": -0.7979,
+        "yoy": -8.1209,
+        "median": 8736
+      },
+      {
+        "city": "阜阳",
+        "province": "安徽省",
+        "average": 6749,
+        "unit": "元/平方米",
+        "mom": -1.0828,
+        "yoy": -6.6899,
+        "median": 6643
+      },
+      {
+        "city": "青岛",
+        "province": "山东省",
+        "average": 17145,
+        "unit": "元/平方米",
+        "mom": -0.3576,
+        "yoy": -6.7827,
+        "median": 14279
+      },
+      {
+        "city": "马鞍山",
+        "province": "安徽省",
+        "average": 7419,
+        "unit": "元/平方米",
+        "mom": -0.5241,
+        "yoy": -7.6675,
+        "median": 7278
+      }
+    ],
+    "trend": [
+      {
+        "city": "全国(百城)",
+        "average": 13381,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.74,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -7.38,
+        "averageTongBiUnit": "%",
+        "date": "2025-09",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 10074,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 13268,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.84,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -7.6,
+        "averageTongBiUnit": "%",
+        "date": "2025-10",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 10011,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 13143,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.94,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -7.95,
+        "averageTongBiUnit": "%",
+        "date": "2025-11",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9949,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 13016,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.97,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -8.36,
+        "averageTongBiUnit": "%",
+        "date": "2025-12",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9800,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 12905,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.85,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -8.67,
+        "averageTongBiUnit": "%",
+        "date": "2026-01",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9723,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 12835,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.54,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -8.78,
+        "averageTongBiUnit": "%",
+        "date": "2026-02",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9654,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 12792,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.335,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -8.5502,
+        "averageTongBiUnit": "%",
+        "date": "2026-03",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9630,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 12733,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.46,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -8.34,
+        "averageTongBiUnit": "%",
+        "date": "2026-04",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9583,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 12692,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.3235,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -7.9904,
+        "averageTongBiUnit": "%",
+        "date": "2026-05",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9553,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 12639,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.4176,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -7.6839,
+        "averageTongBiUnit": "%",
+        "date": "2026-06",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9510,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 12584,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.4352,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -7.3684,
+        "averageTongBiUnit": "%",
+        "date": "2026-07",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9447,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      },
+      {
+        "city": "全国(百城)",
+        "average": 12527,
+        "averageUnit": "元/平方米",
+        "averageHuanBi": -0.453,
+        "averageHuanBiUnit": "%",
+        "averageTongBi": -7.0766,
+        "averageTongBiUnit": "%",
+        "date": "2026-08",
+        "cityId": "590676af-6ca1-4635-9148-5a1e6ff83b06",
+        "median": 9416,
+        "medianHuanBi": 0,
+        "medianUnit": "元/平方米"
+      }
+    ],
+    "sourceUrl": "https://www.cih-index.com/data/index/esfHouse.html"
+  }
+}
