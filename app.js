@@ -320,7 +320,7 @@ function renderAreaControls() {
     : [];
   setSelectOptions(
     citySelect,
-    municipalityDistricts ? "直辖市：请选择区县" : province ? "请选择城市 / 州" : "请先选择省份",
+    municipalityDistricts ? "直辖市：请选择区县" : province ? "请选择市 / 州 / 县" : "请先选择省份",
     cityFeatures,
     selectedCityName,
   );
