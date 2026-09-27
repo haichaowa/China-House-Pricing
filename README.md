@@ -1,8 +1,8 @@
-# China Host Pricing
+# China House Pricing
 
-China Host Pricing is a lightweight interactive prototype for exploring China housing prices on a map. Click a province to zoom in and inspect monitored-city prices, month-over-month change, and year-over-year change. The prototype also compares new-home and second-hand markets and shows a 12-month national trend.
+China House Pricing is a lightweight interactive prototype for exploring China housing prices on a map. Click a province to zoom in and inspect monitored-city prices, month-over-month change, and year-over-year change. The prototype also compares new-home and second-hand markets and shows a 12-month national trend.
 
-> Repository name follows the requested project title. The topic is housing prices; “Host” is retained intentionally.
+> Repository name follows the requested project title: **China House Pricing**.
 
 ## Features
 
