@@ -12,6 +12,7 @@ China House Pricing is a lightweight interactive prototype for exploring China h
 - Province → city → district drill-down with dynamically loaded administrative boundaries
 - Twelve-month time slider and playback for historical national, province, and monitored-city prices
 - District-level second-hand listing reference prices for 70 monitored cities and 666 districts/county-level areas
+- Quick shortcuts for Beijing's 16 districts, Tianjin's 16 districts, and Tangshan's 14 districts/counties
 - New-home and second-hand market toggle
 - Province color based on the median monitored-city sample price
 - City cards with sample average price, MoM, and YoY

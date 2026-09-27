@@ -530,7 +530,11 @@ function renderSummary() {
   document.querySelector("#region-title").textContent = title;
   document.querySelector("#region-type").textContent = labels[state.market].name;
   document.querySelector("#city-list-title").textContent = listTitle;
-  document.querySelector("#city-count").textContent = `${rows.length} 个行政区`;
+  const districtRows = rows.filter((row) => row.level === "district");
+  const coveredDistrictCount = districtRows.filter((row) => Number.isFinite(row.price)).length;
+  document.querySelector("#city-count").textContent = districtRows.length
+    ? `${coveredDistrictCount}/${districtRows.length} 个区县有参考价`
+    : `${rows.length} 个行政区`;
 
   const isDistrict = selectedFeature?.properties?.level === "district";
   const selectedDistrictRecord = isDistrict ? findDistrictRecord(selectedFeature.properties.name) : null;
@@ -1094,6 +1098,11 @@ function initializeCharts() {
   document.querySelectorAll(".segment").forEach((button) => {
     button.addEventListener("click", () => setMarket(button.dataset.market));
   });
+  document.querySelectorAll(".region-shortcuts button").forEach((button) => {
+    button.addEventListener("click", () => {
+      void focusShortcutRegion(button.dataset.province, button.dataset.city);
+    });
+  });
   document.querySelector("#time-slider").addEventListener("input", (event) => {
     stopPlayback();
     setTimeIndex(Number(event.target.value));
@@ -1111,6 +1120,24 @@ function initializeCharts() {
     state.mapChart.resize();
     state.trendChart.resize();
   });
+}
+
+async function focusShortcutRegion(provinceName, cityName = "") {
+  // District-level public data currently represents second-hand listing
+  // references. Switch automatically so these shortcuts remain useful.
+  if (state.market !== "esfHouse") setMarket("esfHouse");
+  const province = state.nationalGeo.features.find(
+    (feature) => feature.properties?.name === provinceName,
+  );
+  if (!province) return;
+  await enterFeature(province);
+  if (!cityName) return;
+
+  const provinceData = state.geoCache.get(province.properties.adcode);
+  const city = provinceData?.features.find(
+    (feature) => feature.properties?.name === cityName,
+  );
+  if (city) await enterFeature(city);
 }
 
 async function main() {

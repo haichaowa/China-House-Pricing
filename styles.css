@@ -417,6 +417,30 @@ h3 { font-size: 15px; }
   line-height: 1.55;
 }
 
+.region-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.region-shortcuts button {
+  padding: 6px 9px;
+  border: 1px solid rgba(75, 212, 196, 0.32);
+  border-radius: 8px;
+  background: rgba(75, 212, 196, 0.08);
+  color: var(--accent);
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.18s ease;
+}
+
+.region-shortcuts button:hover {
+  border-color: rgba(75, 212, 196, 0.75);
+  background: rgba(75, 212, 196, 0.16);
+  transform: translateY(-1px);
+}
+
 .summary-card {
   padding: 14px;
   border: 1px solid var(--border);

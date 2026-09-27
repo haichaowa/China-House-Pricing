@@ -16,6 +16,9 @@ assert district_prices["cityCoverage"] >= 70
 assert district_prices["districtCoverage"] >= 600
 assert len(district_prices["cities"]) == district_prices["cityCoverage"]
 assert sum(len(city["districts"]) for city in district_prices["cities"].values()) == district_prices["districtCoverage"]
+for city_name, expected_count in {"北京": 16, "天津": 16, "唐山": 14}.items():
+    assert city_name in district_prices["cities"], f"{city_name} is missing district prices"
+    assert len(district_prices["cities"][city_name]["districts"]) == expected_count
 for market in ("newHouse", "esfHouse"):
     assert len(prices[market]["cities"]) == 100
     assert len(prices[market]["trend"]) >= 12
