@@ -612,6 +612,113 @@ function renderTrend() {
     : "";
 }
 
+function activeFocusTrend() {
+  const trend = activeTrend();
+  const current = currentPathItem();
+  const provinceName = currentProvinceName();
+  const selected = activeFeature();
+
+  if (current?.level === "province" && provinceName) {
+    return {
+      name: provinceName,
+      records: trend.map((item) => ({
+        date: item.date,
+        average: median(state.prices[state.market].cities
+          .filter((city) => city.province === provinceName)
+          .map((city) => city.history?.find((history) => history.date === item.date)?.average ?? (
+            item.date === state.prices[state.market].date ? city.average : NaN
+          ))),
+        mom: null,
+        yoy: null,
+      })),
+    };
+  }
+
+  const focusCityName = currentCityName()
+    ?? (selected?.feature?.properties?.level === "city" ? selected.name : null)
+    ?? (selected?.feature?.properties?.level === "district" ? provinceName : null);
+  const city = focusCityName
+    ? state.prices[state.market].cities.find((item) => item.province === (provinceName ?? item.province) && normalizeAreaName(item.city) === normalizeAreaName(focusCityName))
+    : null;
+
+  if (city) {
+    return {
+      name: city.city,
+      records: trend.map((item) => {
+        const history = city.history?.find((history) => history.date === item.date);
+        return history ?? {
+          date: item.date,
+          average: item.date === state.prices[state.market].date ? city.average : NaN,
+          mom: item.date === state.prices[state.market].date ? city.mom : NaN,
+          yoy: item.date === state.prices[state.market].date ? city.yoy : NaN,
+        };
+      }),
+    };
+  }
+
+  return {
+    name: "全国百城",
+    records: trend.map((item) => ({
+      date: item.date,
+      average: item.average,
+      mom: item.averageHuanBi,
+      yoy: item.averageTongBi,
+    })),
+  };
+}
+
+function renderTimeFeedback() {
+  const focus = activeFocusTrend();
+  const records = focus.records;
+  const max = Math.max(0, records.length - 1);
+  const index = Math.min(Math.max(state.timeIndex ?? max, 0), max);
+  const record = records[index] ?? {};
+  const progress = max ? index / max : 0;
+
+  document.querySelector("#time-input-wrap").style.setProperty("--time-progress", String(progress));
+  document.querySelector("#time-focus-name").textContent = focus.name;
+  document.querySelector("#time-tooltip-price").textContent = formatPrice(record.average);
+  document.querySelector("#time-tooltip-change").textContent = `环比 ${formatChange(record.mom)}`;
+
+  document.querySelector("#time-metrics").innerHTML = [
+    { label: "当前均价", value: formatPrice(record.average), className: "" },
+    { label: "环比", value: formatChange(record.mom), className: changeClass(record.mom) },
+    { label: "同比", value: formatChange(record.yoy), className: changeClass(record.yoy) },
+  ].map((metric) => `<div class="time-metric">
+    <span>${metric.label}</span>
+    <strong class="${metric.className}">${metric.value}</strong>
+  </div>`).join("");
+
+  const values = records.map((item) => item.average).filter(Number.isFinite);
+  const min = Math.min(...values);
+  const maxPrice = Math.max(...values);
+  const points = records.map((item, itemIndex) => {
+    if (!Number.isFinite(item.average)) return null;
+    const x = max ? (itemIndex / max) * 240 : 120;
+    const normalized = maxPrice === min ? 0.5 : (item.average - min) / (maxPrice - min);
+    const y = 38 - normalized * 30;
+    return { x, y };
+  }).filter(Boolean);
+  const pointText = points.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+  const currentPoint = points[index] ?? points.at(-1) ?? { x: 120, y: 19 };
+  const first = points[0] ?? currentPoint;
+  const last = points.at(-1) ?? currentPoint;
+
+  document.querySelector("#time-sparkline").innerHTML = `
+    <svg viewBox="0 0 240 45" preserveAspectRatio="none" role="presentation">
+      <defs>
+        <linearGradient id="time-spark-gradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="rgba(75,212,196,0.35)" />
+          <stop offset="100%" stop-color="rgba(75,212,196,0)" />
+        </linearGradient>
+      </defs>
+      <path d="M ${first.x},45 L ${pointText.replaceAll(" ", " L ")} L ${last.x},45 Z" fill="url(#time-spark-gradient)" />
+      <polyline points="${pointText}" fill="none" stroke="#4bd4c4" stroke-width="2" vector-effect="non-scaling-stroke" />
+      <line x1="${currentPoint.x}" y1="3" x2="${currentPoint.x}" y2="42" stroke="rgba(255,104,122,0.9)" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    </svg>
+  `;
+}
+
 function renderTimeControls() {
   const trend = activeTrend();
   const max = Math.max(0, trend.length - 1);
@@ -627,6 +734,7 @@ function renderTimeControls() {
   document.querySelector("#time-prev").disabled = index === 0;
   document.querySelector("#time-next").disabled = index === max;
   document.querySelector("#data-date").textContent = `${labels[state.market].name} · ${activeDate()}`;
+  renderTimeFeedback();
 }
 
 function stopPlayback() {
@@ -737,6 +845,7 @@ function goCountry({ silent = false } = {}) {
   updateCaption();
   renderBreadcrumb();
   renderAreaControls();
+  renderTimeFeedback();
   if (!silent) {
     setMapOption();
     renderSummary();
@@ -769,6 +878,7 @@ async function enterFeature(feature) {
     updateCaption();
     renderBreadcrumb();
     renderAreaControls();
+    renderTimeFeedback();
     setMapOption();
     renderSummary();
     renderTrend();
@@ -798,6 +908,7 @@ function selectFeature(feature) {
   updateCaption();
   renderBreadcrumb();
   renderAreaControls();
+  renderTimeFeedback();
   setMapOption();
   renderSummary();
   renderTrend();
@@ -820,6 +931,7 @@ function goToPathIndex(index) {
   updateCaption();
   renderBreadcrumb();
   renderAreaControls();
+  renderTimeFeedback();
   setMapOption();
   renderSummary();
   renderTrend();
