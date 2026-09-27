@@ -19,6 +19,9 @@ Use `python3 -m http.server 8000` and open <http://localhost:8000>.
 - [x] DataV province and district GeoJSON requests return HTTP 200
 - [x] Loading overlay is removed after data initialization
 - [x] Mobile layout at 390×844 has no horizontal overflow
+- [x] Twelve-month time slider switches national, province, city, and district cards
+- [x] Time playback advances from the oldest month and stops at the latest month
+- [x] Historical coverage reports 99/100 monitored cities
 - [x] No browser console errors or warnings
 
 ## Current local result

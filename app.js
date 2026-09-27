@@ -11,6 +11,8 @@ const state = {
   trendChart: null,
   path: [],
   selectedName: null,
+  timeIndex: null,
+  playbackTimer: null,
   mapCenter: [104.8, 36.2],
   mapZoom: 1.18,
 };
@@ -63,7 +65,7 @@ function provinceStats(data, province = null) {
   const cities = province ? data.cities.filter((city) => city.province === province) : data.cities;
   return {
     cities,
-    count: cities.length,
+    count: cities.filter((city) => Number.isFinite(city.average)).length,
     medianPrice: median(cities.map((city) => city.average)),
     averagePrice: average(cities.map((city) => city.average)),
     averageMom: average(cities.map((city) => city.mom)),
@@ -84,8 +86,56 @@ function currentPathItem(levelOffset = 0) {
   return state.path.at(Math.max(0, state.path.length - 1 + levelOffset)) ?? null;
 }
 
+function activeTrend() {
+  return [...state.prices[state.market].trend].sort((a, b) => a.date.localeCompare(b.date));
+}
+
+function activeDate() {
+  const trend = activeTrend();
+  if (!trend.length) return state.prices[state.market].date;
+  const index = Math.min(Math.max(state.timeIndex ?? trend.length - 1, 0), trend.length - 1);
+  return trend[index].date;
+}
+
+function activeNationalRecord() {
+  return activeTrend().find((item) => item.date === activeDate()) ?? state.prices[state.market].summary;
+}
+
+function cityAtTime(city) {
+  const date = activeDate();
+  const history = city.history?.find((item) => item.date === date);
+  if (history) {
+    return {
+      ...city,
+      average: history.average,
+      mom: history.mom,
+      yoy: history.yoy,
+      median: history.median,
+    };
+  }
+  if (date === state.prices[state.market].date) return city;
+  return { ...city, average: NaN, mom: NaN, yoy: NaN, median: NaN };
+}
+
+function activeMarketData() {
+  const base = state.prices[state.market];
+  const national = activeNationalRecord();
+  return {
+    ...base,
+    date: activeDate(),
+    summary: {
+      ...base.summary,
+      average: national.average,
+      median: national.median,
+      averageHuanBi: national.averageHuanBi,
+      averageTongBi: national.averageTongBi,
+    },
+    cities: base.cities.map(cityAtTime),
+  };
+}
+
 function findCityRecord(name, provinceName = null) {
-  const data = state.prices[state.market];
+  const data = activeMarketData();
   const target = normalizeAreaName(name);
   return data.cities.find((city) => {
     const provinceMatches = !provinceName || city.province === provinceName;
@@ -108,7 +158,7 @@ function activeFeature(name = state.selectedName) {
 }
 
 function currentMapData() {
-  const data = state.prices[state.market];
+  const data = activeMarketData();
   const current = currentPathItem();
   const mapCurrent = current?.level === "selected" ? currentPathItem(-1) : current;
 
@@ -339,7 +389,7 @@ function renderAreaControls() {
 }
 
 function renderSummary() {
-  const data = state.prices[state.market];
+  const data = activeMarketData();
   const current = currentPathItem();
   const provinceName = currentProvinceName();
   const selectedFeature = activeFeature();
@@ -414,7 +464,7 @@ function renderSummary() {
       count: data.cities.length,
       medianPrice: data.summary.average,
       averageMom: data.summary.averageHuanBi,
-      averageYoy: null,
+      averageYoy: data.summary.averageTongBi,
     };
   }
 
@@ -433,7 +483,13 @@ function renderSummary() {
     summaryCard(
       "监测样本",
       `${summary.count} 个`,
-      isDistrict ? "百城价格指数城市" : current?.level === "province" ? "该省监测城市" : "全国监测城市",
+      isDistrict
+        ? "百城价格指数城市"
+        : current?.level === "province"
+          ? "该省有历史数据的监测城市"
+          : current?.level === "city"
+            ? "该市监测样本"
+            : "全国监测城市",
     ),
     summaryCard(
       "环比变化",
@@ -444,7 +500,7 @@ function renderSummary() {
     summaryCard(
       "同比变化",
       formatChange(summary.averageYoy),
-      isDistrict ? "所属城市同比" : "公开汇总页未提供全国同比",
+      isDistrict ? "所属城市同比" : "全国百城同比",
       changeClass(summary.averageYoy),
     ),
   ].join("");
@@ -464,11 +520,36 @@ function renderSummary() {
 }
 
 function renderTrend() {
-  const data = state.prices[state.market];
+  const data = activeMarketData();
   const trend = [...data.trend].sort((a, b) => a.date.localeCompare(b.date));
+  const current = currentPathItem();
+  const provinceName = currentProvinceName();
+  const selected = activeFeature();
+  const focusCityName = currentCityName()
+    ?? (selected?.feature?.properties?.level === "city" ? selected.name : null)
+    ?? (selected?.feature?.properties?.level === "district" ? provinceName : null);
+  const focusCity = focusCityName ? findCityRecord(focusCityName, provinceName) : null;
+  const focusName = current?.level === "province" ? provinceName : focusCity?.city ?? "当前地区";
+  const provinceTrend = provinceName ? trend.map((item) => {
+    const values = state.prices[state.market].cities
+      .filter((city) => city.province === provinceName)
+      .map((city) => city.history?.find((history) => history.date === item.date)?.average ?? (
+        item.date === state.prices[state.market].date ? city.average : NaN
+      ));
+    return median(values);
+  }) : [];
+
   state.trendChart.setOption({
     backgroundColor: "transparent",
-    grid: { left: 42, right: 14, top: 28, bottom: 28 },
+    grid: { left: 42, right: 14, top: 42, bottom: 28 },
+    legend: {
+      data: ["全国百城", focusName],
+      textStyle: { color: "#9dacc8", fontSize: 10 },
+      itemWidth: 12,
+      itemHeight: 7,
+      top: 0,
+      right: 0,
+    },
     tooltip: {
       trigger: "axis",
       backgroundColor: "rgba(8, 12, 24, 0.94)",
@@ -489,13 +570,19 @@ function renderTrend() {
       splitLine: { lineStyle: { color: "rgba(125,154,210,0.1)" } },
     },
     series: [{
-      name: `${labels[state.market].name}样本均价`,
+      name: "全国百城",
       type: "line",
       smooth: true,
       symbolSize: 6,
       data: trend.map((item) => item.average),
       lineStyle: { width: 3, color: "#4bd4c4" },
       itemStyle: { color: "#4bd4c4" },
+      markLine: {
+        symbol: "none",
+        label: { show: false },
+        lineStyle: { color: "rgba(255,104,122,0.75)", type: "dashed", width: 1.5 },
+        data: [{ xAxis: activeDate() }],
+      },
       areaStyle: {
         color: {
           type: "linear",
@@ -506,12 +593,81 @@ function renderTrend() {
           ],
         },
       },
+    }, {
+      name: focusName,
+      type: "line",
+      smooth: true,
+      symbolSize: 5,
+      data: current?.level === "province"
+        ? provinceTrend
+        : trend.map((item) => focusCity?.history?.find((history) => history.date === item.date)?.average ?? NaN),
+      lineStyle: { width: 2, color: "#ff687a", type: "dashed" },
+      itemStyle: { color: "#ff687a" },
+      connectNulls: false,
     }],
     animationDuration: 1000,
   });
   document.querySelector("#trend-range").textContent = trend.length
     ? `${trend[0].date} 至 ${trend.at(-1).date}`
     : "";
+}
+
+function renderTimeControls() {
+  const trend = activeTrend();
+  const max = Math.max(0, trend.length - 1);
+  const index = Math.min(Math.max(state.timeIndex ?? max, 0), max);
+  const slider = document.querySelector("#time-slider");
+  slider.min = "0";
+  slider.max = String(max);
+  slider.value = String(index);
+  document.querySelector("#time-label").textContent = activeDate();
+  document.querySelector("#time-start").textContent = trend[0]?.date ?? "--";
+  document.querySelector("#time-end").textContent = trend.at(-1)?.date ?? "--";
+  document.querySelector("#time-coverage").textContent = `城市历史公开覆盖 ${state.prices[state.market].historicalCoverage}/100`;
+  document.querySelector("#time-prev").disabled = index === 0;
+  document.querySelector("#time-next").disabled = index === max;
+  document.querySelector("#data-date").textContent = `${labels[state.market].name} · ${activeDate()}`;
+}
+
+function stopPlayback() {
+  if (!state.playbackTimer) return;
+  window.clearInterval(state.playbackTimer);
+  state.playbackTimer = null;
+  document.querySelector("#time-play").textContent = "播放";
+}
+
+function setTimeIndex(index, { updateChart = true } = {}) {
+  const trend = activeTrend();
+  state.timeIndex = Math.min(Math.max(index, 0), Math.max(0, trend.length - 1));
+  renderTimeControls();
+  if (updateChart) {
+    setMapOption(false, true);
+    renderSummary();
+    renderTrend();
+  }
+}
+
+function startPlayback() {
+  if (state.playbackTimer) {
+    stopPlayback();
+    return;
+  }
+
+  const trend = activeTrend();
+  if ((state.timeIndex ?? trend.length - 1) >= trend.length - 1) {
+    setTimeIndex(0, { updateChart: false });
+  }
+
+  document.querySelector("#time-play").textContent = "暂停";
+  state.playbackTimer = window.setInterval(() => {
+    const next = (state.timeIndex ?? 0) + 1;
+    if (next > trend.length - 1) {
+      stopPlayback();
+      return;
+    }
+    setTimeIndex(next);
+  }, 1200);
+  setTimeIndex(state.timeIndex ?? 0);
 }
 
 function geometryBBox(geometry) {
@@ -584,6 +740,7 @@ function goCountry({ silent = false } = {}) {
   if (!silent) {
     setMapOption();
     renderSummary();
+    renderTrend();
   }
 }
 
@@ -614,6 +771,7 @@ async function enterFeature(feature) {
     renderAreaControls();
     setMapOption();
     renderSummary();
+    renderTrend();
   } catch (error) {
     console.error(error);
     setStatus("行政区边界加载失败，可重试或直接选择");
@@ -642,6 +800,7 @@ function selectFeature(feature) {
   renderAreaControls();
   setMapOption();
   renderSummary();
+  renderTrend();
 }
 
 function selectOrEnterByName(name) {
@@ -663,6 +822,7 @@ function goToPathIndex(index) {
   renderAreaControls();
   setMapOption();
   renderSummary();
+  renderTrend();
 }
 
 function goUp() {
@@ -695,7 +855,7 @@ function setMarket(market) {
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-selected", String(active));
   });
-  document.querySelector("#data-date").textContent = `${labels[market].name} · ${state.prices[market].date}`;
+  renderTimeControls();
   setMapOption(true, true);
   renderSummary();
   renderTrend();
@@ -731,6 +891,19 @@ function initializeCharts() {
   document.querySelectorAll(".segment").forEach((button) => {
     button.addEventListener("click", () => setMarket(button.dataset.market));
   });
+  document.querySelector("#time-slider").addEventListener("input", (event) => {
+    stopPlayback();
+    setTimeIndex(Number(event.target.value));
+  });
+  document.querySelector("#time-prev").addEventListener("click", () => {
+    stopPlayback();
+    setTimeIndex((state.timeIndex ?? activeTrend().length - 1) - 1);
+  });
+  document.querySelector("#time-next").addEventListener("click", () => {
+    stopPlayback();
+    setTimeIndex((state.timeIndex ?? 0) + 1);
+  });
+  document.querySelector("#time-play").addEventListener("click", startPlayback);
   window.addEventListener("resize", () => {
     state.mapChart.resize();
     state.trendChart.resize();
@@ -745,6 +918,7 @@ async function main() {
     ]);
     initializeCharts();
     goCountry({ silent: true });
+    setTimeIndex(activeTrend().length - 1, { updateChart: false });
     setMarket("newHouse");
   } catch (error) {
     console.error(error);

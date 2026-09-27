@@ -29,6 +29,25 @@
         </div>
       </header>
 
+      <section class="timeline-panel" aria-label="历史时间维度">
+        <button id="time-prev" class="time-button" type="button" aria-label="上一月">‹</button>
+        <div class="time-slider">
+          <div class="time-head">
+            <label for="time-slider">历史月份</label>
+            <strong id="time-label">--</strong>
+          </div>
+          <input id="time-slider" type="range" min="0" max="11" step="1" value="11" aria-label="选择历史月份" />
+          <div class="time-range">
+            <span id="time-start"></span>
+            <span>拖动查看近 12 个月</span>
+            <span id="time-end"></span>
+          </div>
+          <p id="time-coverage" class="time-coverage"></p>
+        </div>
+        <button id="time-next" class="time-button" type="button" aria-label="下一月">›</button>
+        <button id="time-play" class="ghost-button play-button" type="button">播放</button>
+      </section>
+
       <main class="layout">
         <section class="map-panel" aria-label="中国房价地图">
           <div class="map-toolbar">
@@ -83,7 +102,7 @@
 
           <section class="panel-block">
             <div class="block-head">
-              <h3>全国百城走势</h3>
+              <h3>历史走势对比</h3>
               <span id="trend-range"></span>
             </div>
             <div id="trend" class="trend-chart"></div>
@@ -103,6 +122,7 @@
               <li>省份值是“该省内监测城市样本价格中位数”，不是官方全省平均成交价。</li>
               <li>城市值为中指研究院公开的样本平均价格，与统计局 70 城同质价格指数口径不同。</li>
               <li>区县支持连续选择与放大；当前公开数据源没有全国统一区县房价表，区县价格显示所属城市样本价格。</li>
+              <li>历史月份来自中指研究院城市详情页；极少数城市若公开页缺失历史数据，会显示为“--”。</li>
               <li>地图仅用于演示交互，正式发布应使用合规地图服务并核对边界。</li>
             </ul>
           </section>
