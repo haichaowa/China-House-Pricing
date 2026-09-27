@@ -673,7 +673,8 @@ async function main() {
     document.querySelector("#loading").textContent = `加载失败：${error.message}`;
     return;
   }
-  document.querySelector("#loading").classList.add("is-hidden");
+  const loading = document.querySelector("#loading");
+  loading.remove();
 }
 
 main();

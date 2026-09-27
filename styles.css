@@ -349,6 +349,7 @@ h3 { font-size: 15px; }
 }
 
 .loading-overlay.is-hidden { opacity: 0; pointer-events: none; }
+.loading-overlay[hidden] { display: none; }
 
 @media (max-width: 1150px) {
   .layout { grid-template-columns: 1fr; }

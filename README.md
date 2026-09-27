@@ -27,6 +27,8 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>.
 
+During interactive debugging, keep changes local. The GitHub Pages workflow is manual-only and should not be run until the province/city/district flows have passed local QA.
+
 No build system is required. ECharts is loaded from jsDelivr.
 
 ## Refresh public data
