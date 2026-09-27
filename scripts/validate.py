@@ -19,6 +19,10 @@ assert sum(len(city["districts"]) for city in district_prices["cities"].values()
 for city_name, expected_count in {"北京": 16, "天津": 16, "唐山": 14}.items():
     assert city_name in district_prices["cities"], f"{city_name} is missing district prices"
     assert len(district_prices["cities"][city_name]["districts"]) == expected_count
+for adcode in (110000, 120000, 130000, 130200):
+    path = ROOT / f"data/areas/{adcode}_full.json"
+    assert path.exists(), f"Missing local boundary {path}"
+    json.loads(path.read_text(encoding="utf-8"))
 for market in ("newHouse", "esfHouse"):
     assert len(prices[market]["cities"]) == 100
     assert len(prices[market]["trend"]) >= 12

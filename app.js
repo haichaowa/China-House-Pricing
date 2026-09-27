@@ -1,6 +1,7 @@
 const priceFormatter = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 0 });
 const compactFormatter = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 1 });
 const GEO_BASE = "https://geo.datav.aliyun.com/areas_v3/bound";
+const LOCAL_GEO_BASE = "./data/areas";
 
 const state = {
   market: "newHouse",
@@ -32,7 +33,15 @@ async function loadJson(url, cacheMode = "default") {
 async function loadAreaGeo(adcode) {
   if (state.geoCache.has(adcode)) return state.geoCache.get(adcode);
   setStatus("正在加载行政区边界…");
-  const geo = await loadJson(`${GEO_BASE}/${adcode}_full.json`);
+  let geo;
+  try {
+    // DataV denies requests with a github.io Referer. Serve cached boundary
+    // files from the same origin first, then retain the remote URL as a local
+    // development fallback.
+    geo = await loadJson(`${LOCAL_GEO_BASE}/${adcode}_full.json`);
+  } catch {
+    geo = await loadJson(`${GEO_BASE}/${adcode}_full.json`);
+  }
   state.geoCache.set(adcode, geo);
   setStatus("");
   return geo;

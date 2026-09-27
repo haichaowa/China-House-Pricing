@@ -52,6 +52,12 @@ python3 scripts/fetch_district_prices.py
 python3 scripts/validate.py
 ```
 
+To recache local province/city/district boundaries:
+
+```bash
+python3 scripts/fetch_area_boundaries.py
+```
+
 The script reads:
 
 - <https://www.cih-index.com/data/index/newHouse.html>
@@ -80,8 +86,12 @@ index.html
 styles.css
 app.js
 data/prices.json
+data/district-prices.json
 data/china-provinces.geojson
+data/areas/
 docs/data-sources.md
 scripts/fetch_data.py
+scripts/fetch_district_prices.py
+scripts/fetch_area_boundaries.py
 scripts/validate.py
 ```
